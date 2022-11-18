@@ -2,3 +2,5 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      css/superfish-nav-menu.css: {}
+      '//fonts.googleapis.com/css2?family=Archivo&amp;family=Archivo+Narrow:ital,wght@1,600&amp;display=swap': { type: external, minified: true }

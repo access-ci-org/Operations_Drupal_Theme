@@ -1,3 +1,9 @@
+v0.2.0 20221118 JP
+  - Implement ACCESS wide universal NAV and FOOTER
+  - Implement menus using Superfish
+  - Improve ACCESS compatible styles and colors
+  - Other misc improvements
+
 Untagges 20220903 JP
   - Move ACCESS wide stuff to ACCESS_wide directory
 

@@ -1,0 +1,105 @@
+.bg-access-dark {
+    background-color:$access-dark
+}
+
+.bg-access-medium {
+    background-color:$access-medium
+}
+
+.bg-access-light {
+    background-color:$access-light
+}
+
+*, * ::before, * ::after {
+    box-sizing: border-box
+}
+
+/*
+*, :after, :before {
+    box-sizing:inherit
+}
+*/
+
+.navbar {
+    --bs-navbar-padding-y: 0;
+}
+
+/*
+    margin: 0 auto;
+    */
+.region-nav-access-main {
+    flex-direction: row;
+    height: 48px;
+    text-align: left
+}
+
+.region-nav-access-additional {
+    flex-direction: row;
+    height: 48px;
+    text-align: right
+}
+
+body {
+    font-family: Archivo;
+}
+
+footer #nsf-logo {
+    flex-shrink: 0;
+    margin-right:20px
+}
+
+footer #nsf-logo img {
+    width:150px
+}
+
+footer .footer-text {
+    list-style: none;
+    padding: 0px 1rem;
+    font-stretch: 100%;
+    text-size-adjust: 100%
+}
+
+footer .footer-text a {
+    font-weight: 700;
+    font-stretch: 100%;
+    text-transform: none;
+    text-decoration: none;
+    color: var(--bs-secondary);
+    font-size: 1.1rem;
+}
+
+footer .footer-text a:hover {
+    text-decoration:underline
+}
+
+footer .footer-contact a {
+    font-stretch: 70% !important;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+footer .footer-logo img {
+    height:30px;
+    width:auto
+}
+
+footer .footer-policies a:link {
+    color: var(--bs-body-color)
+}
+
+footer .social-link {
+    text-decoration: none;
+    transition: transform .1s ease;
+    height: fit-content;
+    margin:0.75rem
+}
+
+footer .social-link svg {
+    fill:#13294b !important;
+    height:55px;
+    width:auto
+}
+
+footer .social-link:hover {
+    transform:scale(1.1)
+}

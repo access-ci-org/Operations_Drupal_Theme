@@ -1,3 +1,6 @@
+// Include ACCESS
+@import 'variables_access';
+
 // Sub theme styling.
 @import 'variables_drupal';
 
@@ -6,8 +9,7 @@
 @import 'variables_bootstrap';
 
 // Include bootstrap.
-//@import '../../../../../bootstrap5/scss/style';
 @import '../../bootstrap5/scss/style';
 
 // Include ACCESS
-@import 'variables_access';
+@import 'styles_access';

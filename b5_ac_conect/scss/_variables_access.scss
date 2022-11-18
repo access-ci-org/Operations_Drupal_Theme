@@ -1,25 +1,21 @@
 // ACCESS variables override
 
-// override default bootstrap colors for accessibility
-//$white: #fff !default;
-//$black: #000 !default;
-//$gray-700: #495057 !default;
+//$body-font-family: Archivo;
 
-$blue: #003CC5 !default;
+$access-dark: #1A5B6E;
+$access-dark-rgb: 26, 91, 110;
+$access-medium: #138597;
+$access-medium-rgb: 19, 133, 151;
+$access-teal: #48C0B9;
+$access-teal-rgb: 72, 192, 185;
+$access-light: #ECF9F8;
+$access-light-rgb: 236, 249, 248;
+$access-yellow: #FFC42D;
+$access-yellow-rgb: 255, 196, 45;
 
-//$cyan: #006170 !default;
-//$pink: #e21181 !default;
-//$green: #008a00 !default;
-
-//$breadcrumb-divider-color: $gray-700 !default;
-//$breadcrumb-active-color: $gray-700 !default;
-
-//$navbar-light-color: rgba($black, .6) !default;
-//$navbar-dark-color: rgba($white, .6) !default;
-
-$bs-body-font-family: archivo;
-$bs-nav-tabs-border-width: 1px;
-//$bs-nav-tabs-border-color: #48c0b9;
-$bs-nav-tabs-border-color: #f07537;
-//$bs-modal-footer-border-width: 1px;
-//$bs-modal-footer-border-color: #48c0b9;
+$theme-colors: (
+  "dark": $access-dark,
+  "light": $access-light,
+  "primary": $access-yellow,
+  "secondary": $access-medium
+);
