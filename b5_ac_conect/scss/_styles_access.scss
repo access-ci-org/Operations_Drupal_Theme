@@ -103,3 +103,26 @@ footer .social-link svg {
 footer .social-link:hover {
     transform:scale(1.1)
 }
+
+.btn-access-primary {
+    font-family: Archivo;
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    color: #000;
+    box-sizing: border-box;
+    background-color: #fec42d;
+    border-color: #fec42d;
+    border-radius: 0;
+    border-width: 4px;
+    padding: 8px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.btn-access-primary:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
