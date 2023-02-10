@@ -11521,4 +11521,9 @@ footer .social-link:hover {
   font-weight: 700;
 }
 
+.navbar-brand .site-logo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /*# sourceMappingURL=style.css.map */
