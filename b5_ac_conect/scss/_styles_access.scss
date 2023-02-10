@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,70,400;0,100,400;0,100,600;0,100,800;1,100,400&display=swap");
+
+:root {
+    --teal-400: #48c0b9;
+    --teal-600: #008597;
+    --teal-700: #1a5b6e;
+    --font-primary: "Archivo", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: "Archivo", Helvetica, Arial, sans-serif;
+}
+
 .bg-access-dark {
     background-color:$access-dark
 }
@@ -37,10 +50,6 @@
     flex-direction: row;
     height: 48px;
     text-align: right
-}
-
-body {
-    font-family: Archivo;
 }
 
 footer #nsf-logo {
@@ -105,7 +114,6 @@ footer .social-link:hover {
 }
 
 .btn-access-primary {
-    font-family: Archivo;
     font-size: 14px;
     font-weight: 700;
     font-stretch: normal;
@@ -125,4 +133,31 @@ footer .social-link:hover {
     color: #000;
     background-color: #fff;
     border-color: #000;
+}
+
+.region-nav-access-main,
+.region-nav-access-additional {
+  ul.sf-menu li.menuparent a {
+      &:hover, &:active, &:focus {
+          color: var(--teal-600);
+          background-color: var(--teal-700);
+      }
+  }
+
+    ul.sf-menu a{
+        &:hover, &:active, &:focus {
+            color: var(--teal-600);
+            background-color: var(--teal-700);
+        }
+
+        color: var(--bs-white);
+        background-color: var(--teal-700);
+        font-size: 14px;
+    }
+
+    ul.sf-menu a{
+        padding: 16px 8px;
+        text-decoration: none;
+        font-weight: 700;
+    }
 }
