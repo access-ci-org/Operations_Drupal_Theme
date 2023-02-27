@@ -12,10 +12,12 @@ $access-light: #ECF9F8;
 $access-light-rgb: 236, 249, 248;
 $access-yellow: #FFC42D;
 $access-yellow-rgb: 255, 196, 45;
+$access-secondary: #6c757d;
+
 
 $theme-colors: (
   "dark": $access-dark,
   "light": $access-light,
   "primary": $access-yellow,
-  "secondary": $access-dark
+  "secondary": $access-secondary
 );
