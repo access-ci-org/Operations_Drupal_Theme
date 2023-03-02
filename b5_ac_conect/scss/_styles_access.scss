@@ -181,11 +181,38 @@ footer .social-link:hover {
 }
 
 a {
-  color: var(--teal-600);
-  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
 
   &:hover {
     color: var(--teal-600);
     text-decoration: underline;
+    font-weight: bold;
   }
+}
+
+
+h1, .h1 {
+    font-size: 36px;
+    font-stretch: 70%;
+    font-weight: 400;
+    //text-transform: uppercase;
+}
+
+
+h2, .h2 {
+    font-size: 24px;
+    font-stretch: 70%;
+    font-weight: 400;
+    //text-transform: uppercase;
+}
+
+
+h3, .h3 {
+    font-size: 20px;
+    font-stretch: 50%;
+    font-weight: 400;
+    color: var(--teal-600)
+    //text-transform: uppercase;
 }
