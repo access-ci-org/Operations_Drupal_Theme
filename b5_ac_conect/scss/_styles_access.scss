@@ -167,6 +167,16 @@ footer .social-link:hover {
     padding-bottom: 60px;
 }
 
+.breadcrumb {
+    padding: 10px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: $access-secondary;
+}
+
 .breadcrumb li {
    a {
        color: var(--teal-700);
@@ -215,4 +225,29 @@ h3, .h3 {
     font-weight: 400;
     color: var(--teal-600)
     //text-transform: uppercase;
+}
+
+.btn {
+    border-radius: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $access-yellow;
+    background-color: $access-yellow;
+    text-decoration: none;
+    font-weight: 200;
+
+    &:hover {
+        text-decoration: none;
+        font-weight: 200;
+        background-color: white;
+        border-color: black;
+    }
+}
+
+.text-orange {
+    color: $access-orange;
+}
+
+.text-yellow {
+    color: $access-yellow;
 }
