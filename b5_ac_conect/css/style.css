@@ -11526,6 +11526,16 @@ footer .social-link:hover {
   padding-bottom: 60px;
 }
 
+.breadcrumb {
+  padding: 10px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: #6c757d;
+}
+
 .breadcrumb li a {
   color: var(--teal-700);
   text-decoration: none;
@@ -11564,6 +11574,30 @@ h3, .h3 {
   font-stretch: 50%;
   font-weight: 400;
   color: var(--teal-600);
+}
+
+.btn, button.link, .button, a.button, .node-preview-container .node-preview-backlink {
+  border-radius: 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #FFC42D;
+  background-color: #FFC42D;
+  text-decoration: none;
+  font-weight: 200;
+}
+.btn:hover, button.link:hover, .button:hover, .node-preview-container .node-preview-backlink:hover {
+  text-decoration: none;
+  font-weight: 200;
+  background-color: white;
+  border-color: black;
+}
+
+.text-orange {
+  color: #F07537;
+}
+
+.text-yellow {
+  color: #FFC42D;
 }
 
 /*# sourceMappingURL=style.css.map */
