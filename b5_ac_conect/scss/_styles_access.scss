@@ -167,16 +167,6 @@ footer .social-link:hover {
     padding-bottom: 60px;
 }
 
-.breadcrumb {
-    padding: 10px;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-style: solid;
-    border-color: $access-secondary;
-}
-
 .breadcrumb li {
    a {
        color: var(--teal-700);
@@ -252,19 +242,19 @@ h3, .h3 {
     color: $access-yellow;
 }
 
-.access-operations-navigation {
+.access-subdomain-global-navigation {
     border-color: $access-dark;
     border-style: solid;
     border-left-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
-    border-top-width: 2px;
+    border-top-width: 3px;
 
     a {
         color: $access-medium;
         text-decoration: none;
         font-weight: 600;
-        font-size: 11px;
+        font-size: 16px;
         padding: 6px 10px;
         display: inline-block;
 
@@ -274,5 +264,18 @@ h3, .h3 {
             font-weight: 600;
         }
     }
+}
 
+.access-subdomain-breadcrumb-wrapper {
+    padding: 9.5px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: $access-secondary;
+
+    .breadcrumb {
+        margin: 0px;
+    }
 }

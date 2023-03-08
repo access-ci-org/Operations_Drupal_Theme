@@ -61,27 +61,23 @@ set footer_classes = ' ' ~
 
   {% if page.nav_access_main or page.nav_access_additional %}
   <div class="bg-access-dark">
-    <div class="container">
       <nav class="{{ nav_classes }}">
         <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
           {{ page.nav_access_main }}
           {{ page.nav_access_additional }}
         </div>
       </nav>
-    </div>
   </div>
   {% endif %}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
-  <div class="container">
-    <nav class="{{ nav_classes }}">
-      <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
-        {{ page.nav_branding }}
-        {{ page.nav_main }}
-        {{ page.nav_additional }}
-      </nav>
+  <nav class="{{ nav_classes }}">
+    <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
+      {{ page.nav_branding }}
+      {{ page.nav_main }}
+      {{ page.nav_additional }}
     </div>
-  </div>
+  </nav>
   {% endif %}
 
 </header>
@@ -103,8 +99,8 @@ set footer_classes = ' ' ~
 
 
   <div>
-    <div class="{{ b5_top_container }}">
-      <div class="border-dark text-end access-operations-navigation">
+    <div class="border-dark text-end access-subdomain-global-navigation">
+      <div class="{{ b5_top_container }}">
         <ul class="list-inline m-0">
           <li class="list-inline-item">
             <a href="/pub/data_n_networking">Data & Networking</a>
@@ -121,11 +117,13 @@ set footer_classes = ' ' ~
         </ul>
       </div>
     </div>
-    <div class="{{ b5_top_container }}">
     {% if page.breadcrumb %}
-      {{ page.breadcrumb }}
+      <div class="w-100 access-subdomain-breadcrumb-wrapper">
+        <div class="{{ b5_top_container }}">
+          {{ page.breadcrumb }}
+        </div>
+      </div>
     {% endif %}
-    </div>
     <div class="row g-0">
       {% if page.sidebar_first %}
         <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">

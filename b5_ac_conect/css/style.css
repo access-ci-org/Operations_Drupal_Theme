@@ -11526,16 +11526,6 @@ footer .social-link:hover {
   padding-bottom: 60px;
 }
 
-.breadcrumb {
-  padding: 10px;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-style: solid;
-  border-color: #6c757d;
-}
-
 .breadcrumb li a {
   color: var(--teal-700);
   text-decoration: none;
@@ -11600,26 +11590,39 @@ h3, .h3 {
   color: #FFC42D;
 }
 
-.access-operations-navigation {
+.access-subdomain-global-navigation {
   border-color: #1A5B6E;
   border-style: solid;
   border-left-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 0px;
-  border-top-width: 2px;
+  border-top-width: 3px;
 }
-.access-operations-navigation a {
+.access-subdomain-global-navigation a {
   color: #138597;
   text-decoration: none;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 16px;
   padding: 6px 10px;
   display: inline-block;
 }
-.access-operations-navigation a:hover {
+.access-subdomain-global-navigation a:hover {
   color: #1A5B6E;
   text-decoration: underline;
   font-weight: 600;
+}
+
+.access-subdomain-breadcrumb-wrapper {
+  padding: 9.5px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: #6c757d;
+}
+.access-subdomain-breadcrumb-wrapper .breadcrumb {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
