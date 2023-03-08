@@ -11546,12 +11546,12 @@ footer .social-link:hover {
   text-decoration: underline;
 }
 
-a {
+a.btn.btn-link, a.btn-link.button, .node-preview-container a.btn-link.node-preview-backlink {
   color: black;
   text-decoration: underline;
   font-weight: bold;
 }
-a:hover {
+a.btn.btn-link:hover, a.btn-link.button:hover, .node-preview-container a.btn-link.node-preview-backlink:hover {
   color: var(--teal-600);
   text-decoration: underline;
   font-weight: bold;
@@ -11576,7 +11576,7 @@ h3, .h3 {
   color: var(--teal-600);
 }
 
-.btn, button.link, .button, a.button, .node-preview-container .node-preview-backlink {
+.btn.btn-primary, button.btn-primary.link, .btn-primary.button, .node-preview-container .btn-primary.node-preview-backlink {
   border-radius: 0px;
   border-width: 2px;
   border-style: solid;
@@ -11585,19 +11585,41 @@ h3, .h3 {
   text-decoration: none;
   font-weight: 200;
 }
-.btn:hover, button.link:hover, .button:hover, .node-preview-container .node-preview-backlink:hover {
+.btn.btn-primary:hover, button.btn-primary.link:hover, .btn-primary.button:hover, .node-preview-container .btn-primary.node-preview-backlink:hover {
   text-decoration: none;
   font-weight: 200;
   background-color: white;
   border-color: black;
 }
 
-.text-orange {
+.text-orange, .btn.btn-link.text-orange, .node-preview-container .btn-link.text-orange.node-preview-backlink, button.text-orange.link {
   color: #F07537;
 }
 
-.text-yellow {
+.text-yellow, .btn.btn-link.text-yellow, .node-preview-container .btn-link.text-yellow.node-preview-backlink, button.text-yellow.link {
   color: #FFC42D;
+}
+
+.access-operations-navigation {
+  border-color: #1A5B6E;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 2px;
+}
+.access-operations-navigation a {
+  color: #138597;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 11px;
+  padding: 6px 10px;
+  display: inline-block;
+}
+.access-operations-navigation a:hover {
+  color: #1A5B6E;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
