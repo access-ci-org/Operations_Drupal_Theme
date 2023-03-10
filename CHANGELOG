@@ -1,3 +1,7 @@
+v0.3.8 20230309      Dinuka De Silva
+  - Link the subdomain navigation to a drupal menu
+  - Improve the styles in outages buttons
+
 v0.3.7 20230308      Dinuka De Silva
   - Adding home page images
   - Adding domain global navigation

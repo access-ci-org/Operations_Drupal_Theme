@@ -11,17 +11,30 @@ body {
     font-family: "Archivo", Helvetica, Arial, sans-serif;
 }
 
-.bg-access-dark {
+.bg-dark {
     background-color:$access-dark
 }
 
-.bg-access-medium {
+.bg-medium {
     background-color:$access-medium
 }
 
-.bg-access-light {
+.bg-light {
     background-color:$access-light
 }
+
+.text-medium {
+    color: $access-medium;
+}
+
+.text-orange, .btn.btn-link.text-orange {
+    color: $access-orange;
+}
+
+.text-yellow, .btn.btn-link.text-yellow {
+    color: $access-yellow;
+}
+
 
 *, * ::before, * ::after {
     box-sizing: border-box
@@ -139,19 +152,19 @@ footer .social-link:hover {
 .region-nav-access-additional {
   ul.sf-menu li.menuparent a {
       &:hover, &:active, &:focus {
-          color: var(--teal-600);
-          background-color: var(--teal-700);
+          color: $access-medium;
+          background-color: $access-dark;
       }
   }
 
     ul.sf-menu a{
         &:hover, &:active, &:focus {
-            color: var(--teal-600);
-            background-color: var(--teal-700);
+            color: $access-medium;
+            background-color: $access-dark;
         }
 
         color: var(--bs-white);
-        background-color: var(--teal-700);
+        background-color: $access-dark;
         font-size: 14px;
     }
 
@@ -167,18 +180,7 @@ footer .social-link:hover {
     padding-bottom: 60px;
 }
 
-.breadcrumb li {
-   a {
-       color: var(--teal-700);
-       text-decoration: none;
-       font-weight: 700;
 
-       &:hover {
-           color: var(--teal-600);
-           text-decoration: underline;
-       }
-   }
-}
 
 a.btn.btn-link {
   color: black;
@@ -186,7 +188,7 @@ a.btn.btn-link {
   font-weight: bold;
 
   &:hover {
-    color: var(--teal-600);
+    color: $access-medium;
     text-decoration: underline;
     font-weight: bold;
   }
@@ -213,33 +215,40 @@ h3, .h3 {
     font-size: 20px;
     font-stretch: 50%;
     font-weight: 400;
-    color: var(--teal-600)
+    color: $access-medium
     //text-transform: uppercase;
 }
 
-.btn.btn-primary {
+.btn {
     border-radius: 0px;
     border-width: 2px;
     border-style: solid;
-    border-color: $access-yellow;
-    background-color: $access-yellow;
     text-decoration: none;
     font-weight: 200;
 
-    &:hover {
+    &:hover, &.active {
         text-decoration: none;
         font-weight: 200;
         background-color: white;
         border-color: black;
+        color: black;
     }
-}
 
-.text-orange, .btn.btn-link.text-orange {
-    color: $access-orange;
-}
+    &.btn-primary {
+        border-color: $access-yellow;
+        background-color: $access-yellow;
+    }
 
-.text-yellow, .btn.btn-link.text-yellow {
-    color: $access-yellow;
+    .btn-outline-primary,
+    .btn-outline-secondary,
+    .btn-outline-success,
+    .btn-outline-danger,
+    .btn-outline-warning,
+    .btn-outline-info,
+    .btn-outline-light,
+    .btn-outline-dark {
+
+    }
 }
 
 .access-subdomain-global-navigation {
@@ -250,17 +259,31 @@ h3, .h3 {
     border-bottom-width: 0px;
     border-top-width: 3px;
 
+    ul {
+        @extend .d-inline-block;
+        @extend .list-inline;
+        li {
+            @extend .list-inline-item;
+            @extend .m-0;
+        }
+    }
+
     a {
-        color: $access-medium;
+        @extend .bg-white;
+        @extend .text-medium;
+
         text-decoration: none;
         font-weight: 600;
         font-size: 16px;
         padding: 6px 10px;
         display: inline-block;
 
-        &:hover {
-            color: $access-dark;
-            text-decoration: underline;
+        &:hover,
+        &.active {
+            @extend .bg-dark;
+            @extend .text-light;
+
+            text-decoration: none;
             font-weight: 600;
         }
     }
@@ -277,5 +300,29 @@ h3, .h3 {
 
     .breadcrumb {
         margin: 0px;
+        li {
+            a {
+                color: $access-dark;
+                text-decoration: none;
+                font-weight: 700;
+
+                &:hover {
+                    color: $access-medium;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+.region-nav-main {
+    li {
+        padding: 10px;
+
+        a {
+            @extend .btn;
+            @extend .btn-outline-dark;
+        }
     }
 }

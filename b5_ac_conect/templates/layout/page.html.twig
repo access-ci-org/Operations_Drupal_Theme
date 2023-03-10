@@ -60,7 +60,7 @@ set footer_classes = ' ' ~
   {{ page.header }}
 
   {% if page.nav_access_main or page.nav_access_additional %}
-  <div class="bg-access-dark">
+  <div class="bg-dark">
       <nav class="{{ nav_classes }}">
         <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
           {{ page.nav_access_main }}
@@ -70,12 +70,11 @@ set footer_classes = ' ' ~
   </div>
   {% endif %}
 
-  {% if page.nav_branding or page.nav_main or page.nav_additional %}
+  {% if page.nav_branding or page.nav_main %}
   <nav class="{{ nav_classes }}">
     <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
       {{ page.nav_branding }}
       {{ page.nav_main }}
-      {{ page.nav_additional }}
     </div>
   </nav>
   {% endif %}
@@ -99,24 +98,13 @@ set footer_classes = ' ' ~
 
 
   <div>
-    <div class="border-dark text-end access-subdomain-global-navigation">
-      <div class="{{ b5_top_container }}">
-        <ul class="list-inline m-0">
-          <li class="list-inline-item">
-            <a href="/pub/data_n_networking">Data & Networking</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="/pub/operational_support">Operations Support</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="/pub/cybersecurity">Cybersecurity</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="/about">About</a>
-          </li>
-        </ul>
+    {% if page.nav_additional %}
+      <div class="border-dark text-end access-subdomain-global-navigation">
+        <div class="{{ b5_top_container }}">
+          {{ page.nav_additional }}
+        </div>
       </div>
-    </div>
+    {% endif %}
     {% if page.breadcrumb %}
       <div class="w-100 access-subdomain-breadcrumb-wrapper">
         <div class="{{ b5_top_container }}">
