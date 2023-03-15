@@ -2933,7 +2933,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-link, button.link {
+.btn-link, .btn.btn-link, .region-nav-main li a.btn-link, .btn-link.button, .node-preview-container .btn-link.node-preview-backlink, .node-preview-container button.node-preview-backlink.link, button.link {
   --bs-btn-font-weight: 400;
   --bs-btn-color: var(--bs-link-color);
   --bs-btn-bg: transparent;
@@ -2955,7 +2955,7 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn, .region-nav-main li .btn-group-lg > a, .node-preview-container .btn-group-lg > .node-preview-backlink, .btn-group-lg > .button, .btn-group-lg > button.link {
+.btn-lg, .region-nav-main li a, .btn-group-lg > .btn, .region-nav-main li .btn-group-lg > a, .node-preview-container .btn-group-lg > .node-preview-backlink, .btn-group-lg > .button, .btn-group-lg > button.link {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
@@ -3469,7 +3469,7 @@ textarea.form-control-lg {
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .region-nav-main li .btn-group-lg > a + .dropdown-toggle-split, .node-preview-container .btn-group-lg > .node-preview-backlink + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > button.link + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .region-nav-main li a + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .region-nav-main li .btn-group-lg > a + .dropdown-toggle-split, .node-preview-container .btn-group-lg > .node-preview-backlink + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > button.link + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -11562,17 +11562,6 @@ footer .social-link:hover {
   padding-bottom: 60px;
 }
 
-a.btn.btn-link, .region-nav-main li a.btn-link, a.btn-link.button, .node-preview-container a.btn-link.node-preview-backlink {
-  color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
-a.btn.btn-link:hover, .region-nav-main li a.btn-link:hover, a.btn-link.button:hover, .node-preview-container a.btn-link.node-preview-backlink:hover {
-  color: #138597;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
 h1, .h1 {
   font-size: 36px;
   font-stretch: 70%;
@@ -11592,6 +11581,11 @@ h3, .h3 {
   color: #138597;
 }
 
+h4, .h4 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
 .btn, .region-nav-main li a, button.link, .button, a.button, .node-preview-container .node-preview-backlink {
   border-radius: 0px;
   border-width: 2px;
@@ -11605,6 +11599,26 @@ h3, .h3 {
   background-color: white;
   border-color: black;
   color: black;
+}
+.btn.btn-link, .region-nav-main li a.btn-link, .btn-link.button, .node-preview-container .btn-link.node-preview-backlink, .node-preview-container button.node-preview-backlink.link, button.link {
+  margin: 0px;
+  padding: 0px;
+  width: initial;
+  text-align: left;
+  font-size: inherit;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  word-break: break-word;
+}
+.btn.btn-link:hover, .region-nav-main li a.btn-link:hover, .btn-link.button:hover, .node-preview-container .btn-link.node-preview-backlink:hover, button.link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  color: #138597;
 }
 .btn.btn-primary, .region-nav-main li a.btn-primary, button.btn-primary.link, .btn-primary.button, .node-preview-container .btn-primary.node-preview-backlink {
   border-color: #FFC42D;

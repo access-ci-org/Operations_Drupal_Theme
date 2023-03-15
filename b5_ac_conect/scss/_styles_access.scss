@@ -180,28 +180,12 @@ footer .social-link:hover {
     padding-bottom: 60px;
 }
 
-
-
-a.btn.btn-link {
-  color: black;
-  text-decoration: underline;
-  font-weight: bold;
-
-  &:hover {
-    color: $access-medium;
-    text-decoration: underline;
-    font-weight: bold;
-  }
-}
-
-
 h1, .h1 {
     font-size: 36px;
     font-stretch: 70%;
     font-weight: 400;
     //text-transform: uppercase;
 }
-
 
 h2, .h2 {
     font-size: 24px;
@@ -210,13 +194,17 @@ h2, .h2 {
     //text-transform: uppercase;
 }
 
-
 h3, .h3 {
     font-size: 20px;
     font-stretch: 50%;
     font-weight: 400;
     color: $access-medium
     //text-transform: uppercase;
+}
+
+h4, .h4 {
+    font-size: 16px;
+    font-weight: 800;
 }
 
 .btn {
@@ -232,6 +220,29 @@ h3, .h3 {
         background-color: white;
         border-color: black;
         color: black;
+    }
+
+    &.btn-link {
+        @extend .btn-link;
+        margin: 0px;
+        padding: 0px;
+        width: initial;
+        text-align: left;
+        font-size: inherit;
+        color: black;
+        text-decoration: underline;
+        font-weight: bold;
+        border: none;
+        background-color: transparent;
+        word-break: break-word;
+
+        &:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background-color: transparent;
+            border: none;
+            color: $access-medium;
+        }
     }
 
     &.btn-primary {
@@ -322,6 +333,7 @@ h3, .h3 {
 
         a {
             @extend .btn;
+            @extend .btn-lg;
             @extend .btn-outline-dark;
         }
     }
