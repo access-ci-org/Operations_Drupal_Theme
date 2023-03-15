@@ -1,3 +1,7 @@
+v0.3.9 20230315      Dinuka De Silva
+  - Fix link styles and adding styles for H4
+  - Adding cybersecurity and data networking banner images
+
 v0.3.8 20230309      Dinuka De Silva
   - Link the subdomain navigation to a drupal menu
   - Improve the styles in outages buttons
