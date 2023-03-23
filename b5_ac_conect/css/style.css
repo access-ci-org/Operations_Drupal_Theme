@@ -7916,7 +7916,7 @@ fieldset.form-item > .list-group + .card-footer {
 }
 
 /* rtl:end:remove */
-.text-dark {
+.text-dark, .btn.btn-link.text-dark, .region-nav-main li a.btn-link.text-dark, .node-preview-container .btn-link.text-dark.node-preview-backlink, .node-preview-container button.text-dark.node-preview-backlink.link, button.text-dark.link {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
@@ -7924,7 +7924,7 @@ fieldset.form-item > .list-group + .card-footer {
 .text-light, .access-subdomain-global-navigation a:hover, .access-subdomain-global-navigation a.active, .access-subdomain-global-navigation .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation a.is-active, .access-subdomain-global-navigation a.is-active,
 .access-subdomain-global-navigation span.nolink:hover,
 .access-subdomain-global-navigation span.nolink.active,
-.access-subdomain-global-navigation span.nolink.is-active {
+.access-subdomain-global-navigation span.nolink.is-active, .access-subdomain-global-navigation a.btn.btn-link:hover, .access-subdomain-global-navigation .region-nav-main li a.btn-link:hover, .region-nav-main li .access-subdomain-global-navigation a.btn-link:hover, .access-subdomain-global-navigation a.btn.btn-link.active, .access-subdomain-global-navigation .region-nav-main li a.btn-link.active, .region-nav-main li .access-subdomain-global-navigation a.btn-link.active, .access-subdomain-global-navigation a.btn.btn-link.is-active, .access-subdomain-global-navigation .region-nav-main li a.btn-link.is-active, .region-nav-main li .access-subdomain-global-navigation a.btn-link.is-active, .node-preview-container .access-subdomain-global-navigation a.btn-link.node-preview-backlink:hover, .access-subdomain-global-navigation .node-preview-container a.btn-link.node-preview-backlink:hover, .node-preview-container .access-subdomain-global-navigation a.btn-link.node-preview-backlink.active, .access-subdomain-global-navigation .node-preview-container a.btn-link.node-preview-backlink.active, .node-preview-container .access-subdomain-global-navigation a.btn-link.node-preview-backlink.is-active, .access-subdomain-global-navigation .node-preview-container a.btn-link.node-preview-backlink.is-active, .btn.btn-link.text-light, .region-nav-main li a.btn-link.text-light, .node-preview-container .btn-link.text-light.node-preview-backlink, .node-preview-container button.text-light.node-preview-backlink.link, button.text-light.link {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
@@ -11418,7 +11418,7 @@ body {
 }
 
 .text-medium, .access-subdomain-global-navigation a,
-.access-subdomain-global-navigation span.nolink {
+.access-subdomain-global-navigation span.nolink, .btn.btn-link.text-medium, .region-nav-main li a.btn-link.text-medium, .node-preview-container .btn-link.text-medium.node-preview-backlink, .node-preview-container .access-subdomain-global-navigation a.btn-link.node-preview-backlink, .access-subdomain-global-navigation .node-preview-container a.btn-link.node-preview-backlink, button.text-medium.link {
   color: #138597;
 }
 

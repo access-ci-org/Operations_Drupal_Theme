@@ -23,7 +23,15 @@ body {
     background-color:$access-light
 }
 
-.text-medium {
+.text-dark, .btn.btn-link.text-dark {
+    @extend .text-dark
+}
+
+.text-light, .btn.btn-link.text-light {
+    @extend .text-light
+}
+
+.text-medium, .btn.btn-link.text-medium {
     color: $access-medium;
 }
 
