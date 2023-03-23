@@ -23,7 +23,15 @@ body {
     background-color:$access-light
 }
 
-.text-medium {
+.text-dark, .btn.btn-link.text-dark {
+    @extend .text-dark
+}
+
+.text-light, .btn.btn-link.text-light {
+    @extend .text-light
+}
+
+.text-medium, .btn.btn-link.text-medium {
     color: $access-medium;
 }
 
@@ -270,16 +278,25 @@ h4, .h4 {
     border-bottom-width: 0px;
     border-top-width: 3px;
 
+    .block {
+        line-height: 10px;
+    }
+
     ul {
         @extend .d-inline-block;
         @extend .list-inline;
         li {
             @extend .list-inline-item;
             @extend .m-0;
+
+            .sf-sub-indicator {
+                display: none;
+            }
         }
     }
 
-    a {
+    a,
+    span.nolink {
         @extend .bg-white;
         @extend .text-medium;
 
@@ -290,7 +307,8 @@ h4, .h4 {
         display: inline-block;
 
         &:hover,
-        &.active {
+        &.active,
+        &.is-active {
             @extend .bg-dark;
             @extend .text-light;
 
