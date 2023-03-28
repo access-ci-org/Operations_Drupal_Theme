@@ -42,99 +42,146 @@
  * @see html.html.twig
  */
 #}
-{%
-set nav_classes = 'navbar navbar-expand-lg d-flex flex-column' ~
-  (b5_navbar_schema != 'none' ? " navbar-#{b5_navbar_schema}" : ' ') ~
-  (b5_navbar_schema != 'none' ? (b5_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
-  (b5_navbar_bg_schema != 'none' ? " bg-#{b5_navbar_bg_schema}" : ' ')
-%}
+{% set nav_classes = 'navbar navbar-expand-lg d-flex flex-column' ~
+    (b5_navbar_schema != 'none' ? " navbar-#{b5_navbar_schema}" : ' ') ~
+    (b5_navbar_schema != 'none' ? (b5_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+    (b5_navbar_bg_schema != 'none' ? " bg-#{b5_navbar_bg_schema}" : ' ') %}
 
-{%
-set footer_classes = ' ' ~
-  (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
-  (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
-  (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
-%}
+{% set footer_classes = ' ' ~
+    (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
+    (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+    (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ') %}
 
 <header data-elastic-exclude="true">
-  {{ page.header }}
+    {{ page.header }}
 
-  {% if page.nav_access_main or page.nav_access_additional %}
-  <div class="bg-dark">
-      <nav class="{{ nav_classes }}">
-        <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
-          {{ page.nav_access_main }}
-          {{ page.nav_access_additional }}
+    {% if page.nav_access_main or page.nav_access_additional %}
+        <div class="bg-dark">
+            <nav class="{{ nav_classes }}">
+                <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
+                    {{ page.nav_access_main }}
+                    {{ page.nav_access_additional }}
+                </div>
+            </nav>
         </div>
-      </nav>
-  </div>
-  {% endif %}
+    {% endif %}
 
-  {% if page.nav_branding or page.nav_main %}
-  <nav class="{{ nav_classes }}">
-    <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
-      {{ page.nav_branding }}
-      {{ page.nav_main }}
-    </div>
-  </nav>
-  {% endif %}
+    {% if page.nav_branding or page.nav_main %}
+        <nav class="{{ nav_classes }}">
+            <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
+                {{ page.nav_branding }}
+                {{ page.nav_main }}
+            </div>
+        </nav>
+    {% endif %}
 
 </header>
 
 <main role="main">
-  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  {%
-  set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
-  %}
+    {% set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3' %}
 
-  {%
-  set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
-  %}
+    {% set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3' %}
 
-  {%
-  set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
-   %}
+    {% set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' ) %}
 
 
-  <div>
-    {% if page.nav_additional %}
-      <div class="border-dark text-end access-subdomain-global-navigation">
-        <div class="{{ b5_top_container }}">
-          {{ page.nav_additional }}
+    <div>
+        {% if page.nav_additional %}
+            <div class="border-dark text-end access-subdomain-global-navigation">
+                <div class="{{ b5_top_container }}">
+                    {{ page.nav_additional }}
+                </div>
+            </div>
+        {% endif %}
+        {% if page.breadcrumb %}
+            <div class="w-100 access-subdomain-breadcrumb-wrapper">
+                <div class="{{ b5_top_container }}">
+                    {{ page.breadcrumb }}
+                </div>
+            </div>
+        {% endif %}
+        <div class="row g-0">
+            {% if page.sidebar_first %}
+                <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">
+                    {{ page.sidebar_first }}
+                </div>
+            {% endif %}
+            <div class="order-1 order-lg-2 {{ content_classes }}">
+                {{ page.content }}
+            </div>
+            {% if page.sidebar_second %}
+                <div class="order-3 {{ sidebar_second_classes }}">
+                    {{ page.sidebar_second }}
+                </div>
+            {% endif %}
         </div>
-      </div>
-    {% endif %}
-    {% if page.breadcrumb %}
-      <div class="w-100 access-subdomain-breadcrumb-wrapper">
-        <div class="{{ b5_top_container }}">
-          {{ page.breadcrumb }}
-        </div>
-      </div>
-    {% endif %}
-    <div class="row g-0">
-      {% if page.sidebar_first %}
-        <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">
-          {{ page.sidebar_first }}
-        </div>
-      {% endif %}
-      <div class="order-1 order-lg-2 {{ content_classes }}">
-        {{ page.content }}
-      </div>
-      {% if page.sidebar_second %}
-        <div class="order-3 {{ sidebar_second_classes }}">
-          {{ page.sidebar_second }}
-        </div>
-      {% endif %}
     </div>
-  </div>
 
 </main>
 
 {% if page.footer %}
-<footer class="mt-auto {{ footer_classes }}" data-elastic-exclude="true">
-  <div class="{{ b5_top_container }}">
-    {{ page.footer }}
-  </div>
-</footer>
+    <footer class="mt-auto {{ footer_classes }}" data-elastic-exclude="true">
+        <div class="{{ b5_top_container }}">
+            <div class="row pt-4">
+                <div class="col-lg-12 p-2">
+                    <a href="https://www.nsf.gov/" id="nsf-logo" target="_blank">
+                        <img style="width: 89px" alt="National Science Foundation"
+                             src="/themes/contrib/b5_ac_conect/logos/NSF_4-Color_bitmap_Logo-150x150.png"></a>
+                </div>
+                <div class="col-md-6">
+                    <p>ACCESS is an advanced computing and data resource supported by the <strong><a
+                                    href="https://www.nsf.gov/" target="_blank">National Science Foundation</a></strong>
+                        and made possible through these lead institutions and their partners — <strong><a
+                                    href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a></strong>,
+                        <strong><a href="https://www.colorado.edu/" target="_blank">University of Colorado
+                                Boulder</a></strong>, <strong><a href="https://illinois.edu/" target="_blank">University
+                                of Illinois at Urbana-Champaign</a></strong>, and <strong><a
+                                    href="https://www.buffalo.edu/" target="_blank">State University of New York at
+                                Buffalo</a></strong>.</p>
+
+                    <a class="mt-3 read-more" href="https://access-ci.org/contact">
+                        CONTACT ACCESS
+                    </a>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <a class="social-link" href="https://twitter.com/ACCESSforCI">
+                        <svg aria-hidden="true" focusable="false" height="24" version="1.1" viewBox="0 0 24 24"
+                             width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://www.youtube.com/c/ACCESSforCI">
+                        <svg aria-hidden="true" focusable="false" height="24" version="1.1" viewBox="0 0 24 24"
+                             width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://www.facebook.com/ACCESSforCI">
+                        <svg aria-hidden="true" focusable="false" height="24" version="1.1" viewBox="0 0 24 24"
+                             width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-4 pt-2 mt-5 border-top border-secondary">
+                <div class="col-md-3 text-md-start" id="footer-brand">
+                    <a href="https://access-ci.org"><img alt="ACCESS" class="footer-logo" height="30"
+                                                         src="/themes/contrib/b5_ac_conect/logos/access-logo-footer.svg"></a>
+                </div>
+
+                <div class="col-md-6 footer-policies text-end">
+                    <a class="p-2" href="https://identity.access-ci.org/aup.html">Acceptable Use</a>
+                    <a class="p-2" href="https://access-ci.org/code-of-conduct">Code of Conduct</a>
+                    <a class="p-2" href="https://access-ci.org/privacy-policy">Privacy Policy</a>
+                </div>
+
+                <div class="col-md-3 text-start footer-rights">All rights reserved. ©2022 ACCESS</div>
+            </div>
+            {#{{ page.footer }}#}
+        </div>
+    </footer>
 {% endif %}

@@ -994,51 +994,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-sm-0,
-.gx-sm-0 {
+  .gx-sm-0 {
     --bs-gutter-x: 0;
   }
   .g-sm-0,
-.gy-sm-0 {
+  .gy-sm-0 {
     --bs-gutter-y: 0;
   }
   .g-sm-1,
-.gx-sm-1 {
+  .gx-sm-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-sm-1,
-.gy-sm-1 {
+  .gy-sm-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-sm-2,
-.gx-sm-2 {
+  .gx-sm-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-sm-2,
-.gy-sm-2 {
+  .gy-sm-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-sm-3,
-.gx-sm-3 {
+  .gx-sm-3 {
     --bs-gutter-x: 1rem;
   }
   .g-sm-3,
-.gy-sm-3 {
+  .gy-sm-3 {
     --bs-gutter-y: 1rem;
   }
   .g-sm-4,
-.gx-sm-4 {
+  .gx-sm-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-sm-4,
-.gy-sm-4 {
+  .gy-sm-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-sm-5,
-.gx-sm-5 {
+  .gx-sm-5 {
     --bs-gutter-x: 3rem;
   }
   .g-sm-5,
-.gy-sm-5 {
+  .gy-sm-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1163,51 +1163,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-md-0,
-.gx-md-0 {
+  .gx-md-0 {
     --bs-gutter-x: 0;
   }
   .g-md-0,
-.gy-md-0 {
+  .gy-md-0 {
     --bs-gutter-y: 0;
   }
   .g-md-1,
-.gx-md-1 {
+  .gx-md-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-md-1,
-.gy-md-1 {
+  .gy-md-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-md-2,
-.gx-md-2 {
+  .gx-md-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-md-2,
-.gy-md-2 {
+  .gy-md-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-md-3,
-.gx-md-3 {
+  .gx-md-3 {
     --bs-gutter-x: 1rem;
   }
   .g-md-3,
-.gy-md-3 {
+  .gy-md-3 {
     --bs-gutter-y: 1rem;
   }
   .g-md-4,
-.gx-md-4 {
+  .gx-md-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-md-4,
-.gy-md-4 {
+  .gy-md-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-md-5,
-.gx-md-5 {
+  .gx-md-5 {
     --bs-gutter-x: 3rem;
   }
   .g-md-5,
-.gy-md-5 {
+  .gy-md-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1332,51 +1332,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-lg-0,
-.gx-lg-0 {
+  .gx-lg-0 {
     --bs-gutter-x: 0;
   }
   .g-lg-0,
-.gy-lg-0 {
+  .gy-lg-0 {
     --bs-gutter-y: 0;
   }
   .g-lg-1,
-.gx-lg-1 {
+  .gx-lg-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-lg-1,
-.gy-lg-1 {
+  .gy-lg-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-lg-2,
-.gx-lg-2 {
+  .gx-lg-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-lg-2,
-.gy-lg-2 {
+  .gy-lg-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-lg-3,
-.gx-lg-3 {
+  .gx-lg-3 {
     --bs-gutter-x: 1rem;
   }
   .g-lg-3,
-.gy-lg-3 {
+  .gy-lg-3 {
     --bs-gutter-y: 1rem;
   }
   .g-lg-4,
-.gx-lg-4 {
+  .gx-lg-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-lg-4,
-.gy-lg-4 {
+  .gy-lg-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-lg-5,
-.gx-lg-5 {
+  .gx-lg-5 {
     --bs-gutter-x: 3rem;
   }
   .g-lg-5,
-.gy-lg-5 {
+  .gy-lg-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1501,51 +1501,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-xl-0,
-.gx-xl-0 {
+  .gx-xl-0 {
     --bs-gutter-x: 0;
   }
   .g-xl-0,
-.gy-xl-0 {
+  .gy-xl-0 {
     --bs-gutter-y: 0;
   }
   .g-xl-1,
-.gx-xl-1 {
+  .gx-xl-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-xl-1,
-.gy-xl-1 {
+  .gy-xl-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-xl-2,
-.gx-xl-2 {
+  .gx-xl-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-xl-2,
-.gy-xl-2 {
+  .gy-xl-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-xl-3,
-.gx-xl-3 {
+  .gx-xl-3 {
     --bs-gutter-x: 1rem;
   }
   .g-xl-3,
-.gy-xl-3 {
+  .gy-xl-3 {
     --bs-gutter-y: 1rem;
   }
   .g-xl-4,
-.gx-xl-4 {
+  .gx-xl-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-xl-4,
-.gy-xl-4 {
+  .gy-xl-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-xl-5,
-.gx-xl-5 {
+  .gx-xl-5 {
     --bs-gutter-x: 3rem;
   }
   .g-xl-5,
-.gy-xl-5 {
+  .gy-xl-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1670,51 +1670,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-xxl-0,
-.gx-xxl-0 {
+  .gx-xxl-0 {
     --bs-gutter-x: 0;
   }
   .g-xxl-0,
-.gy-xxl-0 {
+  .gy-xxl-0 {
     --bs-gutter-y: 0;
   }
   .g-xxl-1,
-.gx-xxl-1 {
+  .gx-xxl-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-xxl-1,
-.gy-xxl-1 {
+  .gy-xxl-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-xxl-2,
-.gx-xxl-2 {
+  .gx-xxl-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-xxl-2,
-.gy-xxl-2 {
+  .gy-xxl-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-xxl-3,
-.gx-xxl-3 {
+  .gx-xxl-3 {
     --bs-gutter-x: 1rem;
   }
   .g-xxl-3,
-.gy-xxl-3 {
+  .gy-xxl-3 {
     --bs-gutter-y: 1rem;
   }
   .g-xxl-4,
-.gx-xxl-4 {
+  .gx-xxl-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-xxl-4,
-.gy-xxl-4 {
+  .gy-xxl-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-xxl-5,
-.gx-xxl-5 {
+  .gx-xxl-5 {
     --bs-gutter-x: 3rem;
   }
   .g-xxl-5,
-.gy-xxl-5 {
+  .gy-xxl-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -3469,7 +3469,7 @@ textarea.form-control-lg {
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .region-nav-main li a + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .region-nav-main li .btn-group-lg > a + .dropdown-toggle-split, .node-preview-container .btn-group-lg > .node-preview-backlink + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > button.link + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .region-nav-main li a + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .node-preview-container .btn-group-lg > .node-preview-backlink + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > button.link + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -4237,69 +4237,69 @@ fieldset.form-item > .list-group + .card-footer {
     border-bottom-right-radius: 0;
   }
   .card-group > .card:not(:last-child) .card-img-top, .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .card-img-top, .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .card-img-top, .card-group > .form-type-managed-file:not(:last-child) .card-img-top, .card-group > .form-item-upload:not(:last-child) .card-img-top, .card-group > fieldset.form-item:not(:last-child) .card-img-top,
-.card-group > .card:not(:last-child) .card-header,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .card-header,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .card-header,
-.card-group > .card:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .card:not(:last-child) .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .views-field-media-library-select-form,
-.media-library-selection .view-media-library .media-library-views-form .media-library-item--grid .card-group > .media-library-item.media-library-item--grid:not(:last-child) .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .views-field-media-library-select-form,
-.card-group > .card:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .card:not(:last-child) .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .views-field-media-bulk-form,
-.media-library-selection .view-media-library .media-library-views-form .media-library-item--grid .card-group > .media-library-item.media-library-item--grid:not(:last-child) .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .views-field-media-bulk-form,
-.card-group > .card:not(:last-child) .form-type-managed-file > label,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .form-type-managed-file > label,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .form-type-managed-file > label,
-.card-group > .form-type-managed-file:not(:last-child) .card-header,
-.card-group > .form-type-managed-file:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-type-managed-file:not(:last-child) .views-field-media-library-select-form,
-.card-group > .form-type-managed-file:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-type-managed-file:not(:last-child) .views-field-media-bulk-form,
-.card-group > .form-type-managed-file:not(:last-child) .form-type-managed-file > label,
-.card-group > .card:not(:last-child) .form-item-upload label,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .form-item-upload label,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .form-item-upload label,
-.card-group > .form-type-managed-file:not(:last-child) .form-item-upload label,
-.form-item-upload .card-group > .card:not(:last-child) label,
-.form-item-upload .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) label,
-.media-library-selection .form-item-upload .card-group > .media-library-item.media-library-item--grid:not(:last-child) label,
-.form-item-upload .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) label,
-.view-media-library .media-library-views-form .media-library-item--grid .form-item-upload .card-group > .views-field-rendered-entity:not(:last-child) label,
-.form-item-upload .card-group > .form-type-managed-file:not(:last-child) label,
-.card-group > .form-item-upload:not(:last-child) .card-header,
-.card-group > .form-item-upload:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-item-upload:not(:last-child) .views-field-media-library-select-form,
-.card-group > .form-item-upload:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-item-upload:not(:last-child) .views-field-media-bulk-form,
-.card-group > .form-item-upload:not(:last-child) label,
-.card-group > .card:not(:last-child) fieldset.form-item > legend,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) fieldset.form-item > legend,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) fieldset.form-item > legend,
-.card-group > .form-type-managed-file:not(:last-child) fieldset.form-item > legend,
-.card-group > .form-item-upload:not(:last-child) fieldset.form-item > legend,
-.card-group > fieldset.form-item:not(:last-child) .card-header,
-.card-group > fieldset.form-item:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > fieldset.form-item:not(:last-child) .views-field-media-library-select-form,
-.card-group > fieldset.form-item:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > fieldset.form-item:not(:last-child) .views-field-media-bulk-form,
-.card-group > fieldset.form-item:not(:last-child) .form-type-managed-file > label,
-.card-group > fieldset.form-item:not(:last-child) .form-item-upload label,
-.form-item-upload .card-group > fieldset.form-item:not(:last-child) label,
-.card-group > fieldset.form-item:not(:last-child) fieldset.form-item > legend {
+  .card-group > .card:not(:last-child) .card-header,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .card-header,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .card-header,
+  .card-group > .card:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .card:not(:last-child) .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .views-field-media-library-select-form,
+  .media-library-selection .view-media-library .media-library-views-form .media-library-item--grid .card-group > .media-library-item.media-library-item--grid:not(:last-child) .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .views-field-media-library-select-form,
+  .card-group > .card:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .card:not(:last-child) .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .views-field-media-bulk-form,
+  .media-library-selection .view-media-library .media-library-views-form .media-library-item--grid .card-group > .media-library-item.media-library-item--grid:not(:last-child) .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .views-field-media-bulk-form,
+  .card-group > .card:not(:last-child) .form-type-managed-file > label,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .form-type-managed-file > label,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .form-type-managed-file > label,
+  .card-group > .form-type-managed-file:not(:last-child) .card-header,
+  .card-group > .form-type-managed-file:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-type-managed-file:not(:last-child) .views-field-media-library-select-form,
+  .card-group > .form-type-managed-file:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-type-managed-file:not(:last-child) .views-field-media-bulk-form,
+  .card-group > .form-type-managed-file:not(:last-child) .form-type-managed-file > label,
+  .card-group > .card:not(:last-child) .form-item-upload label,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .form-item-upload label,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .form-item-upload label,
+  .card-group > .form-type-managed-file:not(:last-child) .form-item-upload label,
+  .form-item-upload .card-group > .card:not(:last-child) label,
+  .form-item-upload .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) label,
+  .media-library-selection .form-item-upload .card-group > .media-library-item.media-library-item--grid:not(:last-child) label,
+  .form-item-upload .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) label,
+  .view-media-library .media-library-views-form .media-library-item--grid .form-item-upload .card-group > .views-field-rendered-entity:not(:last-child) label,
+  .form-item-upload .card-group > .form-type-managed-file:not(:last-child) label,
+  .card-group > .form-item-upload:not(:last-child) .card-header,
+  .card-group > .form-item-upload:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-item-upload:not(:last-child) .views-field-media-library-select-form,
+  .card-group > .form-item-upload:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-item-upload:not(:last-child) .views-field-media-bulk-form,
+  .card-group > .form-item-upload:not(:last-child) label,
+  .card-group > .card:not(:last-child) fieldset.form-item > legend,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) fieldset.form-item > legend,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) fieldset.form-item > legend,
+  .card-group > .form-type-managed-file:not(:last-child) fieldset.form-item > legend,
+  .card-group > .form-item-upload:not(:last-child) fieldset.form-item > legend,
+  .card-group > fieldset.form-item:not(:last-child) .card-header,
+  .card-group > fieldset.form-item:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > fieldset.form-item:not(:last-child) .views-field-media-library-select-form,
+  .card-group > fieldset.form-item:not(:last-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > fieldset.form-item:not(:last-child) .views-field-media-bulk-form,
+  .card-group > fieldset.form-item:not(:last-child) .form-type-managed-file > label,
+  .card-group > fieldset.form-item:not(:last-child) .form-item-upload label,
+  .form-item-upload .card-group > fieldset.form-item:not(:last-child) label,
+  .card-group > fieldset.form-item:not(:last-child) fieldset.form-item > legend {
     border-top-right-radius: 0;
   }
   .card-group > .card:not(:last-child) .card-img-bottom, .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .card-img-bottom, .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .card-img-bottom, .card-group > .form-type-managed-file:not(:last-child) .card-img-bottom, .card-group > .form-item-upload:not(:last-child) .card-img-bottom, .card-group > fieldset.form-item:not(:last-child) .card-img-bottom,
-.card-group > .card:not(:last-child) .card-footer,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .card-footer,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .card-footer,
-.card-group > .form-type-managed-file:not(:last-child) .card-footer,
-.card-group > .form-item-upload:not(:last-child) .card-footer,
-.card-group > fieldset.form-item:not(:last-child) .card-footer {
+  .card-group > .card:not(:last-child) .card-footer,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:last-child) .card-footer,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:last-child) .card-footer,
+  .card-group > .form-type-managed-file:not(:last-child) .card-footer,
+  .card-group > .form-item-upload:not(:last-child) .card-footer,
+  .card-group > fieldset.form-item:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
   .card-group > .card:not(:first-child), .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child), .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child), .card-group > .form-type-managed-file:not(:first-child), .card-group > .form-item-upload:not(:first-child), .card-group > fieldset.form-item:not(:first-child) {
@@ -4307,69 +4307,69 @@ fieldset.form-item > .list-group + .card-footer {
     border-bottom-left-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-img-top, .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .card-img-top, .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .card-img-top, .card-group > .form-type-managed-file:not(:first-child) .card-img-top, .card-group > .form-item-upload:not(:first-child) .card-img-top, .card-group > fieldset.form-item:not(:first-child) .card-img-top,
-.card-group > .card:not(:first-child) .card-header,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .card-header,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .card-header,
-.card-group > .card:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .card:not(:first-child) .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .views-field-media-library-select-form,
-.media-library-selection .view-media-library .media-library-views-form .media-library-item--grid .card-group > .media-library-item.media-library-item--grid:not(:first-child) .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .views-field-media-library-select-form,
-.card-group > .card:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .card:not(:first-child) .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .views-field-media-bulk-form,
-.media-library-selection .view-media-library .media-library-views-form .media-library-item--grid .card-group > .media-library-item.media-library-item--grid:not(:first-child) .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .views-field-media-bulk-form,
-.card-group > .card:not(:first-child) .form-type-managed-file > label,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .form-type-managed-file > label,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .form-type-managed-file > label,
-.card-group > .form-type-managed-file:not(:first-child) .card-header,
-.card-group > .form-type-managed-file:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-type-managed-file:not(:first-child) .views-field-media-library-select-form,
-.card-group > .form-type-managed-file:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-type-managed-file:not(:first-child) .views-field-media-bulk-form,
-.card-group > .form-type-managed-file:not(:first-child) .form-type-managed-file > label,
-.card-group > .card:not(:first-child) .form-item-upload label,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .form-item-upload label,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .form-item-upload label,
-.card-group > .form-type-managed-file:not(:first-child) .form-item-upload label,
-.form-item-upload .card-group > .card:not(:first-child) label,
-.form-item-upload .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) label,
-.media-library-selection .form-item-upload .card-group > .media-library-item.media-library-item--grid:not(:first-child) label,
-.form-item-upload .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) label,
-.view-media-library .media-library-views-form .media-library-item--grid .form-item-upload .card-group > .views-field-rendered-entity:not(:first-child) label,
-.form-item-upload .card-group > .form-type-managed-file:not(:first-child) label,
-.card-group > .form-item-upload:not(:first-child) .card-header,
-.card-group > .form-item-upload:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-item-upload:not(:first-child) .views-field-media-library-select-form,
-.card-group > .form-item-upload:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-item-upload:not(:first-child) .views-field-media-bulk-form,
-.card-group > .form-item-upload:not(:first-child) label,
-.card-group > .card:not(:first-child) fieldset.form-item > legend,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) fieldset.form-item > legend,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) fieldset.form-item > legend,
-.card-group > .form-type-managed-file:not(:first-child) fieldset.form-item > legend,
-.card-group > .form-item-upload:not(:first-child) fieldset.form-item > legend,
-.card-group > fieldset.form-item:not(:first-child) .card-header,
-.card-group > fieldset.form-item:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > fieldset.form-item:not(:first-child) .views-field-media-library-select-form,
-.card-group > fieldset.form-item:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > fieldset.form-item:not(:first-child) .views-field-media-bulk-form,
-.card-group > fieldset.form-item:not(:first-child) .form-type-managed-file > label,
-.card-group > fieldset.form-item:not(:first-child) .form-item-upload label,
-.form-item-upload .card-group > fieldset.form-item:not(:first-child) label,
-.card-group > fieldset.form-item:not(:first-child) fieldset.form-item > legend {
+  .card-group > .card:not(:first-child) .card-header,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .card-header,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .card-header,
+  .card-group > .card:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .card:not(:first-child) .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .views-field-media-library-select-form,
+  .media-library-selection .view-media-library .media-library-views-form .media-library-item--grid .card-group > .media-library-item.media-library-item--grid:not(:first-child) .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .views-field-media-library-select-form,
+  .card-group > .card:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .card:not(:first-child) .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .views-field-media-bulk-form,
+  .media-library-selection .view-media-library .media-library-views-form .media-library-item--grid .card-group > .media-library-item.media-library-item--grid:not(:first-child) .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .views-field-media-bulk-form,
+  .card-group > .card:not(:first-child) .form-type-managed-file > label,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .form-type-managed-file > label,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .form-type-managed-file > label,
+  .card-group > .form-type-managed-file:not(:first-child) .card-header,
+  .card-group > .form-type-managed-file:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-type-managed-file:not(:first-child) .views-field-media-library-select-form,
+  .card-group > .form-type-managed-file:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-type-managed-file:not(:first-child) .views-field-media-bulk-form,
+  .card-group > .form-type-managed-file:not(:first-child) .form-type-managed-file > label,
+  .card-group > .card:not(:first-child) .form-item-upload label,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .form-item-upload label,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .form-item-upload label,
+  .card-group > .form-type-managed-file:not(:first-child) .form-item-upload label,
+  .form-item-upload .card-group > .card:not(:first-child) label,
+  .form-item-upload .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) label,
+  .media-library-selection .form-item-upload .card-group > .media-library-item.media-library-item--grid:not(:first-child) label,
+  .form-item-upload .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) label,
+  .view-media-library .media-library-views-form .media-library-item--grid .form-item-upload .card-group > .views-field-rendered-entity:not(:first-child) label,
+  .form-item-upload .card-group > .form-type-managed-file:not(:first-child) label,
+  .card-group > .form-item-upload:not(:first-child) .card-header,
+  .card-group > .form-item-upload:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-item-upload:not(:first-child) .views-field-media-library-select-form,
+  .card-group > .form-item-upload:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .form-item-upload:not(:first-child) .views-field-media-bulk-form,
+  .card-group > .form-item-upload:not(:first-child) label,
+  .card-group > .card:not(:first-child) fieldset.form-item > legend,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) fieldset.form-item > legend,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) fieldset.form-item > legend,
+  .card-group > .form-type-managed-file:not(:first-child) fieldset.form-item > legend,
+  .card-group > .form-item-upload:not(:first-child) fieldset.form-item > legend,
+  .card-group > fieldset.form-item:not(:first-child) .card-header,
+  .card-group > fieldset.form-item:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-library-select-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > fieldset.form-item:not(:first-child) .views-field-media-library-select-form,
+  .card-group > fieldset.form-item:not(:first-child) .view-media-library .media-library-views-form .media-library-item--grid .views-field-media-bulk-form,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > fieldset.form-item:not(:first-child) .views-field-media-bulk-form,
+  .card-group > fieldset.form-item:not(:first-child) .form-type-managed-file > label,
+  .card-group > fieldset.form-item:not(:first-child) .form-item-upload label,
+  .form-item-upload .card-group > fieldset.form-item:not(:first-child) label,
+  .card-group > fieldset.form-item:not(:first-child) fieldset.form-item > legend {
     border-top-left-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-img-bottom, .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .card-img-bottom, .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .card-img-bottom, .card-group > .form-type-managed-file:not(:first-child) .card-img-bottom, .card-group > .form-item-upload:not(:first-child) .card-img-bottom, .card-group > fieldset.form-item:not(:first-child) .card-img-bottom,
-.card-group > .card:not(:first-child) .card-footer,
-.media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .card-footer,
-.view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .card-footer,
-.card-group > .form-type-managed-file:not(:first-child) .card-footer,
-.card-group > .form-item-upload:not(:first-child) .card-footer,
-.card-group > fieldset.form-item:not(:first-child) .card-footer {
+  .card-group > .card:not(:first-child) .card-footer,
+  .media-library-selection .card-group > .media-library-item.media-library-item--grid:not(:first-child) .card-footer,
+  .view-media-library .media-library-views-form .media-library-item--grid .card-group > .views-field-rendered-entity:not(:first-child) .card-footer,
+  .card-group > .form-type-managed-file:not(:first-child) .card-footer,
+  .card-group > .form-item-upload:not(:first-child) .card-footer,
+  .card-group > fieldset.form-item:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
 }
@@ -5345,7 +5345,7 @@ fieldset.form-item > .list-group + .card-footer {
 }
 @media (min-width: 992px) {
   .modal-lg,
-.modal-xl {
+  .modal-xl {
     --bs-modal-width: 800px;
   }
 }
@@ -5386,7 +5386,7 @@ fieldset.form-item > .list-group + .card-footer {
     border-radius: 0;
   }
   .modal-fullscreen-sm-down .modal-header,
-.modal-fullscreen-sm-down .modal-footer {
+  .modal-fullscreen-sm-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-sm-down .modal-body {
@@ -5406,7 +5406,7 @@ fieldset.form-item > .list-group + .card-footer {
     border-radius: 0;
   }
   .modal-fullscreen-md-down .modal-header,
-.modal-fullscreen-md-down .modal-footer {
+  .modal-fullscreen-md-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-md-down .modal-body {
@@ -5426,7 +5426,7 @@ fieldset.form-item > .list-group + .card-footer {
     border-radius: 0;
   }
   .modal-fullscreen-lg-down .modal-header,
-.modal-fullscreen-lg-down .modal-footer {
+  .modal-fullscreen-lg-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-lg-down .modal-body {
@@ -5446,7 +5446,7 @@ fieldset.form-item > .list-group + .card-footer {
     border-radius: 0;
   }
   .modal-fullscreen-xl-down .modal-header,
-.modal-fullscreen-xl-down .modal-footer {
+  .modal-fullscreen-xl-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-xl-down .modal-body {
@@ -5466,7 +5466,7 @@ fieldset.form-item > .list-group + .card-footer {
     border-radius: 0;
   }
   .modal-fullscreen-xxl-down .modal-header,
-.modal-fullscreen-xxl-down .modal-footer {
+  .modal-fullscreen-xxl-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-xxl-down .modal-body {
@@ -5805,9 +5805,9 @@ fieldset.form-item > .list-group + .card-footer {
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-start, .carousel-fade .media-library-view--widget .view-header a.carousel-item-start.is-active, .media-library-view--widget .view-header .carousel-fade a.carousel-item-start.is-active,
-.carousel-fade .active.carousel-item-end,
-.carousel-fade .media-library-view--widget .view-header a.carousel-item-end.is-active,
-.media-library-view--widget .view-header .carousel-fade a.carousel-item-end.is-active {
+  .carousel-fade .active.carousel-item-end,
+  .carousel-fade .media-library-view--widget .view-header a.carousel-item-end.is-active,
+  .media-library-view--widget .view-header .carousel-fade a.carousel-item-end.is-active {
     transition: none;
   }
 }
@@ -5832,7 +5832,7 @@ fieldset.form-item > .list-group + .card-footer {
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
-.carousel-control-next {
+  .carousel-control-next {
     transition: none;
   }
 }
@@ -6000,7 +6000,7 @@ fieldset.form-item > .list-group + .card-footer {
 
 @media (prefers-reduced-motion: reduce) {
   .spinner-border,
-.spinner-grow {
+  .spinner-grow {
     --bs-spinner-animation-speed: 1.5s;
   }
 }
@@ -11327,7 +11327,7 @@ tr.region-title td {
 }
 @media (min-width: 768px) {
   .media-library-view--widget .view-filters .form--inline > div,
-.view-media-library .view-filters .form--inline > div {
+  .view-media-library .view-filters .form--inline > div {
     flex: 0 0 auto;
     width: auto;
     margin-bottom: 1rem;
@@ -11458,50 +11458,6 @@ body {
   text-align: right;
 }
 
-footer #nsf-logo {
-  flex-shrink: 0;
-  margin-right: 20px;
-}
-
-footer #nsf-logo img {
-  width: 150px;
-}
-
-footer .footer-text {
-  list-style: none;
-  padding: 0px 1rem;
-  font-stretch: 100%;
-  text-size-adjust: 100%;
-}
-
-footer .footer-text a {
-  font-weight: 700;
-  font-stretch: 100%;
-  text-transform: none;
-  text-decoration: none;
-  color: var(--bs-secondary);
-  font-size: 1.1rem;
-}
-
-footer .footer-text a:hover {
-  text-decoration: underline;
-}
-
-footer .footer-contact a {
-  font-stretch: 70% !important;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-footer .footer-logo img {
-  height: 30px;
-  width: auto;
-}
-
-footer .footer-policies a:link {
-  color: var(--bs-body-color);
-}
-
 footer .social-link {
   text-decoration: none;
   transition: transform 0.1s ease;
@@ -11517,6 +11473,17 @@ footer .social-link svg {
 
 footer .social-link:hover {
   transform: scale(1.1);
+}
+
+footer .footer-policies a, footer .read-more, footer footer-rights {
+  font-size: 14px;
+}
+footer a {
+  color: #138597;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 .btn-access-primary {
