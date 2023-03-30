@@ -1,3 +1,6 @@
+v0.3.17 20230328      Dinuka De Silva
+  - Move the notices from node twig to blocks
+
 v0.3.16 20230328      Dinuka De Silva
   - Improving header and footer styles
 
