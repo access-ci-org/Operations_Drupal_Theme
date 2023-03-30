@@ -11535,49 +11535,30 @@ footer a:hover {
 .access-subdomain-global-navigation ul li .sf-sub-indicator {
   display: none;
 }
-.access-subdomain-global-navigation ul li.sfHover a, .access-subdomain-global-navigation ul li.sfHover span.nolink {
-  background-color: #138597;
-  color: #ECF9F8;
-}
-.access-subdomain-global-navigation a,
-.access-subdomain-global-navigation span.nolink {
+.access-subdomain-global-navigation ul li a, .access-subdomain-global-navigation ul li span.nolink {
   background-color: #138597;
   color: #ECF9F8;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  padding: 6px 10px;
-  display: inline-block;
+  padding: 16px 24px;
 }
-.access-subdomain-global-navigation a.sf-depth-1,
-.access-subdomain-global-navigation span.nolink.sf-depth-1 {
+.access-subdomain-global-navigation ul li a.sf-depth-1, .access-subdomain-global-navigation ul li span.nolink.sf-depth-1 {
   color: #1A5B6E;
   background-color: white;
 }
-.access-subdomain-global-navigation a.sf-depth-1:hover,
-.access-subdomain-global-navigation span.nolink.sf-depth-1:hover {
+.access-subdomain-global-navigation ul li a:hover, .access-subdomain-global-navigation ul li span.nolink:hover {
   background-color: #138597;
   color: #ECF9F8;
   text-decoration: underline;
   font-weight: 600;
 }
-.access-subdomain-global-navigation a.sf-depth-1.active, .access-subdomain-global-navigation a.sf-depth-1.is-active,
-.access-subdomain-global-navigation span.nolink.sf-depth-1.active,
-.access-subdomain-global-navigation span.nolink.sf-depth-1.is-active {
+.access-subdomain-global-navigation ul li a.active, .access-subdomain-global-navigation ul li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation ul li a.is-active, .access-subdomain-global-navigation ul li a.is-active, .access-subdomain-global-navigation ul li span.nolink.active, .access-subdomain-global-navigation ul li span.nolink.is-active {
   background-color: #1A5B6E;
   color: #ECF9F8;
 }
-.access-subdomain-global-navigation a:hover,
-.access-subdomain-global-navigation span.nolink:hover {
+.access-subdomain-global-navigation ul li.sfHover a, .access-subdomain-global-navigation ul li.sfHover span.nolink {
   background-color: #138597;
-  color: #ECF9F8;
-  text-decoration: underline;
-  font-weight: 600;
-}
-.access-subdomain-global-navigation a.active, .access-subdomain-global-navigation .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation a.is-active, .access-subdomain-global-navigation a.is-active,
-.access-subdomain-global-navigation span.nolink.active,
-.access-subdomain-global-navigation span.nolink.is-active {
-  background-color: #1A5B6E;
   color: #ECF9F8;
 }
 
