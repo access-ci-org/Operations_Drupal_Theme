@@ -11497,30 +11497,40 @@ footer a:hover {
   border-color: #000;
 }
 
-.region-nav-access-main ul.sf-menu li.menuparent a:hover, .region-nav-access-main ul.sf-menu li.menuparent a:active, .region-nav-access-main ul.sf-menu li.menuparent a:focus,
-.region-nav-access-additional ul.sf-menu li.menuparent a:hover,
-.region-nav-access-additional ul.sf-menu li.menuparent a:active,
-.region-nav-access-additional ul.sf-menu li.menuparent a:focus {
-  color: #138597;
-  background-color: #1A5B6E;
-}
-.region-nav-access-main ul.sf-menu a,
-.region-nav-access-additional ul.sf-menu a {
+.region-nav-access-main ul li a,
+.region-nav-access-additional ul li a {
   padding: 16px 8px;
   text-decoration: none;
   font-weight: 700;
-  color: var(--bs-white);
-  background-color: #1A5B6E;
+  color: #ECF9F8;
+  background-color: #138597;
   font-size: 14px;
 }
-.region-nav-access-main ul.sf-menu a:hover, .region-nav-access-main ul.sf-menu a:active, .region-nav-access-main ul.sf-menu a:focus,
-.region-nav-access-additional ul.sf-menu a:hover,
-.region-nav-access-additional ul.sf-menu a:active,
-.region-nav-access-additional ul.sf-menu a:focus {
-  color: #138597;
+.region-nav-access-main ul li a.sf-depth-1,
+.region-nav-access-additional ul li a.sf-depth-1 {
+  color: #ECF9F8;
   background-color: #1A5B6E;
 }
-
+.region-nav-access-main ul li a:hover, .region-nav-access-main ul li a:focus,
+.region-nav-access-additional ul li a:hover,
+.region-nav-access-additional ul li a:focus {
+  color: #ECF9F8;
+  background-color: #138597;
+  text-decoration: underline;
+}
+.region-nav-access-main ul li a.active, .region-nav-access-main ul li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .region-nav-access-main ul li a.is-active, .region-nav-access-main ul li a.is-active,
+.region-nav-access-additional ul li a.active,
+.region-nav-access-additional ul li .media-library-view--widget .view-header a.is-active,
+.media-library-view--widget .view-header .region-nav-access-additional ul li a.is-active,
+.region-nav-access-additional ul li a.is-active {
+  color: #ECF9F8;
+  background-color: #138597;
+}
+.region-nav-access-main ul li.sfHover a,
+.region-nav-access-additional ul li.sfHover a {
+  color: #ECF9F8;
+  background-color: #138597;
+}
 .access-subdomain-global-navigation {
   border-color: #1A5B6E;
   border-style: solid;

@@ -130,27 +130,47 @@ footer {
 
 .region-nav-access-main,
 .region-nav-access-additional {
-    ul.sf-menu li.menuparent a {
-        &:hover, &:active, &:focus {
-            color: $access-medium;
-            background-color: $access-dark;
+    //ul.sf-menu li.menuparent a {
+    //    &:hover, &:active, &:focus {
+    //        color: $access-light;
+    //        background-color: $access-medium;
+    //    }
+    //}
+
+    ul {
+        li {
+
+            a {
+                &.sf-depth-1 {
+                    color: $access-light;
+                    background-color: $access-dark;
+                }
+
+                padding: 16px 8px;
+                text-decoration: none;
+                font-weight: 700;
+
+                &:hover, &:focus {
+                    color: $access-light;
+                    background-color: $access-medium;
+                    text-decoration: underline;
+                }
+
+                &.active, &.is-active {
+                    color: $access-light;
+                    background-color: $access-medium;
+                }
+
+                color: $access-light;
+                background-color: $access-medium;
+                font-size: 14px;
+            }
+
+            &.sfHover a {
+                color: $access-light;
+                background-color: $access-medium;
+            }
         }
-    }
-
-    ul.sf-menu a{
-
-        padding: 16px 8px;
-        text-decoration: none;
-        font-weight: 700;
-
-        &:hover, &:active, &:focus {
-            color: $access-medium;
-            background-color: $access-dark;
-        }
-
-        color: var(--bs-white);
-        background-color: $access-dark;
-        font-size: 14px;
     }
 }
 
