@@ -130,14 +130,19 @@ footer {
 
 .region-nav-access-main,
 .region-nav-access-additional {
-  ul.sf-menu li.menuparent a {
-      &:hover, &:active, &:focus {
-          color: $access-medium;
-          background-color: $access-dark;
-      }
-  }
+    ul.sf-menu li.menuparent a {
+        &:hover, &:active, &:focus {
+            color: $access-medium;
+            background-color: $access-dark;
+        }
+    }
 
     ul.sf-menu a{
+
+        padding: 16px 8px;
+        text-decoration: none;
+        font-weight: 700;
+
         &:hover, &:active, &:focus {
             color: $access-medium;
             background-color: $access-dark;
@@ -147,13 +152,110 @@ footer {
         background-color: $access-dark;
         font-size: 14px;
     }
+}
 
-    ul.sf-menu a{
-        padding: 16px 8px;
+.access-subdomain-global-navigation {
+    border-color: $access-dark;
+    border-style: solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 3px;
+
+    .block {
+        line-height: 10px;
+    }
+
+    //ul.sf-menu li.menuparent a {
+    //    &:hover, &:active, &:focus {
+    //        color: $access-medium;
+    //        background-color: $access-dark;
+    //    }
+    //}
+    //
+    //ul.sf-menu a{
+    //
+    //    padding: 16px 8px;
+    //    text-decoration: none;
+    //    font-weight: 700;
+    //
+    //    &:hover, &:active, &:focus {
+    //        color: $access-medium;
+    //        background-color: $access-dark;
+    //    }
+    //
+    //    color: var(--bs-white);
+    //    background-color: $access-dark;
+    //    font-size: 14px;
+    //}
+
+
+    ul {
+        @extend .d-inline-block;
+        @extend .list-inline;
+        li {
+            @extend .list-inline-item;
+            @extend .m-0;
+
+            .sf-sub-indicator {
+                display: none;
+            }
+
+            &.sfHover {
+                a, span.nolink {
+                    background-color: $access-medium;
+                    color: $access-light;
+                }
+            }
+        }
+
+    }
+
+    a,
+    span.nolink {
+
+        &.sf-depth-1 {
+            color: $access-dark;
+            background-color: white;
+
+            &:hover {
+                background-color: $access-medium;
+                color: $access-light;
+
+                text-decoration: underline;
+                font-weight: 600;
+            }
+
+            &.active, &.is-active {
+                background-color: $access-dark;
+                color: $access-light;
+            }
+        }
+
+        background-color: $access-medium;
+        color: $access-light;
+
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 6px 10px;
+        display: inline-block;
+
+        &:hover {
+            background-color: $access-medium;
+            color: $access-light;
+
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        &.active, &.is-active {
+            background-color: $access-dark;
+            color: $access-light;
+        }
     }
 }
+
 
 .navbar-brand .site-logo {
     padding-top: 60px;
@@ -239,54 +341,6 @@ h4, .h4 {
     .btn-outline-light,
     .btn-outline-dark {
 
-    }
-}
-
-.access-subdomain-global-navigation {
-    border-color: $access-dark;
-    border-style: solid;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-top-width: 3px;
-
-    .block {
-        line-height: 10px;
-    }
-
-    ul {
-        @extend .d-inline-block;
-        @extend .list-inline;
-        li {
-            @extend .list-inline-item;
-            @extend .m-0;
-
-            .sf-sub-indicator {
-                display: none;
-            }
-        }
-    }
-
-    a,
-    span.nolink {
-        @extend .bg-white;
-        @extend .text-medium;
-
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 16px;
-        padding: 6px 10px;
-        display: inline-block;
-
-        &:hover,
-        &.active,
-        &.is-active {
-            @extend .bg-dark;
-            @extend .text-light;
-
-            text-decoration: none;
-            font-weight: 600;
-        }
     }
 }
 

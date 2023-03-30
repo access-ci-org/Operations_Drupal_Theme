@@ -7921,10 +7921,7 @@ fieldset.form-item > .list-group + .card-footer {
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-light, .access-subdomain-global-navigation a:hover, .access-subdomain-global-navigation a.active, .access-subdomain-global-navigation .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation a.is-active, .access-subdomain-global-navigation a.is-active,
-.access-subdomain-global-navigation span.nolink:hover,
-.access-subdomain-global-navigation span.nolink.active,
-.access-subdomain-global-navigation span.nolink.is-active, .access-subdomain-global-navigation a.btn.btn-link:hover, .access-subdomain-global-navigation .region-nav-main li a.btn-link:hover, .region-nav-main li .access-subdomain-global-navigation a.btn-link:hover, .access-subdomain-global-navigation a.btn.btn-link.active, .access-subdomain-global-navigation .region-nav-main li a.btn-link.active, .region-nav-main li .access-subdomain-global-navigation a.btn-link.active, .access-subdomain-global-navigation a.btn.btn-link.is-active, .access-subdomain-global-navigation .region-nav-main li a.btn-link.is-active, .region-nav-main li .access-subdomain-global-navigation a.btn-link.is-active, .node-preview-container .access-subdomain-global-navigation a.btn-link.node-preview-backlink:hover, .access-subdomain-global-navigation .node-preview-container a.btn-link.node-preview-backlink:hover, .node-preview-container .access-subdomain-global-navigation a.btn-link.node-preview-backlink.active, .access-subdomain-global-navigation .node-preview-container a.btn-link.node-preview-backlink.active, .node-preview-container .access-subdomain-global-navigation a.btn-link.node-preview-backlink.is-active, .access-subdomain-global-navigation .node-preview-container a.btn-link.node-preview-backlink.is-active, .btn.btn-link.text-light, .region-nav-main li a.btn-link.text-light, .node-preview-container .btn-link.text-light.node-preview-backlink, .node-preview-container button.text-light.node-preview-backlink.link, button.text-light.link {
+.text-light, .btn.btn-link.text-light, .region-nav-main li a.btn-link.text-light, .node-preview-container .btn-link.text-light.node-preview-backlink, .node-preview-container button.text-light.node-preview-backlink.link, button.text-light.link {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
@@ -7990,10 +7987,7 @@ fieldset.form-item > .list-group + .card-footer {
   --bs-text-opacity: 1;
 }
 
-.bg-dark, .access-subdomain-global-navigation a:hover, .access-subdomain-global-navigation a.active, .access-subdomain-global-navigation .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation a.is-active, .access-subdomain-global-navigation a.is-active,
-.access-subdomain-global-navigation span.nolink:hover,
-.access-subdomain-global-navigation span.nolink.active,
-.access-subdomain-global-navigation span.nolink.is-active {
+.bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -8018,8 +8012,7 @@ fieldset.form-item > .list-group + .card-footer {
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-white, .access-subdomain-global-navigation a,
-.access-subdomain-global-navigation span.nolink {
+.bg-white {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -11402,10 +11395,7 @@ body {
   font-family: "Archivo", Helvetica, Arial, sans-serif;
 }
 
-.bg-dark, .access-subdomain-global-navigation a:hover, .access-subdomain-global-navigation a.active, .access-subdomain-global-navigation .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation a.is-active, .access-subdomain-global-navigation a.is-active,
-.access-subdomain-global-navigation span.nolink:hover,
-.access-subdomain-global-navigation span.nolink.active,
-.access-subdomain-global-navigation span.nolink.is-active {
+.bg-dark {
   background-color: #1A5B6E;
 }
 
@@ -11417,8 +11407,7 @@ body {
   background-color: #ECF9F8;
 }
 
-.text-medium, .access-subdomain-global-navigation a,
-.access-subdomain-global-navigation span.nolink, .btn.btn-link.text-medium, .region-nav-main li a.btn-link.text-medium, .node-preview-container .btn-link.text-medium.node-preview-backlink, .node-preview-container .access-subdomain-global-navigation a.btn-link.node-preview-backlink, .access-subdomain-global-navigation .node-preview-container a.btn-link.node-preview-backlink, button.text-medium.link {
+.text-medium, .btn.btn-link.text-medium, .region-nav-main li a.btn-link.text-medium, .node-preview-container .btn-link.text-medium.node-preview-backlink, button.text-medium.link {
   color: #138597;
 }
 
@@ -11517,6 +11506,9 @@ footer a:hover {
 }
 .region-nav-access-main ul.sf-menu a,
 .region-nav-access-additional ul.sf-menu a {
+  padding: 16px 8px;
+  text-decoration: none;
+  font-weight: 700;
   color: var(--bs-white);
   background-color: #1A5B6E;
   font-size: 14px;
@@ -11528,11 +11520,65 @@ footer a:hover {
   color: #138597;
   background-color: #1A5B6E;
 }
-.region-nav-access-main ul.sf-menu a,
-.region-nav-access-additional ul.sf-menu a {
-  padding: 16px 8px;
+
+.access-subdomain-global-navigation {
+  border-color: #1A5B6E;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 3px;
+}
+.access-subdomain-global-navigation .block {
+  line-height: 10px;
+}
+.access-subdomain-global-navigation ul li .sf-sub-indicator {
+  display: none;
+}
+.access-subdomain-global-navigation ul li.sfHover a, .access-subdomain-global-navigation ul li.sfHover span.nolink {
+  background-color: #138597;
+  color: #ECF9F8;
+}
+.access-subdomain-global-navigation a,
+.access-subdomain-global-navigation span.nolink {
+  background-color: #138597;
+  color: #ECF9F8;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 10px;
+  display: inline-block;
+}
+.access-subdomain-global-navigation a.sf-depth-1,
+.access-subdomain-global-navigation span.nolink.sf-depth-1 {
+  color: #1A5B6E;
+  background-color: white;
+}
+.access-subdomain-global-navigation a.sf-depth-1:hover,
+.access-subdomain-global-navigation span.nolink.sf-depth-1:hover {
+  background-color: #138597;
+  color: #ECF9F8;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.access-subdomain-global-navigation a.sf-depth-1.active, .access-subdomain-global-navigation a.sf-depth-1.is-active,
+.access-subdomain-global-navigation span.nolink.sf-depth-1.active,
+.access-subdomain-global-navigation span.nolink.sf-depth-1.is-active {
+  background-color: #1A5B6E;
+  color: #ECF9F8;
+}
+.access-subdomain-global-navigation a:hover,
+.access-subdomain-global-navigation span.nolink:hover {
+  background-color: #138597;
+  color: #ECF9F8;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.access-subdomain-global-navigation a.active, .access-subdomain-global-navigation .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation a.is-active, .access-subdomain-global-navigation a.is-active,
+.access-subdomain-global-navigation span.nolink.active,
+.access-subdomain-global-navigation span.nolink.is-active {
+  background-color: #1A5B6E;
+  color: #ECF9F8;
 }
 
 .navbar-brand .site-logo {
@@ -11602,36 +11648,6 @@ h4, .h4 {
   border-color: #FFC42D;
   background-color: #FFC42D;
 }
-.access-subdomain-global-navigation {
-  border-color: #1A5B6E;
-  border-style: solid;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  border-top-width: 3px;
-}
-.access-subdomain-global-navigation .block {
-  line-height: 10px;
-}
-.access-subdomain-global-navigation ul li .sf-sub-indicator {
-  display: none;
-}
-.access-subdomain-global-navigation a,
-.access-subdomain-global-navigation span.nolink {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 6px 10px;
-  display: inline-block;
-}
-.access-subdomain-global-navigation a:hover, .access-subdomain-global-navigation a.active, .access-subdomain-global-navigation .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation a.is-active, .access-subdomain-global-navigation a.is-active,
-.access-subdomain-global-navigation span.nolink:hover,
-.access-subdomain-global-navigation span.nolink.active,
-.access-subdomain-global-navigation span.nolink.is-active {
-  text-decoration: none;
-  font-weight: 600;
-}
-
 .access-subdomain-breadcrumb-wrapper {
   padding: 9.5px;
   border-top-width: 1px;
