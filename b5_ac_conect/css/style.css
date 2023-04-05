@@ -7916,12 +7916,12 @@ fieldset.form-item > .list-group + .card-footer {
 }
 
 /* rtl:end:remove */
-.text-dark, .btn.btn-link.text-dark, .region-nav-main li a.btn-link.text-dark, .node-preview-container .btn-link.text-dark.node-preview-backlink, .node-preview-container button.text-dark.node-preview-backlink.link, button.text-dark.link {
+.text-dark, .bg-light, .btn.btn-link.bg-light, .region-nav-main li a.btn-link.bg-light, .node-preview-container button.btn.bg-light.node-preview-backlink.link, .node-preview-container .btn-link.node-preview-backlink.bg-light, button.link.bg-light, .btn.btn-link.text-dark, .region-nav-main li a.btn-link.text-dark, .node-preview-container .btn-link.text-dark.node-preview-backlink, .node-preview-container button.text-dark.node-preview-backlink.link, button.text-dark.link {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-light, .btn.btn-link.text-light, .region-nav-main li a.btn-link.text-light, .node-preview-container .btn-link.text-light.node-preview-backlink, .node-preview-container button.text-light.node-preview-backlink.link, button.text-light.link {
+.text-light, .bg-dark, .btn.btn-link.bg-dark, .region-nav-main li a.btn-link.bg-dark, .node-preview-container button.btn.bg-dark.node-preview-backlink.link, .node-preview-container .btn-link.node-preview-backlink.bg-dark, button.link.bg-dark, .btn.btn-link.text-light, .region-nav-main li a.btn-link.text-light, .node-preview-container .btn-link.text-light.node-preview-backlink, .node-preview-container button.text-light.node-preview-backlink.link, button.text-light.link {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
@@ -11395,28 +11395,27 @@ body {
   font-family: "Archivo", Helvetica, Arial, sans-serif;
 }
 
+.text-medium, .btn.btn-link.text-medium, .region-nav-main li a.btn-link.text-medium, .node-preview-container .btn-link.text-medium.node-preview-backlink, button.text-medium.link {
+  color: #138597;
+}
+
+.text-orange, .bg-dark .btn.btn-link:hover, .bg-dark .region-nav-main li a.btn-link:hover, .region-nav-main li .bg-dark a.btn-link:hover, .bg-dark .btn-link.button:hover, .bg-dark .node-preview-container .btn-link.node-preview-backlink:hover, .bg-dark .node-preview-container button.node-preview-backlink.link:hover, .node-preview-container .bg-dark .btn-link.node-preview-backlink:hover, .node-preview-container .bg-dark button.node-preview-backlink.link:hover, .bg-dark button.link:hover, .btn.btn-link.text-orange, .region-nav-main li a.btn-link.text-orange, .node-preview-container .btn-link.text-orange.node-preview-backlink, button.text-orange.link, .bg-dark button.link:hover {
+  color: #F07537;
+}
+
+.text-yellow, .bg-dark .btn.btn-link, .bg-dark .region-nav-main li a.btn-link, .region-nav-main li .bg-dark a.btn-link, .bg-dark .node-preview-container button.btn.node-preview-backlink.link, .node-preview-container .bg-dark button.btn.node-preview-backlink.link, .bg-dark .btn-link.button, .bg-dark .node-preview-container .btn-link.node-preview-backlink, .node-preview-container .bg-dark .btn-link.node-preview-backlink, .bg-dark button.link, .btn.btn-link.text-yellow, .region-nav-main li a.btn-link.text-yellow, .node-preview-container .btn-link.text-yellow.node-preview-backlink, button.text-yellow.link {
+  color: #FFC42D;
+}
+
 .bg-dark {
   background-color: #1A5B6E;
 }
-
 .bg-medium {
   background-color: #138597;
 }
 
 .bg-light {
   background-color: #ECF9F8;
-}
-
-.text-medium, .btn.btn-link.text-medium, .region-nav-main li a.btn-link.text-medium, .node-preview-container .btn-link.text-medium.node-preview-backlink, button.text-medium.link {
-  color: #138597;
-}
-
-.text-orange, .btn.btn-link.text-orange, .region-nav-main li a.btn-link.text-orange, .node-preview-container .btn-link.text-orange.node-preview-backlink, button.text-orange.link {
-  color: #F07537;
-}
-
-.text-yellow, .btn.btn-link.text-yellow, .region-nav-main li a.btn-link.text-yellow, .node-preview-container .btn-link.text-yellow.node-preview-backlink, button.text-yellow.link {
-  color: #FFC42D;
 }
 
 *, * ::before, * ::after {

@@ -11,18 +11,6 @@ body {
     font-family: "Archivo", Helvetica, Arial, sans-serif;
 }
 
-.bg-dark {
-    background-color:$access-dark
-}
-
-.bg-medium {
-    background-color:$access-medium
-}
-
-.bg-light {
-    background-color:$access-light
-}
-
 .text-dark, .btn.btn-link.text-dark {
     @extend .text-dark
 }
@@ -41,6 +29,30 @@ body {
 
 .text-yellow, .btn.btn-link.text-yellow {
     color: $access-yellow;
+}
+
+.bg-dark {
+    background-color:$access-dark;
+
+    @extend .text-light;
+
+    .btn.btn-link {
+      @extend .text-yellow;
+
+        &:hover {
+            @extend .text-orange;
+        }
+    }
+}
+
+.bg-medium {
+    background-color:$access-medium;
+}
+
+.bg-light {
+    background-color:$access-light;
+
+    @extend .text-dark;
 }
 
 
