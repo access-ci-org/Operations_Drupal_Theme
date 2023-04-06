@@ -11664,5 +11664,15 @@ h4, .h4 {
 .region-nav-main li {
   padding: 10px;
 }
+.views-row .ui-state-active,
+.views-row .ui-accordion .ui-accordion-header {
+  color: #138597;
+  background: white;
+  border-color: #dddddd;
+}
+.views-row .ui-state-active .field-content a,
+.views-row .ui-accordion .ui-accordion-header .field-content a {
+  color: #1A5B6E;
+}
 
 /*# sourceMappingURL=style.css.map */

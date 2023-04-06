@@ -372,3 +372,18 @@ h4, .h4 {
         }
     }
 }
+
+.views-row {
+    .ui-state-active,
+    .ui-accordion .ui-accordion-header {
+        color: $access-medium;
+        background: white;
+        border-color: #dddddd;
+
+        .field-content a {
+            color: $access-dark;
+        }
+    }
+}
+
+
