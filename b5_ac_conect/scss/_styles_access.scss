@@ -43,6 +43,10 @@ body {
             @extend .text-orange;
         }
     }
+
+    h3, .h3 {
+        color: $access-teal;
+    }
 }
 
 .bg-medium {

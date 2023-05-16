@@ -11410,6 +11410,10 @@ body {
 .bg-dark {
   background-color: #1A5B6E;
 }
+.bg-dark h3, .bg-dark .h3 {
+  color: #48C0B9;
+}
+
 .bg-medium {
   background-color: #138597;
 }
