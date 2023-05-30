@@ -79,13 +79,11 @@ body {
     */
 .region-nav-access-main {
     flex-direction: row;
-    height: 48px;
     text-align: left
 }
 
 .region-nav-access-additional {
     flex-direction: row;
-    height: 48px;
     text-align: right
 }
 
@@ -153,10 +151,42 @@ footer {
     //    }
     //}
 
+
+
+    .nav-menu-icon-no-text {
+        visibility: hidden;
+    }
+
+    .nav-menu-icon::after {
+        visibility: visible;
+        display: inline-block;
+        height: 13px;
+        width: 16px;
+        overflow: visible;
+        content: " ";
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        margin-left: 5px;
+    }
+
+    .nav-menu-icon-home::after {
+        background-image: url(../assets/img/icons/house-solid.svg);
+    }
+
+    .nav-menu-icon-search::after {
+        background-image: url(../assets/img/icons/magnifying-glass-solid.svg);
+    }
+
+    .nav-menu-icon-hamburger::after {
+        background-image: url(../assets/img/icons/bars-solid.svg);
+    }
+
     ul {
         li {
 
             a {
+
                 &.sf-depth-1 {
                     color: $access-light;
                     background-color: $access-dark;
