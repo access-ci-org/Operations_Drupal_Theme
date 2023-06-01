@@ -101,6 +101,10 @@ footer .social-link svg {
 }
 
 footer .social-link:hover {
+    text-decoration: none;
+}
+
+footer .social-link svg:hover {
     transform:scale(1.1)
 }
 
@@ -185,7 +189,7 @@ footer {
     ul {
         li {
 
-            a {
+            a, .menuparent {
 
                 &.sf-depth-1 {
                     color: $access-light;

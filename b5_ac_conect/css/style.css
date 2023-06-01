@@ -11462,6 +11462,10 @@ footer .social-link svg {
 }
 
 footer .social-link:hover {
+  text-decoration: none;
+}
+
+footer .social-link svg:hover {
   transform: scale(1.1);
 }
 
@@ -11527,8 +11531,9 @@ footer a:hover {
 .region-nav-access-additional .nav-menu-icon-hamburger::after {
   background-image: url(../assets/img/icons/bars-solid.svg);
 }
-.region-nav-access-main ul li a,
-.region-nav-access-additional ul li a {
+.region-nav-access-main ul li a, .region-nav-access-main ul li .menuparent,
+.region-nav-access-additional ul li a,
+.region-nav-access-additional ul li .menuparent {
   padding: 16px 8px;
   text-decoration: none;
   font-weight: 700;
@@ -11536,23 +11541,28 @@ footer a:hover {
   background-color: #138597;
   font-size: 14px;
 }
-.region-nav-access-main ul li a.sf-depth-1,
-.region-nav-access-additional ul li a.sf-depth-1 {
+.region-nav-access-main ul li a.sf-depth-1, .region-nav-access-main ul li .menuparent.sf-depth-1,
+.region-nav-access-additional ul li a.sf-depth-1,
+.region-nav-access-additional ul li .menuparent.sf-depth-1 {
   color: #ECF9F8;
   background-color: #1A5B6E;
 }
-.region-nav-access-main ul li a:hover, .region-nav-access-main ul li a:focus,
+.region-nav-access-main ul li a:hover, .region-nav-access-main ul li a:focus, .region-nav-access-main ul li .menuparent:hover, .region-nav-access-main ul li .menuparent:focus,
 .region-nav-access-additional ul li a:hover,
-.region-nav-access-additional ul li a:focus {
+.region-nav-access-additional ul li a:focus,
+.region-nav-access-additional ul li .menuparent:hover,
+.region-nav-access-additional ul li .menuparent:focus {
   color: #ECF9F8;
   background-color: #138597;
   text-decoration: underline;
 }
-.region-nav-access-main ul li a.active, .region-nav-access-main ul li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .region-nav-access-main ul li a.is-active, .region-nav-access-main ul li a.is-active,
+.region-nav-access-main ul li a.active, .region-nav-access-main ul li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .region-nav-access-main ul li a.is-active, .region-nav-access-main ul li a.is-active, .region-nav-access-main ul li .menuparent.active, .region-nav-access-main ul li .menuparent.is-active,
 .region-nav-access-additional ul li a.active,
 .region-nav-access-additional ul li .media-library-view--widget .view-header a.is-active,
 .media-library-view--widget .view-header .region-nav-access-additional ul li a.is-active,
-.region-nav-access-additional ul li a.is-active {
+.region-nav-access-additional ul li a.is-active,
+.region-nav-access-additional ul li .menuparent.active,
+.region-nav-access-additional ul li .menuparent.is-active {
   color: #ECF9F8;
   background-color: #138597;
 }
