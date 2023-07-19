@@ -11531,21 +11531,33 @@ footer a:hover {
 .region-nav-access-additional .nav-menu-icon-hamburger::after {
   background-image: url(../assets/img/icons/bars-solid.svg);
 }
+.region-nav-access-main .sf-depth-1 ul,
+.region-nav-access-additional .sf-depth-1 ul {
+  padding: 10px !important;
+  background-color: #138597;
+}
 .region-nav-access-main ul li a, .region-nav-access-main ul li .menuparent,
 .region-nav-access-additional ul li a,
 .region-nav-access-additional ul li .menuparent {
-  padding: 16px 8px;
   text-decoration: none;
-  font-weight: 700;
-  color: #ECF9F8;
-  background-color: #138597;
-  font-size: 14px;
 }
 .region-nav-access-main ul li a.sf-depth-1, .region-nav-access-main ul li .menuparent.sf-depth-1,
 .region-nav-access-additional ul li a.sf-depth-1,
 .region-nav-access-additional ul li .menuparent.sf-depth-1 {
   color: #ECF9F8;
   background-color: #1A5B6E;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 16px 8px;
+}
+.region-nav-access-main ul li a.sf-depth-2, .region-nav-access-main ul li .menuparent.sf-depth-2,
+.region-nav-access-additional ul li a.sf-depth-2,
+.region-nav-access-additional ul li .menuparent.sf-depth-2 {
+  color: #ECF9F8;
+  background-color: #138597;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 5px;
 }
 .region-nav-access-main ul li a:hover, .region-nav-access-main ul li a:focus, .region-nav-access-main ul li .menuparent:hover, .region-nav-access-main ul li .menuparent:focus,
 .region-nav-access-additional ul li a:hover,
@@ -11583,6 +11595,10 @@ footer a:hover {
 .access-subdomain-global-navigation .block {
   line-height: 10px;
 }
+.access-subdomain-global-navigation .sf-depth-1 ul {
+  padding: 10px !important;
+  background-color: #138597;
+}
 .access-subdomain-global-navigation ul li .sf-sub-indicator {
   display: none;
 }
@@ -11590,13 +11606,20 @@ footer a:hover {
   background-color: #138597;
   color: #ECF9F8;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 16px 24px;
 }
 .access-subdomain-global-navigation ul li a.sf-depth-1, .access-subdomain-global-navigation ul li span.nolink.sf-depth-1 {
   color: #1A5B6E;
   background-color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 24px;
+}
+.access-subdomain-global-navigation ul li a.sf-depth-2, .access-subdomain-global-navigation ul li span.nolink.sf-depth-2 {
+  color: #ECF9F8;
+  background-color: #138597;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 5px;
 }
 .access-subdomain-global-navigation ul li a:hover, .access-subdomain-global-navigation ul li span.nolink:hover {
   background-color: #138597;

@@ -186,6 +186,13 @@ footer {
         background-image: url(../assets/img/icons/bars-solid.svg);
     }
 
+    .sf-depth-1 {
+        ul {
+            padding: 10px !important;
+            background-color: $access-medium;
+        }
+    }
+
     ul {
         li {
 
@@ -194,11 +201,20 @@ footer {
                 &.sf-depth-1 {
                     color: $access-light;
                     background-color: $access-dark;
+                    font-weight: 700;
+                    font-size: 14px;
+                    padding: 16px 8px;
                 }
 
-                padding: 16px 8px;
+                &.sf-depth-2 {
+                    color: $access-light;
+                    background-color: $access-medium;
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding: 6px 5px;
+                }
+
                 text-decoration: none;
-                font-weight: 700;
 
                 &:hover, &:focus {
                     color: $access-light;
@@ -210,10 +226,6 @@ footer {
                     color: $access-light;
                     background-color: $access-medium;
                 }
-
-                color: $access-light;
-                background-color: $access-medium;
-                font-size: 14px;
             }
 
             &.sfHover a {
@@ -236,6 +248,13 @@ footer {
         line-height: 10px;
     }
 
+    .sf-depth-1 {
+        ul {
+            padding: 10px !important;
+            background-color: $access-medium;
+        }
+    }
+
     ul {
         @extend .d-inline-block;
         @extend .list-inline;
@@ -252,13 +271,21 @@ footer {
                 color: $access-light;
 
                 text-decoration: none;
-                font-weight: 600;
-                font-size: 16px;
-                padding: 16px 24px;
 
                 &.sf-depth-1 {
                     color: $access-dark;
                     background-color: white;
+                    font-weight: 600;
+                    font-size: 16px;
+                    padding: 16px 24px;
+                }
+
+                &.sf-depth-2 {
+                    color: $access-light;
+                    background-color: $access-medium;
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding: 6px 5px;
                 }
 
                 &:hover {
