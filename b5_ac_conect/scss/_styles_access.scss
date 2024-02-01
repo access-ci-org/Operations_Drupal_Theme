@@ -204,6 +204,10 @@ footer {
                     font-weight: 700;
                     font-size: 14px;
                     padding: 16px 8px;
+
+                    &:hover, &:focus {
+                        text-decoration: none;
+                    }
                 }
 
                 &.sf-depth-2 {

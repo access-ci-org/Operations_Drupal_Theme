@@ -11550,6 +11550,13 @@ footer a:hover {
   font-size: 14px;
   padding: 16px 8px;
 }
+.region-nav-access-main ul li a.sf-depth-1:hover, .region-nav-access-main ul li a.sf-depth-1:focus, .region-nav-access-main ul li .menuparent.sf-depth-1:hover, .region-nav-access-main ul li .menuparent.sf-depth-1:focus,
+.region-nav-access-additional ul li a.sf-depth-1:hover,
+.region-nav-access-additional ul li a.sf-depth-1:focus,
+.region-nav-access-additional ul li .menuparent.sf-depth-1:hover,
+.region-nav-access-additional ul li .menuparent.sf-depth-1:focus {
+  text-decoration: none;
+}
 .region-nav-access-main ul li a.sf-depth-2, .region-nav-access-main ul li .menuparent.sf-depth-2,
 .region-nav-access-additional ul li a.sf-depth-2,
 .region-nav-access-additional ul li .menuparent.sf-depth-2 {
