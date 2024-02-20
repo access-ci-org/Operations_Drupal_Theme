@@ -11469,15 +11469,38 @@ footer .social-link svg:hover {
   transform: scale(1.1);
 }
 
-footer .footer-policies a, footer .read-more, footer footer-rights {
-  font-size: 14px;
+footer p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
-footer a {
+footer p a.btn.btn-link, footer p .region-nav-main li a.btn-link, .region-nav-main li footer p a.btn-link, footer p a.btn-link.button, footer p .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container footer p a.btn-link.node-preview-backlink {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+footer p small, footer p .small {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+footer a.btn.btn-link, footer .region-nav-main li a.btn-link, .region-nav-main li footer a.btn-link, footer a.btn-link.button, footer .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container footer a.btn-link.node-preview-backlink {
   color: #138597;
   text-decoration: none;
 }
-footer a:hover {
+footer a.btn.btn-link:hover, footer .region-nav-main li a.btn-link:hover, .region-nav-main li footer a.btn-link:hover, footer a.btn-link.button:hover, footer .node-preview-container a.btn-link.node-preview-backlink:hover, .node-preview-container footer a.btn-link.node-preview-backlink:hover {
   text-decoration: underline;
+}
+footer .footer-policies a.btn.btn-link, footer .footer-policies .region-nav-main li a.btn-link, .region-nav-main li footer .footer-policies a.btn-link, footer .footer-policies a.btn-link.button, footer .footer-policies .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container footer .footer-policies a.btn-link.node-preview-backlink {
+  font-size: 12px;
+  font-weight: 600;
+}
+footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more, .region-nav-main li footer a.btn-link.read-more, footer a.btn-link.read-more.button, footer .node-preview-container a.btn-link.read-more.node-preview-backlink, .node-preview-container footer a.btn-link.read-more.node-preview-backlink {
+  color: #138597;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .btn-access-primary {
