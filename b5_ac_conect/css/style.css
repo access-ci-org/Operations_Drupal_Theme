@@ -11546,7 +11546,7 @@ footer a:hover {
 .region-nav-access-additional ul li .menuparent.sf-depth-1 {
   color: #ECF9F8;
   background-color: #1A5B6E;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 14px;
   padding: 16px 8px;
 }
@@ -11564,7 +11564,11 @@ footer a:hover {
   background-color: #138597;
   font-weight: 600;
   font-size: 14px;
-  padding: 6px 5px;
+  line-height: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .region-nav-access-main ul li a:hover, .region-nav-access-main ul li a:focus, .region-nav-access-main ul li .menuparent:hover, .region-nav-access-main ul li .menuparent:focus,
 .region-nav-access-additional ul li a:hover,
@@ -11619,14 +11623,21 @@ footer a:hover {
   background-color: white;
   font-weight: 600;
   font-size: 16px;
-  padding: 16px 24px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .access-subdomain-global-navigation ul li a.sf-depth-2, .access-subdomain-global-navigation ul li span.nolink.sf-depth-2 {
   color: #ECF9F8;
   background-color: #138597;
   font-weight: 600;
-  font-size: 14px;
-  padding: 6px 5px;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .access-subdomain-global-navigation ul li a:hover, .access-subdomain-global-navigation ul li span.nolink:hover {
   background-color: #138597;
@@ -11643,9 +11654,19 @@ footer a:hover {
   color: #ECF9F8;
 }
 
+ul.sf-menu.sf-horizontal.sf-shadow ul,
+ul.sf-menu.sf-vertical.sf-shadow ul,
+ul.sf-menu.sf-navbar.sf-shadow ul ul {
+  box-shadow: none;
+}
+
 .navbar-brand .site-logo {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.navbar-brand .site-logo img {
+  height: 85.87px;
+  width: 380px;
 }
 
 h1, .h1 {
@@ -11725,7 +11746,8 @@ h4, .h4 {
 .access-subdomain-breadcrumb-wrapper .breadcrumb li a {
   color: #1A5B6E;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 14px;
 }
 .access-subdomain-breadcrumb-wrapper .breadcrumb li a:hover {
   color: #138597;
