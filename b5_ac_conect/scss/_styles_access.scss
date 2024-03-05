@@ -361,13 +361,38 @@ ul.sf-menu.sf-navbar.sf-shadow ul ul {
     box-shadow: none;
 }
 
-.navbar-brand .site-logo {
+.branding-wrapper {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 64px;
 
-    img {
-        height: 85.87px;
-        width: 380px;
+    .nsf-logo {
+        padding-right: 20px;
+
+        img {
+            height: 82px;
+            width: 82px;
+        }
+    }
+
+    .logo-divider {
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        img {
+            height: 70px;
+        }
+    }
+
+    .navbar-brand {
+        .site-logo {
+            padding-top: 22px;
+            padding-left: 23px;
+
+            img {
+                height: 75px;
+                width: 253px;
+            }
+        }
     }
 }
 

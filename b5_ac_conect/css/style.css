@@ -11683,13 +11683,31 @@ ul.sf-menu.sf-navbar.sf-shadow ul ul {
   box-shadow: none;
 }
 
-.navbar-brand .site-logo {
+.branding-wrapper {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 64px;
 }
-.navbar-brand .site-logo img {
-  height: 85.87px;
-  width: 380px;
+.branding-wrapper .nsf-logo {
+  padding-right: 20px;
+}
+.branding-wrapper .nsf-logo img {
+  height: 82px;
+  width: 82px;
+}
+.branding-wrapper .logo-divider {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.branding-wrapper .logo-divider img {
+  height: 70px;
+}
+.branding-wrapper .navbar-brand .site-logo {
+  padding-top: 22px;
+  padding-left: 23px;
+}
+.branding-wrapper .navbar-brand .site-logo img {
+  height: 75px;
+  width: 253px;
 }
 
 h1, .h1 {
