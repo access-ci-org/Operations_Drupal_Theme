@@ -1,3 +1,6 @@
+v0.3.30 20240307      JP Navarro
+  - Fix the new logo references by making them absolute
+
 v0.3.29 20240305      Dinuka De Silva
   - Enable NSF link from the branding logo
 
