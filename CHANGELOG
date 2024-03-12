@@ -1,3 +1,7 @@
+v0.3.31 20240312      Dinuka De Silva
+  - Fix social icons
+  - Enable link text to be selectable
+
 v0.3.30 20240307      JP Navarro
   - Fix the new logo references by making them absolute
 
