@@ -11484,6 +11484,7 @@ footer p a.btn.btn-link, footer p .region-nav-main li a.btn-link, .region-nav-ma
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+  user-select: auto;
 }
 footer p small, footer p .small {
   font-size: 12px;
