@@ -11461,11 +11461,16 @@ footer .social-link svg {
   width: auto;
 }
 
+footer .social-link img {
+  height: 45px;
+  width: 45px;
+}
+
 footer .social-link:hover {
   text-decoration: none;
 }
 
-footer .social-link svg:hover {
+footer .social-link img:hover {
   transform: scale(1.1);
 }
 
