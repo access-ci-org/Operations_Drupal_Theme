@@ -16,6 +16,13 @@ $access-orange: #F07537;
 $access-orange-rgb: 240, 117, 56;
 $access-secondary: #6c757d;
 
+$container-max-widths: (
+  sm: 1180px,
+  md: 1180px,
+  lg: 1180px,
+  xl: 1203px,
+  xxl: 1203px
+) !default;
 
 $theme-colors: (
   "dark": $access-dark,

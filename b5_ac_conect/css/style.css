@@ -624,27 +624,27 @@ progress {
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 1180px;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 1180px;
   }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 1180px;
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1203px;
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1203px;
   }
 }
 .row {
@@ -11442,6 +11442,9 @@ body {
   flex-direction: row;
   text-align: left;
 }
+.region-nav-access-main ul {
+  height: 48px;
+}
 
 .region-nav-access-additional {
   flex-direction: row;
@@ -11578,6 +11581,7 @@ footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more
   font-weight: 800;
   font-size: 14px;
   padding: 16px 8px;
+  height: 100%;
 }
 .region-nav-access-main ul li a.sf-depth-1:hover, .region-nav-access-main ul li a.sf-depth-1:focus, .region-nav-access-main ul li .menuparent.sf-depth-1:hover, .region-nav-access-main ul li .menuparent.sf-depth-1:focus,
 .region-nav-access-additional ul li a.sf-depth-1:hover,
@@ -11689,9 +11693,15 @@ ul.sf-menu.sf-navbar.sf-shadow ul ul {
   box-shadow: none;
 }
 
+ul.sf-menu li {
+  height: 100%;
+}
+
 .branding-wrapper {
   padding-top: 50px;
   padding-bottom: 64px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .branding-wrapper .nsf-logo {
   padding-right: 20px;

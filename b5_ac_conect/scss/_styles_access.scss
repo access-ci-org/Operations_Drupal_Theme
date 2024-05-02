@@ -79,7 +79,11 @@ body {
     */
 .region-nav-access-main {
     flex-direction: row;
-    text-align: left
+    text-align: left;
+
+    ul {
+        height: 48px;
+    }
 }
 
 .region-nav-access-additional {
@@ -237,6 +241,7 @@ footer {
                     font-weight: 800;
                     font-size: 14px;
                     padding: 16px 8px;
+                    height: 100%;
 
                     &:hover, &:focus {
                         text-decoration: none;
@@ -366,9 +371,15 @@ ul.sf-menu.sf-navbar.sf-shadow ul ul {
     box-shadow: none;
 }
 
+ul.sf-menu li {
+    height: 100%;
+}
+
 .branding-wrapper {
     padding-top: 50px;
     padding-bottom: 64px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     .nsf-logo {
         padding-right: 20px;
