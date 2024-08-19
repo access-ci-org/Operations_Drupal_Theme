@@ -1,3 +1,7 @@
+v0.3.36 20240819      Dinuka De Silva
+  - Adding the "access-operations-drupal-portal" parent CSS class for ACCESS styles
+  - Making the link text selectable.
+
 v0.3.35 20240801      Dinuka De Silva
   - Fix "Acceptable Use Policy" link
 

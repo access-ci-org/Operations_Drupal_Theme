@@ -543,15 +543,15 @@ progress {
   list-style: none;
 }
 
-.list-inline, .access-subdomain-global-navigation ul {
+.list-inline, .access-operations-drupal-portal .access-subdomain-global-navigation ul {
   padding-left: 0;
   list-style: none;
 }
 
-.list-inline-item, .access-subdomain-global-navigation ul li {
+.list-inline-item, .access-operations-drupal-portal .access-subdomain-global-navigation ul li {
   display: inline-block;
 }
-.list-inline-item:not(:last-child), .access-subdomain-global-navigation ul li:not(:last-child) {
+.list-inline-item:not(:last-child), .access-operations-drupal-portal .access-subdomain-global-navigation ul li:not(:last-child) {
   margin-right: 0.5rem;
 }
 
@@ -2286,7 +2286,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .region-nav-main li .btn-check[disabled] + a, .node-preview-container .btn-check[disabled] + .node-preview-backlink, .btn-check[disabled] + .button, .btn-check[disabled] + button.link, .btn-check:disabled + .btn, .region-nav-main li .btn-check:disabled + a, .node-preview-container .btn-check:disabled + .node-preview-backlink, .btn-check:disabled + .button, .btn-check:disabled + button.link {
+.btn-check[disabled] + .btn, .access-operations-drupal-portal .region-nav-main li .btn-check[disabled] + a, .node-preview-container .btn-check[disabled] + .node-preview-backlink, .btn-check[disabled] + .button, .btn-check[disabled] + button.link, .btn-check:disabled + .btn, .access-operations-drupal-portal .region-nav-main li .btn-check:disabled + a, .node-preview-container .btn-check:disabled + .node-preview-backlink, .btn-check:disabled + .button, .btn-check:disabled + button.link {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2462,11 +2462,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .region-nav-main li a, .region-nav-main li .input-group a, .input-group .node-preview-container .node-preview-backlink, .node-preview-container .input-group .node-preview-backlink, .input-group .button, .input-group button.link {
+.input-group .btn, .input-group .access-operations-drupal-portal .region-nav-main li a, .access-operations-drupal-portal .region-nav-main li .input-group a, .input-group .node-preview-container .node-preview-backlink, .node-preview-container .input-group .node-preview-backlink, .input-group .button, .input-group button.link {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .region-nav-main li a:focus, .region-nav-main li .input-group a:focus, .input-group .node-preview-container .node-preview-backlink:focus, .node-preview-container .input-group .node-preview-backlink:focus, .input-group .button:focus, .input-group button.link:focus {
+.input-group .btn:focus, .input-group .access-operations-drupal-portal .region-nav-main li a:focus, .access-operations-drupal-portal .region-nav-main li .input-group a:focus, .input-group .node-preview-container .node-preview-backlink:focus, .node-preview-container .input-group .node-preview-backlink:focus, .input-group .button:focus, .input-group button.link:focus {
   z-index: 5;
 }
 
@@ -2489,7 +2489,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
-.region-nav-main li .input-group-lg > a,
+.access-operations-drupal-portal .region-nav-main li .input-group-lg > a,
 .node-preview-container .input-group-lg > .node-preview-backlink,
 .input-group-lg > .button,
 .input-group-lg > button.link {
@@ -2502,7 +2502,7 @@ textarea.form-control-lg {
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
-.region-nav-main li .input-group-sm > a,
+.access-operations-drupal-portal .region-nav-main li .input-group-sm > a,
 .node-preview-container .input-group-sm > .node-preview-backlink,
 .input-group-sm > .button,
 .input-group-sm > button.link {
@@ -2721,7 +2721,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn, .region-nav-main li a, .node-preview-container .node-preview-backlink, a.button, .button, button.link {
+.btn, .access-operations-drupal-portal .region-nav-main li a, .node-preview-container .node-preview-backlink, a.button, .button, button.link {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -2755,41 +2755,41 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .region-nav-main li a, .node-preview-container .node-preview-backlink, a.button, .button, button.link {
+  .btn, .access-operations-drupal-portal .region-nav-main li a, .node-preview-container .node-preview-backlink, a.button, .button, button.link {
     transition: none;
   }
 }
-.btn:hover, .region-nav-main li a:hover, .node-preview-container .node-preview-backlink:hover, .button:hover, button.link:hover {
+.btn:hover, .access-operations-drupal-portal .region-nav-main li a:hover, .node-preview-container .node-preview-backlink:hover, .button:hover, button.link:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .region-nav-main li .btn-check + a:hover, .node-preview-container .btn-check + .node-preview-backlink:hover, .btn-check + .button:hover, .btn-check + button.link:hover {
+.btn-check + .btn:hover, .access-operations-drupal-portal .region-nav-main li .btn-check + a:hover, .node-preview-container .btn-check + .node-preview-backlink:hover, .btn-check + .button:hover, .btn-check + button.link:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, .region-nav-main li a:focus-visible, .node-preview-container .node-preview-backlink:focus-visible, .button:focus-visible, button.link:focus-visible {
+.btn:focus-visible, .access-operations-drupal-portal .region-nav-main li a:focus-visible, .node-preview-container .node-preview-backlink:focus-visible, .button:focus-visible, button.link:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .region-nav-main li .btn-check:focus-visible + a, .node-preview-container .btn-check:focus-visible + .node-preview-backlink, .btn-check:focus-visible + .button, .btn-check:focus-visible + button.link {
+.btn-check:focus-visible + .btn, .access-operations-drupal-portal .region-nav-main li .btn-check:focus-visible + a, .node-preview-container .btn-check:focus-visible + .node-preview-backlink, .btn-check:focus-visible + .button, .btn-check:focus-visible + button.link {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .region-nav-main li .btn-check:checked + a, .node-preview-container .btn-check:checked + .node-preview-backlink, .btn-check:checked + .button, .btn-check:checked + button.link, :not(.btn-check) + .btn:active, .region-nav-main li :not(.btn-check) + a:active, .node-preview-container :not(.btn-check) + .node-preview-backlink:active, :not(.btn-check) + .button:active, :not(.btn-check) + button.link:active, .btn:first-child:active, .region-nav-main li a:first-child:active, .node-preview-container .node-preview-backlink:first-child:active, .button:first-child:active, button.link:first-child:active, .btn.active, .region-nav-main li a.active, .media-library-view--widget .view-header a.btn.is-active, .media-library-view--widget .view-header .region-nav-main li a.is-active, .region-nav-main li .media-library-view--widget .view-header a.is-active, .node-preview-container .active.node-preview-backlink, .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active, .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active, .active.button, .media-library-view--widget .view-header a.button.is-active, button.active.link, .btn.show, .region-nav-main li a.show, .node-preview-container .show.node-preview-backlink, .show.button, button.show.link {
+.btn-check:checked + .btn, .access-operations-drupal-portal .region-nav-main li .btn-check:checked + a, .node-preview-container .btn-check:checked + .node-preview-backlink, .btn-check:checked + .button, .btn-check:checked + button.link, :not(.btn-check) + .btn:active, .access-operations-drupal-portal .region-nav-main li :not(.btn-check) + a:active, .node-preview-container :not(.btn-check) + .node-preview-backlink:active, :not(.btn-check) + .button:active, :not(.btn-check) + button.link:active, .btn:first-child:active, .access-operations-drupal-portal .region-nav-main li a:first-child:active, .node-preview-container .node-preview-backlink:first-child:active, .button:first-child:active, button.link:first-child:active, .btn.active, .access-operations-drupal-portal .region-nav-main li a.active, .media-library-view--widget .view-header a.btn.is-active, .media-library-view--widget .view-header .access-operations-drupal-portal .region-nav-main li a.is-active, .access-operations-drupal-portal .region-nav-main li .media-library-view--widget .view-header a.is-active, .node-preview-container .active.node-preview-backlink, .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active, .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active, .active.button, .media-library-view--widget .view-header a.button.is-active, button.active.link, .btn.show, .access-operations-drupal-portal .region-nav-main li a.show, .node-preview-container .show.node-preview-backlink, .show.button, button.show.link {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, .region-nav-main li .btn-check:checked + a:focus-visible, .node-preview-container .btn-check:checked + .node-preview-backlink:focus-visible, .btn-check:checked + .button:focus-visible, .btn-check:checked + button.link:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .region-nav-main li :not(.btn-check) + a:active:focus-visible, .node-preview-container :not(.btn-check) + .node-preview-backlink:active:focus-visible, :not(.btn-check) + .button:active:focus-visible, :not(.btn-check) + button.link:active:focus-visible, .btn:first-child:active:focus-visible, .region-nav-main li a:first-child:active:focus-visible, .node-preview-container .node-preview-backlink:first-child:active:focus-visible, .button:first-child:active:focus-visible, button.link:first-child:active:focus-visible, .btn.active:focus-visible, .region-nav-main li a.active:focus-visible, .media-library-view--widget .view-header a.btn.is-active:focus-visible, .media-library-view--widget .view-header .region-nav-main li a.is-active:focus-visible, .region-nav-main li .media-library-view--widget .view-header a.is-active:focus-visible, .node-preview-container .active.node-preview-backlink:focus-visible, .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active:focus-visible, .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active:focus-visible, .active.button:focus-visible, .media-library-view--widget .view-header a.button.is-active:focus-visible, button.active.link:focus-visible, .btn.show:focus-visible, .region-nav-main li a.show:focus-visible, .node-preview-container .show.node-preview-backlink:focus-visible, .show.button:focus-visible, button.show.link:focus-visible {
+.btn-check:checked + .btn:focus-visible, .access-operations-drupal-portal .region-nav-main li .btn-check:checked + a:focus-visible, .node-preview-container .btn-check:checked + .node-preview-backlink:focus-visible, .btn-check:checked + .button:focus-visible, .btn-check:checked + button.link:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .access-operations-drupal-portal .region-nav-main li :not(.btn-check) + a:active:focus-visible, .node-preview-container :not(.btn-check) + .node-preview-backlink:active:focus-visible, :not(.btn-check) + .button:active:focus-visible, :not(.btn-check) + button.link:active:focus-visible, .btn:first-child:active:focus-visible, .access-operations-drupal-portal .region-nav-main li a:first-child:active:focus-visible, .node-preview-container .node-preview-backlink:first-child:active:focus-visible, .button:first-child:active:focus-visible, button.link:first-child:active:focus-visible, .btn.active:focus-visible, .access-operations-drupal-portal .region-nav-main li a.active:focus-visible, .media-library-view--widget .view-header a.btn.is-active:focus-visible, .media-library-view--widget .view-header .access-operations-drupal-portal .region-nav-main li a.is-active:focus-visible, .access-operations-drupal-portal .region-nav-main li .media-library-view--widget .view-header a.is-active:focus-visible, .node-preview-container .active.node-preview-backlink:focus-visible, .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active:focus-visible, .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active:focus-visible, .active.button:focus-visible, .media-library-view--widget .view-header a.button.is-active:focus-visible, button.active.link:focus-visible, .btn.show:focus-visible, .access-operations-drupal-portal .region-nav-main li a.show:focus-visible, .node-preview-container .show.node-preview-backlink:focus-visible, .show.button:focus-visible, button.show.link:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .region-nav-main li a:disabled, .node-preview-container .node-preview-backlink:disabled, .button:disabled, button.link:disabled, .btn.disabled, .region-nav-main li a.disabled, .node-preview-container .disabled.node-preview-backlink, .disabled.button, button.disabled.link, fieldset:disabled .btn, fieldset:disabled .region-nav-main li a, .region-nav-main li fieldset:disabled a, fieldset:disabled .node-preview-container .node-preview-backlink, .node-preview-container fieldset:disabled .node-preview-backlink, fieldset:disabled .button, fieldset:disabled button.link {
+.btn:disabled, .access-operations-drupal-portal .region-nav-main li a:disabled, .node-preview-container .node-preview-backlink:disabled, .button:disabled, button.link:disabled, .btn.disabled, .access-operations-drupal-portal .region-nav-main li a.disabled, .node-preview-container .disabled.node-preview-backlink, .disabled.button, button.disabled.link, fieldset:disabled .btn, fieldset:disabled .access-operations-drupal-portal .region-nav-main li a, .access-operations-drupal-portal .region-nav-main li fieldset:disabled a, fieldset:disabled .node-preview-container .node-preview-backlink, .node-preview-container fieldset:disabled .node-preview-backlink, fieldset:disabled .button, fieldset:disabled button.link {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -2865,7 +2865,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #6c757d;
 }
 
-.btn-outline-dark, .region-nav-main li a {
+.btn-outline-dark, .access-operations-drupal-portal .region-nav-main li a {
   --bs-btn-color: #1A5B6E;
   --bs-btn-border-color: #1A5B6E;
   --bs-btn-hover-color: #fff;
@@ -2933,7 +2933,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-link, .btn.btn-link, .region-nav-main li a.btn-link, .btn-link.button, .node-preview-container .btn-link.node-preview-backlink, .node-preview-container button.node-preview-backlink.link, button.link {
+.btn-link, .access-operations-drupal-portal .btn.btn-link, .access-operations-drupal-portal .region-nav-main li a.btn-link, .access-operations-drupal-portal .btn-link.button, .access-operations-drupal-portal .node-preview-container .btn-link.node-preview-backlink, .node-preview-container .access-operations-drupal-portal .btn-link.node-preview-backlink, .access-operations-drupal-portal button.link, .access-operations-drupal-portal button.btn.link, button.link {
   --bs-btn-font-weight: 400;
   --bs-btn-color: var(--bs-link-color);
   --bs-btn-bg: transparent;
@@ -2948,21 +2948,21 @@ textarea.form-control-lg {
   --bs-btn-focus-shadow-rgb: 38, 89, 206;
   text-decoration: underline;
 }
-.btn-link:focus-visible, button.link:focus-visible {
+.btn-link:focus-visible, .access-operations-drupal-portal .btn.btn-link:focus-visible, .access-operations-drupal-portal .region-nav-main li a.btn-link:focus-visible, .access-operations-drupal-portal .btn-link.button:focus-visible, .access-operations-drupal-portal .node-preview-container .btn-link.node-preview-backlink:focus-visible, .node-preview-container .access-operations-drupal-portal .btn-link.node-preview-backlink:focus-visible, button.link:focus-visible {
   color: var(--bs-btn-color);
 }
-.btn-link:hover, button.link:hover {
+.btn-link:hover, .access-operations-drupal-portal .btn.btn-link:hover, .access-operations-drupal-portal .region-nav-main li a.btn-link:hover, .access-operations-drupal-portal .btn-link.button:hover, .access-operations-drupal-portal .node-preview-container .btn-link.node-preview-backlink:hover, .node-preview-container .access-operations-drupal-portal .btn-link.node-preview-backlink:hover, button.link:hover {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .region-nav-main li a, .btn-group-lg > .btn, .region-nav-main li .btn-group-lg > a, .node-preview-container .btn-group-lg > .node-preview-backlink, .btn-group-lg > .button, .btn-group-lg > button.link {
+.btn-lg, .access-operations-drupal-portal .region-nav-main li a, .btn-group-lg > .btn, .node-preview-container .btn-group-lg > .node-preview-backlink, .btn-group-lg > .button, .btn-group-lg > button.link {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: 0.5rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .region-nav-main li .btn-group-sm > a, .node-preview-container .btn-group-sm > .node-preview-backlink, .btn-group-sm > .button, .btn-group-sm > button.link {
+.btn-sm, .btn-group-sm > .btn, .access-operations-drupal-portal .region-nav-main li .btn-group-sm > a, .node-preview-container .btn-group-sm > .node-preview-backlink, .btn-group-sm > .button, .btn-group-sm > button.link {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -3328,41 +3328,41 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .region-nav-main li .btn-group > a, .node-preview-container .btn-group > .node-preview-backlink, .btn-group > .button, .btn-group > button.link,
+.btn-group > .btn, .access-operations-drupal-portal .region-nav-main li .btn-group > a, .node-preview-container .btn-group > .node-preview-backlink, .btn-group > .button, .btn-group > button.link,
 .btn-group-vertical > .btn,
-.region-nav-main li .btn-group-vertical > a,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a,
 .node-preview-container .btn-group-vertical > .node-preview-backlink,
 .btn-group-vertical > .button,
 .btn-group-vertical > button.link {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .region-nav-main li .btn-group > .btn-check:checked + a, .node-preview-container .btn-group > .btn-check:checked + .node-preview-backlink, .btn-group > .btn-check:checked + .button, .btn-group > .btn-check:checked + button.link,
+.btn-group > .btn-check:checked + .btn, .access-operations-drupal-portal .region-nav-main li .btn-group > .btn-check:checked + a, .node-preview-container .btn-group > .btn-check:checked + .node-preview-backlink, .btn-group > .btn-check:checked + .button, .btn-group > .btn-check:checked + button.link,
 .btn-group > .btn-check:focus + .btn,
-.region-nav-main li .btn-group > .btn-check:focus + a,
+.access-operations-drupal-portal .region-nav-main li .btn-group > .btn-check:focus + a,
 .node-preview-container .btn-group > .btn-check:focus + .node-preview-backlink,
 .btn-group > .btn-check:focus + .button,
 .btn-group > .btn-check:focus + button.link,
 .btn-group > .btn:hover,
-.region-nav-main li .btn-group > a:hover,
+.access-operations-drupal-portal .region-nav-main li .btn-group > a:hover,
 .node-preview-container .btn-group > .node-preview-backlink:hover,
 .btn-group > .button:hover,
 .btn-group > button.link:hover,
 .btn-group > .btn:focus,
-.region-nav-main li .btn-group > a:focus,
+.access-operations-drupal-portal .region-nav-main li .btn-group > a:focus,
 .node-preview-container .btn-group > .node-preview-backlink:focus,
 .btn-group > .button:focus,
 .btn-group > button.link:focus,
 .btn-group > .btn:active,
-.region-nav-main li .btn-group > a:active,
+.access-operations-drupal-portal .region-nav-main li .btn-group > a:active,
 .node-preview-container .btn-group > .node-preview-backlink:active,
 .btn-group > .button:active,
 .btn-group > button.link:active,
 .btn-group > .btn.active,
-.region-nav-main li .btn-group > a.active,
+.access-operations-drupal-portal .region-nav-main li .btn-group > a.active,
 .media-library-view--widget .view-header .btn-group > a.btn.is-active,
-.media-library-view--widget .view-header .region-nav-main li .btn-group > a.is-active,
-.region-nav-main li .media-library-view--widget .view-header .btn-group > a.is-active,
+.media-library-view--widget .view-header .access-operations-drupal-portal .region-nav-main li .btn-group > a.is-active,
+.access-operations-drupal-portal .region-nav-main li .media-library-view--widget .view-header .btn-group > a.is-active,
 .node-preview-container .btn-group > .active.node-preview-backlink,
 .node-preview-container .media-library-view--widget .view-header .btn-group > a.node-preview-backlink.is-active,
 .media-library-view--widget .view-header .node-preview-container .btn-group > a.node-preview-backlink.is-active,
@@ -3370,35 +3370,35 @@ textarea.form-control-lg {
 .media-library-view--widget .view-header .btn-group > a.button.is-active,
 .btn-group > button.active.link,
 .btn-group-vertical > .btn-check:checked + .btn,
-.region-nav-main li .btn-group-vertical > .btn-check:checked + a,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > .btn-check:checked + a,
 .node-preview-container .btn-group-vertical > .btn-check:checked + .node-preview-backlink,
 .btn-group-vertical > .btn-check:checked + .button,
 .btn-group-vertical > .btn-check:checked + button.link,
 .btn-group-vertical > .btn-check:focus + .btn,
-.region-nav-main li .btn-group-vertical > .btn-check:focus + a,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > .btn-check:focus + a,
 .node-preview-container .btn-group-vertical > .btn-check:focus + .node-preview-backlink,
 .btn-group-vertical > .btn-check:focus + .button,
 .btn-group-vertical > .btn-check:focus + button.link,
 .btn-group-vertical > .btn:hover,
-.region-nav-main li .btn-group-vertical > a:hover,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a:hover,
 .node-preview-container .btn-group-vertical > .node-preview-backlink:hover,
 .btn-group-vertical > .button:hover,
 .btn-group-vertical > button.link:hover,
 .btn-group-vertical > .btn:focus,
-.region-nav-main li .btn-group-vertical > a:focus,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a:focus,
 .node-preview-container .btn-group-vertical > .node-preview-backlink:focus,
 .btn-group-vertical > .button:focus,
 .btn-group-vertical > button.link:focus,
 .btn-group-vertical > .btn:active,
-.region-nav-main li .btn-group-vertical > a:active,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a:active,
 .node-preview-container .btn-group-vertical > .node-preview-backlink:active,
 .btn-group-vertical > .button:active,
 .btn-group-vertical > button.link:active,
 .btn-group-vertical > .btn.active,
-.region-nav-main li .btn-group-vertical > a.active,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a.active,
 .media-library-view--widget .view-header .btn-group-vertical > a.btn.is-active,
-.media-library-view--widget .view-header .region-nav-main li .btn-group-vertical > a.is-active,
-.region-nav-main li .media-library-view--widget .view-header .btn-group-vertical > a.is-active,
+.media-library-view--widget .view-header .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a.is-active,
+.access-operations-drupal-portal .region-nav-main li .media-library-view--widget .view-header .btn-group-vertical > a.is-active,
 .node-preview-container .btn-group-vertical > .active.node-preview-backlink,
 .node-preview-container .media-library-view--widget .view-header .btn-group-vertical > a.node-preview-backlink.is-active,
 .media-library-view--widget .view-header .node-preview-container .btn-group-vertical > a.node-preview-backlink.is-active,
@@ -3420,32 +3420,32 @@ textarea.form-control-lg {
 .btn-group {
   border-radius: 0.375rem;
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .region-nav-main li .btn-group > :not(.btn-check:first-child) + a, .node-preview-container .btn-group > :not(.btn-check:first-child) + .node-preview-backlink, .btn-group > :not(.btn-check:first-child) + .button, .btn-group > :not(.btn-check:first-child) + button.link,
+.btn-group > :not(.btn-check:first-child) + .btn, .access-operations-drupal-portal .region-nav-main li .btn-group > :not(.btn-check:first-child) + a, .node-preview-container .btn-group > :not(.btn-check:first-child) + .node-preview-backlink, .btn-group > :not(.btn-check:first-child) + .button, .btn-group > :not(.btn-check:first-child) + button.link,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .region-nav-main li .btn-group > a:not(:last-child):not(.dropdown-toggle), .node-preview-container .btn-group > .node-preview-backlink:not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:last-child):not(.dropdown-toggle), .btn-group > button.link:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .access-operations-drupal-portal .region-nav-main li .btn-group > a:not(:last-child):not(.dropdown-toggle), .node-preview-container .btn-group > .node-preview-backlink:not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:last-child):not(.dropdown-toggle), .btn-group > button.link:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
-.region-nav-main li .btn-group > a.dropdown-toggle-split:first-child,
+.access-operations-drupal-portal .region-nav-main li .btn-group > a.dropdown-toggle-split:first-child,
 .node-preview-container .btn-group > .dropdown-toggle-split.node-preview-backlink:first-child,
 .btn-group > .dropdown-toggle-split.button:first-child,
 .btn-group > button.dropdown-toggle-split.link:first-child,
 .btn-group > .btn-group:not(:last-child) > .btn,
-.region-nav-main li .btn-group > .btn-group:not(:last-child) > a,
+.access-operations-drupal-portal .region-nav-main li .btn-group > .btn-group:not(:last-child) > a,
 .node-preview-container .btn-group > .btn-group:not(:last-child) > .node-preview-backlink,
 .btn-group > .btn-group:not(:last-child) > .button,
 .btn-group > .btn-group:not(:last-child) > button.link {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .region-nav-main li .btn-group > a:nth-child(n+3), .node-preview-container .btn-group > .node-preview-backlink:nth-child(n+3), .btn-group > .button:nth-child(n+3), .btn-group > button.link:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .access-operations-drupal-portal .region-nav-main li .btn-group > a:nth-child(n+3), .node-preview-container .btn-group > .node-preview-backlink:nth-child(n+3), .btn-group > .button:nth-child(n+3), .btn-group > button.link:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
-.region-nav-main li .btn-group > :not(.btn-check) + a,
+.access-operations-drupal-portal .region-nav-main li .btn-group > :not(.btn-check) + a,
 .node-preview-container .btn-group > :not(.btn-check) + .node-preview-backlink,
 .btn-group > :not(.btn-check) + .button,
 .btn-group > :not(.btn-check) + button.link,
 .btn-group > .btn-group:not(:first-child) > .btn,
-.region-nav-main li .btn-group > .btn-group:not(:first-child) > a,
+.access-operations-drupal-portal .region-nav-main li .btn-group > .btn-group:not(:first-child) > a,
 .node-preview-container .btn-group > .btn-group:not(:first-child) > .node-preview-backlink,
 .btn-group > .btn-group:not(:first-child) > .button,
 .btn-group > .btn-group:not(:first-child) > button.link {
@@ -3464,12 +3464,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .region-nav-main li .btn-group-sm > a + .dropdown-toggle-split, .node-preview-container .btn-group-sm > .node-preview-backlink + .dropdown-toggle-split, .btn-group-sm > .button + .dropdown-toggle-split, .btn-group-sm > button.link + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .access-operations-drupal-portal .region-nav-main li .btn-group-sm > a + .dropdown-toggle-split, .node-preview-container .btn-group-sm > .node-preview-backlink + .dropdown-toggle-split, .btn-group-sm > .button + .dropdown-toggle-split, .btn-group-sm > button.link + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .region-nav-main li a + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .node-preview-container .btn-group-lg > .node-preview-backlink + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > button.link + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .access-operations-drupal-portal .region-nav-main li a + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .node-preview-container .btn-group-lg > .node-preview-backlink + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > button.link + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3479,26 +3479,26 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .region-nav-main li .btn-group-vertical > a, .node-preview-container .btn-group-vertical > .node-preview-backlink, .btn-group-vertical > .button, .btn-group-vertical > button.link,
+.btn-group-vertical > .btn, .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a, .node-preview-container .btn-group-vertical > .node-preview-backlink, .btn-group-vertical > .button, .btn-group-vertical > button.link,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .region-nav-main li .btn-group-vertical > a:not(:first-child), .node-preview-container .btn-group-vertical > .node-preview-backlink:not(:first-child), .btn-group-vertical > .button:not(:first-child), .btn-group-vertical > button.link:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a:not(:first-child), .node-preview-container .btn-group-vertical > .node-preview-backlink:not(:first-child), .btn-group-vertical > .button:not(:first-child), .btn-group-vertical > button.link:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .region-nav-main li .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), .node-preview-container .btn-group-vertical > .node-preview-backlink:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > button.link:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), .node-preview-container .btn-group-vertical > .node-preview-backlink:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > button.link:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
-.region-nav-main li .btn-group-vertical > .btn-group:not(:last-child) > a,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > .btn-group:not(:last-child) > a,
 .node-preview-container .btn-group-vertical > .btn-group:not(:last-child) > .node-preview-backlink,
 .btn-group-vertical > .btn-group:not(:last-child) > .button,
 .btn-group-vertical > .btn-group:not(:last-child) > button.link {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .region-nav-main li .btn-group-vertical > a ~ .btn, .region-nav-main li .btn-group-vertical > .btn ~ a, .region-nav-main li .btn-group-vertical > a ~ a, .node-preview-container .btn-group-vertical > .node-preview-backlink ~ .btn, .node-preview-container .region-nav-main li .btn-group-vertical > .node-preview-backlink ~ a, .region-nav-main li .node-preview-container .btn-group-vertical > .node-preview-backlink ~ a, .node-preview-container .btn-group-vertical > .btn ~ .node-preview-backlink, .node-preview-container .region-nav-main li .btn-group-vertical > a ~ .node-preview-backlink, .region-nav-main li .node-preview-container .btn-group-vertical > a ~ .node-preview-backlink, .node-preview-container .btn-group-vertical > .node-preview-backlink ~ .node-preview-backlink, .btn-group-vertical > .button ~ .btn, .region-nav-main li .btn-group-vertical > .button ~ a, .node-preview-container .btn-group-vertical > .button ~ .node-preview-backlink, .btn-group-vertical > .btn ~ .button, .region-nav-main li .btn-group-vertical > a ~ .button, .node-preview-container .btn-group-vertical > .node-preview-backlink ~ .button, .btn-group-vertical > .button ~ .button, .btn-group-vertical > button.link ~ .btn, .region-nav-main li .btn-group-vertical > button.link ~ a, .node-preview-container .btn-group-vertical > button.link ~ .node-preview-backlink, .btn-group-vertical > button.link ~ .button, .btn-group-vertical > .btn ~ button.link, .region-nav-main li .btn-group-vertical > a ~ button.link, .node-preview-container .btn-group-vertical > .node-preview-backlink ~ button.link, .btn-group-vertical > .button ~ button.link, .btn-group-vertical > button.link ~ button.link,
+.btn-group-vertical > .btn ~ .btn, .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a ~ .btn, .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > .btn ~ a, .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a ~ a, .node-preview-container .btn-group-vertical > .node-preview-backlink ~ .btn, .node-preview-container .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > .node-preview-backlink ~ a, .access-operations-drupal-portal .region-nav-main li .node-preview-container .btn-group-vertical > .node-preview-backlink ~ a, .node-preview-container .btn-group-vertical > .btn ~ .node-preview-backlink, .node-preview-container .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a ~ .node-preview-backlink, .access-operations-drupal-portal .region-nav-main li .node-preview-container .btn-group-vertical > a ~ .node-preview-backlink, .node-preview-container .btn-group-vertical > .node-preview-backlink ~ .node-preview-backlink, .btn-group-vertical > .button ~ .btn, .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > .button ~ a, .node-preview-container .btn-group-vertical > .button ~ .node-preview-backlink, .btn-group-vertical > .btn ~ .button, .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a ~ .button, .node-preview-container .btn-group-vertical > .node-preview-backlink ~ .button, .btn-group-vertical > .button ~ .button, .btn-group-vertical > button.link ~ .btn, .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > button.link ~ a, .node-preview-container .btn-group-vertical > button.link ~ .node-preview-backlink, .btn-group-vertical > button.link ~ .button, .btn-group-vertical > .btn ~ button.link, .access-operations-drupal-portal .region-nav-main li .btn-group-vertical > a ~ button.link, .node-preview-container .btn-group-vertical > .node-preview-backlink ~ button.link, .btn-group-vertical > .button ~ button.link, .btn-group-vertical > button.link ~ button.link,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
-.region-nav-main li .btn-group-vertical > .btn-group:not(:first-child) > a,
+.access-operations-drupal-portal .region-nav-main li .btn-group-vertical > .btn-group:not(:first-child) > a,
 .node-preview-container .btn-group-vertical > .btn-group:not(:first-child) > .node-preview-backlink,
 .btn-group-vertical > .btn-group:not(:first-child) > .button,
 .btn-group-vertical > .btn-group:not(:first-child) > button.link {
@@ -4657,7 +4657,7 @@ fieldset.form-item > .list-group + .card-footer {
   display: none;
 }
 
-.btn .badge, .region-nav-main li a .badge, .node-preview-container .node-preview-backlink .badge, .button .badge, button.link .badge {
+.btn .badge, .access-operations-drupal-portal .region-nav-main li a .badge, .node-preview-container .node-preview-backlink .badge, .button .badge, button.link .badge {
   position: relative;
   top: -1px;
 }
@@ -6562,7 +6562,7 @@ fieldset.form-item > .list-group + .card-footer {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .region-nav-main li a.placeholder::before, .node-preview-container .placeholder.node-preview-backlink::before, .placeholder.button::before, button.placeholder.link::before {
+.placeholder.btn::before, .access-operations-drupal-portal .region-nav-main li a.placeholder::before, .node-preview-container .placeholder.node-preview-backlink::before, .placeholder.button::before, button.placeholder.link::before {
   display: inline-block;
   content: "";
 }
@@ -6902,7 +6902,7 @@ fieldset.form-item > .list-group + .card-footer {
   display: inline !important;
 }
 
-.d-inline-block, .access-subdomain-global-navigation ul {
+.d-inline-block, .access-operations-drupal-portal .access-subdomain-global-navigation ul {
   display: inline-block !important;
 }
 
@@ -7375,7 +7375,7 @@ fieldset.form-item > .list-group + .card-footer {
   order: 6 !important;
 }
 
-.m-0, .access-subdomain-global-navigation ul li {
+.m-0, .access-operations-drupal-portal .access-subdomain-global-navigation ul li {
   margin: 0 !important;
 }
 
@@ -7916,12 +7916,12 @@ fieldset.form-item > .list-group + .card-footer {
 }
 
 /* rtl:end:remove */
-.text-dark, .bg-light, .btn.btn-link.bg-light, .region-nav-main li a.btn-link.bg-light, .node-preview-container button.btn.bg-light.node-preview-backlink.link, .node-preview-container .btn-link.node-preview-backlink.bg-light, button.link.bg-light, .btn.btn-link.text-dark, .region-nav-main li a.btn-link.text-dark, .node-preview-container .btn-link.text-dark.node-preview-backlink, .node-preview-container button.text-dark.node-preview-backlink.link, button.text-dark.link {
+.text-dark, .access-operations-drupal-portal .bg-light, .access-operations-drupal-portal .btn.btn-link.bg-light, .access-operations-drupal-portal .region-nav-main li a.btn-link.bg-light, .access-operations-drupal-portal button.btn.bg-light.link, .access-operations-drupal-portal .text-dark, .access-operations-drupal-portal .btn.btn-link.text-dark, .access-operations-drupal-portal .region-nav-main li a.btn-link.text-dark, .access-operations-drupal-portal button.btn.text-dark.link {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-light, .bg-dark, .btn.btn-link.bg-dark, .region-nav-main li a.btn-link.bg-dark, .node-preview-container button.btn.bg-dark.node-preview-backlink.link, .node-preview-container .btn-link.node-preview-backlink.bg-dark, button.link.bg-dark, .btn.btn-link.text-light, .region-nav-main li a.btn-link.text-light, .node-preview-container .btn-link.text-light.node-preview-backlink, .node-preview-container button.text-light.node-preview-backlink.link, button.text-light.link {
+.text-light, .access-operations-drupal-portal .bg-dark, .access-operations-drupal-portal .btn.btn-link.bg-dark, .access-operations-drupal-portal .region-nav-main li a.btn-link.bg-dark, .access-operations-drupal-portal button.btn.bg-dark.link, .access-operations-drupal-portal .text-light, .access-operations-drupal-portal .btn.btn-link.text-light, .access-operations-drupal-portal .region-nav-main li a.btn-link.text-light, .access-operations-drupal-portal button.btn.text-light.link {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
@@ -10776,10 +10776,10 @@ a.button.button--small {
   text-decoration: none;
 }
 
-.btn-outline-dark:hover a, .region-nav-main li a:hover a {
+.btn-outline-dark:hover a, .access-operations-drupal-portal .region-nav-main li a:hover a {
   color: #fff;
 }
-.btn-outline-dark a:hover, .region-nav-main li a a:hover {
+.btn-outline-dark a:hover, .access-operations-drupal-portal .region-nav-main li a a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -10808,20 +10808,20 @@ a.button.button--small {
   text-decoration: none;
 }
 
-.btn, .region-nav-main li a, .node-preview-container .node-preview-backlink, button.link,
+.btn, .access-operations-drupal-portal .region-nav-main li a, .node-preview-container .node-preview-backlink, button.link,
 .button, a.button {
   margin: 0 0.5rem;
 }
-.btn:first-child, .region-nav-main li a:first-child, .node-preview-container .node-preview-backlink:first-child, button.link:first-child,
+.btn:first-child, .access-operations-drupal-portal .region-nav-main li a:first-child, .node-preview-container .node-preview-backlink:first-child, button.link:first-child,
 .button:first-child {
   margin-left: 0;
 }
-.btn:last-child, .region-nav-main li a:last-child, .node-preview-container .node-preview-backlink:last-child, button.link:last-child,
+.btn:last-child, .access-operations-drupal-portal .region-nav-main li a:last-child, .node-preview-container .node-preview-backlink:last-child, button.link:last-child,
 .button:last-child {
   margin-right: 0;
 }
 
-.btn-group .btn, .btn-group .region-nav-main li a, .region-nav-main li .btn-group a, .btn-group .node-preview-container .node-preview-backlink, .node-preview-container .btn-group .node-preview-backlink, .btn-group button.link,
+.btn-group .btn, .btn-group .access-operations-drupal-portal .region-nav-main li a, .access-operations-drupal-portal .region-nav-main li .btn-group a, .btn-group .node-preview-container .node-preview-backlink, .node-preview-container .btn-group .node-preview-backlink, .btn-group button.link,
 .btn-group .button {
   margin: 0;
 }
@@ -11384,135 +11384,119 @@ code {
   overflow-y: auto;
 }
 
-:root {
+.access-operations-drupal-portal {
+  /*
+  *, :after, :before {
+      box-sizing:inherit
+  }
+  */
+  /*
+      margin: 0 auto;
+      */
+}
+.access-operations-drupal-portal :root {
   --teal-400: #48c0b9;
   --teal-600: #008597;
   --teal-700: #1a5b6e;
   --font-primary: "Archivo", Helvetica, Arial, sans-serif;
 }
-
-body {
+.access-operations-drupal-portal body {
   font-family: "Archivo", Helvetica, Arial, sans-serif;
 }
-
-.text-medium, .btn.btn-link.text-medium, .region-nav-main li a.btn-link.text-medium, .node-preview-container .btn-link.text-medium.node-preview-backlink, button.text-medium.link {
+.access-operations-drupal-portal .text-medium, .access-operations-drupal-portal .btn.btn-link.text-medium, .access-operations-drupal-portal .region-nav-main li a.btn-link.text-medium, .access-operations-drupal-portal button.btn.text-medium.link {
   color: #138597;
 }
-
-.text-orange, .bg-dark .btn.btn-link:hover, .bg-dark .region-nav-main li a.btn-link:hover, .region-nav-main li .bg-dark a.btn-link:hover, .bg-dark .btn-link.button:hover, .bg-dark .node-preview-container .btn-link.node-preview-backlink:hover, .bg-dark .node-preview-container button.node-preview-backlink.link:hover, .node-preview-container .bg-dark .btn-link.node-preview-backlink:hover, .node-preview-container .bg-dark button.node-preview-backlink.link:hover, .bg-dark button.link:hover, .btn.btn-link.text-orange, .region-nav-main li a.btn-link.text-orange, .node-preview-container .btn-link.text-orange.node-preview-backlink, button.text-orange.link, .bg-dark button.link:hover {
+.access-operations-drupal-portal .text-orange, .access-operations-drupal-portal .bg-dark .btn.btn-link:hover, .access-operations-drupal-portal .bg-dark .region-nav-main li a.btn-link:hover, .access-operations-drupal-portal .region-nav-main li .bg-dark a.btn-link:hover, .access-operations-drupal-portal .bg-dark button.btn.link:hover, .access-operations-drupal-portal .bg-dark .btn-link.button:hover, .access-operations-drupal-portal .bg-dark button.button.link:hover, .access-operations-drupal-portal .bg-dark .node-preview-container .btn-link.node-preview-backlink:hover, .access-operations-drupal-portal .bg-dark .node-preview-container button.node-preview-backlink.link:hover, .node-preview-container .access-operations-drupal-portal .bg-dark .btn-link.node-preview-backlink:hover, .node-preview-container .access-operations-drupal-portal .bg-dark button.node-preview-backlink.link:hover, .access-operations-drupal-portal .bg-dark button.link:hover, .access-operations-drupal-portal .btn.btn-link.text-orange, .access-operations-drupal-portal .region-nav-main li a.btn-link.text-orange, .access-operations-drupal-portal button.btn.text-orange.link {
   color: #F07537;
 }
-
-.text-yellow, .bg-dark .btn.btn-link, .bg-dark .region-nav-main li a.btn-link, .region-nav-main li .bg-dark a.btn-link, .bg-dark .node-preview-container button.btn.node-preview-backlink.link, .node-preview-container .bg-dark button.btn.node-preview-backlink.link, .bg-dark .btn-link.button, .bg-dark .node-preview-container .btn-link.node-preview-backlink, .node-preview-container .bg-dark .btn-link.node-preview-backlink, .bg-dark button.link, .btn.btn-link.text-yellow, .region-nav-main li a.btn-link.text-yellow, .node-preview-container .btn-link.text-yellow.node-preview-backlink, button.text-yellow.link {
+.access-operations-drupal-portal .text-yellow, .access-operations-drupal-portal .bg-dark .btn.btn-link, .access-operations-drupal-portal .bg-dark .region-nav-main li a.btn-link, .access-operations-drupal-portal .region-nav-main li .bg-dark a.btn-link, .access-operations-drupal-portal .bg-dark button.btn.link, .access-operations-drupal-portal .bg-dark .btn-link.button, .access-operations-drupal-portal .bg-dark .node-preview-container .btn-link.node-preview-backlink, .node-preview-container .access-operations-drupal-portal .bg-dark .btn-link.node-preview-backlink, .access-operations-drupal-portal .bg-dark button.link, .access-operations-drupal-portal .btn.btn-link.text-yellow, .access-operations-drupal-portal .region-nav-main li a.btn-link.text-yellow, .access-operations-drupal-portal button.btn.text-yellow.link {
   color: #FFC42D;
 }
-
-.bg-dark {
+.access-operations-drupal-portal .bg-dark {
   background-color: #1A5B6E;
 }
-.bg-dark h3, .bg-dark .h3 {
+.access-operations-drupal-portal .bg-dark h3, .access-operations-drupal-portal .bg-dark .h3 {
   color: #48C0B9;
 }
-
-.bg-medium {
+.access-operations-drupal-portal .bg-medium {
   background-color: #138597;
 }
-
-.bg-light {
+.access-operations-drupal-portal .bg-light {
   background-color: #ECF9F8;
 }
-
-*, * ::before, * ::after {
+.access-operations-drupal-portal *, .access-operations-drupal-portal * ::before, .access-operations-drupal-portal * ::after {
   box-sizing: border-box;
 }
-
-/*
-*, :after, :before {
-    box-sizing:inherit
-}
-*/
-.navbar {
+.access-operations-drupal-portal .navbar {
   --bs-navbar-padding-y: 0;
 }
-
-/*
-    margin: 0 auto;
-    */
-.region-nav-access-main {
+.access-operations-drupal-portal .region-nav-access-main {
   flex-direction: row;
   text-align: left;
 }
-.region-nav-access-main ul {
+.access-operations-drupal-portal .region-nav-access-main ul {
   height: 48px;
 }
-
-.region-nav-access-additional {
+.access-operations-drupal-portal .region-nav-access-additional {
   flex-direction: row;
   text-align: right;
 }
-
-footer .social-link {
+.access-operations-drupal-portal footer .social-link {
   text-decoration: none;
   transition: transform 0.1s ease;
   height: fit-content;
   margin: 0.75rem;
 }
-
-footer .social-link svg {
+.access-operations-drupal-portal footer .social-link svg {
   fill: #13294b !important;
   height: 55px;
   width: auto;
 }
-
-footer .social-link img {
+.access-operations-drupal-portal footer .social-link img {
   height: 45px;
   width: 45px;
 }
-
-footer .social-link:hover {
+.access-operations-drupal-portal footer .social-link:hover {
   text-decoration: none;
 }
-
-footer .social-link img:hover {
+.access-operations-drupal-portal footer .social-link img:hover {
   transform: scale(1.1);
 }
-
-footer p {
+.access-operations-drupal-portal footer p {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
 }
-footer p a.btn.btn-link, footer p .region-nav-main li a.btn-link, .region-nav-main li footer p a.btn-link, footer p a.btn-link.button, footer p .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container footer p a.btn-link.node-preview-backlink {
+.access-operations-drupal-portal footer p a.btn.btn-link, .access-operations-drupal-portal footer p .region-nav-main li a.btn-link, .access-operations-drupal-portal .region-nav-main li footer p a.btn-link, .access-operations-drupal-portal footer p a.btn-link.button, .access-operations-drupal-portal footer p .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container .access-operations-drupal-portal footer p a.btn-link.node-preview-backlink {
   text-decoration: none;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  user-select: auto;
 }
-footer p small, footer p .small {
+.access-operations-drupal-portal footer p small, .access-operations-drupal-portal footer p .small {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
 }
-footer a.btn.btn-link, footer .region-nav-main li a.btn-link, .region-nav-main li footer a.btn-link, footer a.btn-link.button, footer .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container footer a.btn-link.node-preview-backlink {
+.access-operations-drupal-portal footer a.btn.btn-link, .access-operations-drupal-portal footer .region-nav-main li a.btn-link, .access-operations-drupal-portal .region-nav-main li footer a.btn-link, .access-operations-drupal-portal footer a.btn-link.button, .access-operations-drupal-portal footer .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container .access-operations-drupal-portal footer a.btn-link.node-preview-backlink {
   color: #138597;
   text-decoration: none;
+  user-select: all;
 }
-footer a.btn.btn-link:hover, footer .region-nav-main li a.btn-link:hover, .region-nav-main li footer a.btn-link:hover, footer a.btn-link.button:hover, footer .node-preview-container a.btn-link.node-preview-backlink:hover, .node-preview-container footer a.btn-link.node-preview-backlink:hover {
+.access-operations-drupal-portal footer a.btn.btn-link:hover, .access-operations-drupal-portal footer .region-nav-main li a.btn-link:hover, .access-operations-drupal-portal .region-nav-main li footer a.btn-link:hover, .access-operations-drupal-portal footer a.btn-link.button:hover, .access-operations-drupal-portal footer .node-preview-container a.btn-link.node-preview-backlink:hover, .node-preview-container .access-operations-drupal-portal footer a.btn-link.node-preview-backlink:hover {
   text-decoration: underline;
 }
-footer .footer-policies a.btn.btn-link, footer .footer-policies .region-nav-main li a.btn-link, .region-nav-main li footer .footer-policies a.btn-link, footer .footer-policies a.btn-link.button, footer .footer-policies .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container footer .footer-policies a.btn-link.node-preview-backlink {
+.access-operations-drupal-portal footer .footer-policies a.btn.btn-link, .access-operations-drupal-portal footer .footer-policies .region-nav-main li a.btn-link, .access-operations-drupal-portal .region-nav-main li footer .footer-policies a.btn-link, .access-operations-drupal-portal footer .footer-policies a.btn-link.button, .access-operations-drupal-portal footer .footer-policies .node-preview-container a.btn-link.node-preview-backlink, .node-preview-container .access-operations-drupal-portal footer .footer-policies a.btn-link.node-preview-backlink {
   font-size: 12px;
   font-weight: 600;
 }
-footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more, .region-nav-main li footer a.btn-link.read-more, footer a.btn-link.read-more.button, footer .node-preview-container a.btn-link.read-more.node-preview-backlink, .node-preview-container footer a.btn-link.read-more.node-preview-backlink {
+.access-operations-drupal-portal footer a.btn.btn-link.read-more, .access-operations-drupal-portal footer .region-nav-main li a.btn-link.read-more, .access-operations-drupal-portal .region-nav-main li footer a.btn-link.read-more, .access-operations-drupal-portal footer a.btn-link.read-more.button, .access-operations-drupal-portal footer .node-preview-container a.btn-link.read-more.node-preview-backlink, .node-preview-container .access-operations-drupal-portal footer a.btn-link.read-more.node-preview-backlink {
   color: #138597;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
 }
-
-.btn-access-primary {
+.access-operations-drupal-portal .btn-access-primary {
   font-size: 14px;
   font-weight: 700;
   font-stretch: normal;
@@ -11527,19 +11511,17 @@ footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more
   text-decoration: none;
   vertical-align: middle;
 }
-
-.btn-access-primary:hover {
+.access-operations-drupal-portal .btn-access-primary:hover {
   color: #000;
   background-color: #fff;
   border-color: #000;
 }
-
-.region-nav-access-main .nav-menu-icon-no-text,
-.region-nav-access-additional .nav-menu-icon-no-text {
+.access-operations-drupal-portal .region-nav-access-main .nav-menu-icon-no-text,
+.access-operations-drupal-portal .region-nav-access-additional .nav-menu-icon-no-text {
   visibility: hidden;
 }
-.region-nav-access-main .nav-menu-icon::after,
-.region-nav-access-additional .nav-menu-icon::after {
+.access-operations-drupal-portal .region-nav-access-main .nav-menu-icon::after,
+.access-operations-drupal-portal .region-nav-access-additional .nav-menu-icon::after {
   visibility: visible;
   display: inline-block;
   height: 13px;
@@ -11551,31 +11533,31 @@ footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more
   background-position: 50%;
   margin-left: 5px;
 }
-.region-nav-access-main .nav-menu-icon-home::after,
-.region-nav-access-additional .nav-menu-icon-home::after {
+.access-operations-drupal-portal .region-nav-access-main .nav-menu-icon-home::after,
+.access-operations-drupal-portal .region-nav-access-additional .nav-menu-icon-home::after {
   background-image: url(../assets/img/icons/house-solid.svg);
 }
-.region-nav-access-main .nav-menu-icon-search::after,
-.region-nav-access-additional .nav-menu-icon-search::after {
+.access-operations-drupal-portal .region-nav-access-main .nav-menu-icon-search::after,
+.access-operations-drupal-portal .region-nav-access-additional .nav-menu-icon-search::after {
   background-image: url(../assets/img/icons/magnifying-glass-solid.svg);
 }
-.region-nav-access-main .nav-menu-icon-hamburger::after,
-.region-nav-access-additional .nav-menu-icon-hamburger::after {
+.access-operations-drupal-portal .region-nav-access-main .nav-menu-icon-hamburger::after,
+.access-operations-drupal-portal .region-nav-access-additional .nav-menu-icon-hamburger::after {
   background-image: url(../assets/img/icons/bars-solid.svg);
 }
-.region-nav-access-main .sf-depth-1 ul,
-.region-nav-access-additional .sf-depth-1 ul {
+.access-operations-drupal-portal .region-nav-access-main .sf-depth-1 ul,
+.access-operations-drupal-portal .region-nav-access-additional .sf-depth-1 ul {
   padding: 10px !important;
   background-color: #138597;
 }
-.region-nav-access-main ul li a, .region-nav-access-main ul li .menuparent,
-.region-nav-access-additional ul li a,
-.region-nav-access-additional ul li .menuparent {
+.access-operations-drupal-portal .region-nav-access-main ul li a, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent,
+.access-operations-drupal-portal .region-nav-access-additional ul li a,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent {
   text-decoration: none;
 }
-.region-nav-access-main ul li a.sf-depth-1, .region-nav-access-main ul li .menuparent.sf-depth-1,
-.region-nav-access-additional ul li a.sf-depth-1,
-.region-nav-access-additional ul li .menuparent.sf-depth-1 {
+.access-operations-drupal-portal .region-nav-access-main ul li a.sf-depth-1, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent.sf-depth-1,
+.access-operations-drupal-portal .region-nav-access-additional ul li a.sf-depth-1,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent.sf-depth-1 {
   color: #ECF9F8;
   background-color: #1A5B6E;
   font-weight: 800;
@@ -11583,16 +11565,16 @@ footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more
   padding: 16px 8px;
   height: 100%;
 }
-.region-nav-access-main ul li a.sf-depth-1:hover, .region-nav-access-main ul li a.sf-depth-1:focus, .region-nav-access-main ul li .menuparent.sf-depth-1:hover, .region-nav-access-main ul li .menuparent.sf-depth-1:focus,
-.region-nav-access-additional ul li a.sf-depth-1:hover,
-.region-nav-access-additional ul li a.sf-depth-1:focus,
-.region-nav-access-additional ul li .menuparent.sf-depth-1:hover,
-.region-nav-access-additional ul li .menuparent.sf-depth-1:focus {
+.access-operations-drupal-portal .region-nav-access-main ul li a.sf-depth-1:hover, .access-operations-drupal-portal .region-nav-access-main ul li a.sf-depth-1:focus, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent.sf-depth-1:hover, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent.sf-depth-1:focus,
+.access-operations-drupal-portal .region-nav-access-additional ul li a.sf-depth-1:hover,
+.access-operations-drupal-portal .region-nav-access-additional ul li a.sf-depth-1:focus,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent.sf-depth-1:hover,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent.sf-depth-1:focus {
   text-decoration: none;
 }
-.region-nav-access-main ul li a.sf-depth-2, .region-nav-access-main ul li .menuparent.sf-depth-2,
-.region-nav-access-additional ul li a.sf-depth-2,
-.region-nav-access-additional ul li .menuparent.sf-depth-2 {
+.access-operations-drupal-portal .region-nav-access-main ul li a.sf-depth-2, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent.sf-depth-2,
+.access-operations-drupal-portal .region-nav-access-additional ul li a.sf-depth-2,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent.sf-depth-2 {
   color: #ECF9F8;
   background-color: #138597;
   font-weight: 600;
@@ -11603,32 +11585,29 @@ footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more
   padding-left: 20px;
   padding-right: 20px;
 }
-.region-nav-access-main ul li a:hover, .region-nav-access-main ul li a:focus, .region-nav-access-main ul li .menuparent:hover, .region-nav-access-main ul li .menuparent:focus,
-.region-nav-access-additional ul li a:hover,
-.region-nav-access-additional ul li a:focus,
-.region-nav-access-additional ul li .menuparent:hover,
-.region-nav-access-additional ul li .menuparent:focus {
+.access-operations-drupal-portal .region-nav-access-main ul li a:hover, .access-operations-drupal-portal .region-nav-access-main ul li a:focus, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent:hover, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent:focus,
+.access-operations-drupal-portal .region-nav-access-additional ul li a:hover,
+.access-operations-drupal-portal .region-nav-access-additional ul li a:focus,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent:hover,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent:focus {
   color: #ECF9F8;
   background-color: #138597;
   text-decoration: underline;
 }
-.region-nav-access-main ul li a.active, .region-nav-access-main ul li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .region-nav-access-main ul li a.is-active, .region-nav-access-main ul li a.is-active, .region-nav-access-main ul li .menuparent.active, .region-nav-access-main ul li .menuparent.is-active,
-.region-nav-access-additional ul li a.active,
-.region-nav-access-additional ul li .media-library-view--widget .view-header a.is-active,
-.media-library-view--widget .view-header .region-nav-access-additional ul li a.is-active,
-.region-nav-access-additional ul li a.is-active,
-.region-nav-access-additional ul li .menuparent.active,
-.region-nav-access-additional ul li .menuparent.is-active {
+.access-operations-drupal-portal .region-nav-access-main ul li a.active, .access-operations-drupal-portal .region-nav-access-main ul li a.is-active, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent.active, .access-operations-drupal-portal .region-nav-access-main ul li .menuparent.is-active,
+.access-operations-drupal-portal .region-nav-access-additional ul li a.active,
+.access-operations-drupal-portal .region-nav-access-additional ul li a.is-active,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent.active,
+.access-operations-drupal-portal .region-nav-access-additional ul li .menuparent.is-active {
   color: #ECF9F8;
   background-color: #138597;
 }
-.region-nav-access-main ul li.sfHover a,
-.region-nav-access-additional ul li.sfHover a {
+.access-operations-drupal-portal .region-nav-access-main ul li.sfHover a,
+.access-operations-drupal-portal .region-nav-access-additional ul li.sfHover a {
   color: #ECF9F8;
   background-color: #138597;
 }
-
-.access-subdomain-global-navigation {
+.access-operations-drupal-portal .access-subdomain-global-navigation {
   border-color: #1A5B6E;
   border-style: solid;
   border-left-width: 0px;
@@ -11636,22 +11615,22 @@ footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more
   border-bottom-width: 0px;
   border-top-width: 3px;
 }
-.access-subdomain-global-navigation .block {
+.access-operations-drupal-portal .access-subdomain-global-navigation .block {
   line-height: 10px;
 }
-.access-subdomain-global-navigation .sf-depth-1 ul {
+.access-operations-drupal-portal .access-subdomain-global-navigation .sf-depth-1 ul {
   padding: 10px !important;
   background-color: #138597;
 }
-.access-subdomain-global-navigation ul li .sf-sub-indicator {
+.access-operations-drupal-portal .access-subdomain-global-navigation ul li .sf-sub-indicator {
   display: none;
 }
-.access-subdomain-global-navigation ul li a, .access-subdomain-global-navigation ul li span.nolink {
+.access-operations-drupal-portal .access-subdomain-global-navigation ul li a, .access-operations-drupal-portal .access-subdomain-global-navigation ul li span.nolink {
   background-color: #138597;
   color: #ECF9F8;
   text-decoration: none;
 }
-.access-subdomain-global-navigation ul li a.sf-depth-1, .access-subdomain-global-navigation ul li span.nolink.sf-depth-1 {
+.access-operations-drupal-portal .access-subdomain-global-navigation ul li a.sf-depth-1, .access-operations-drupal-portal .access-subdomain-global-navigation ul li span.nolink.sf-depth-1 {
   color: #1A5B6E;
   background-color: white;
   font-weight: 600;
@@ -11661,7 +11640,7 @@ footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more
   padding-left: 20px;
   padding-right: 20px;
 }
-.access-subdomain-global-navigation ul li a.sf-depth-2, .access-subdomain-global-navigation ul li span.nolink.sf-depth-2 {
+.access-operations-drupal-portal .access-subdomain-global-navigation ul li a.sf-depth-2, .access-operations-drupal-portal .access-subdomain-global-navigation ul li span.nolink.sf-depth-2 {
   color: #ECF9F8;
   background-color: #138597;
   font-weight: 600;
@@ -11672,99 +11651,91 @@ footer a.btn.btn-link.read-more, footer .region-nav-main li a.btn-link.read-more
   padding-left: 20px;
   padding-right: 20px;
 }
-.access-subdomain-global-navigation ul li a:hover, .access-subdomain-global-navigation ul li span.nolink:hover {
+.access-operations-drupal-portal .access-subdomain-global-navigation ul li a:hover, .access-operations-drupal-portal .access-subdomain-global-navigation ul li span.nolink:hover {
   background-color: #138597;
   color: #ECF9F8;
   text-decoration: underline;
   font-weight: 600;
 }
-.access-subdomain-global-navigation ul li a.active, .access-subdomain-global-navigation ul li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-subdomain-global-navigation ul li a.is-active, .access-subdomain-global-navigation ul li a.is-active, .access-subdomain-global-navigation ul li span.nolink.active, .access-subdomain-global-navigation ul li span.nolink.is-active {
+.access-operations-drupal-portal .access-subdomain-global-navigation ul li a.active, .access-operations-drupal-portal .access-subdomain-global-navigation ul li a.is-active, .access-operations-drupal-portal .access-subdomain-global-navigation ul li span.nolink.active, .access-operations-drupal-portal .access-subdomain-global-navigation ul li span.nolink.is-active {
   background-color: #1A5B6E;
   color: #ECF9F8;
 }
-.access-subdomain-global-navigation ul li.sfHover a, .access-subdomain-global-navigation ul li.sfHover span.nolink {
+.access-operations-drupal-portal .access-subdomain-global-navigation ul li.sfHover a, .access-operations-drupal-portal .access-subdomain-global-navigation ul li.sfHover span.nolink {
   background-color: #138597;
   color: #ECF9F8;
 }
-
-ul.sf-menu.sf-horizontal.sf-shadow ul,
-ul.sf-menu.sf-vertical.sf-shadow ul,
-ul.sf-menu.sf-navbar.sf-shadow ul ul {
+.access-operations-drupal-portal ul.sf-menu.sf-horizontal.sf-shadow ul,
+.access-operations-drupal-portal ul.sf-menu.sf-vertical.sf-shadow ul,
+.access-operations-drupal-portal ul.sf-menu.sf-navbar.sf-shadow ul ul {
   box-shadow: none;
 }
-
-ul.sf-menu li {
+.access-operations-drupal-portal ul.sf-menu li {
   height: 100%;
 }
-
-.branding-wrapper {
+.access-operations-drupal-portal .branding-wrapper {
   padding-top: 50px;
   padding-bottom: 64px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.branding-wrapper .nsf-logo {
+.access-operations-drupal-portal .branding-wrapper .nsf-logo {
   padding-right: 20px;
 }
-.branding-wrapper .nsf-logo img {
+.access-operations-drupal-portal .branding-wrapper .nsf-logo img {
   height: 82px;
   width: 82px;
 }
-.branding-wrapper .logo-divider {
+.access-operations-drupal-portal .branding-wrapper .logo-divider {
   padding-top: 6px;
   padding-bottom: 6px;
 }
-.branding-wrapper .logo-divider img {
+.access-operations-drupal-portal .branding-wrapper .logo-divider img {
   height: 70px;
 }
-.branding-wrapper .navbar-brand .site-logo {
+.access-operations-drupal-portal .branding-wrapper .navbar-brand .site-logo {
   padding-top: 22px;
   padding-left: 23px;
 }
-.branding-wrapper .navbar-brand .site-logo img {
+.access-operations-drupal-portal .branding-wrapper .navbar-brand .site-logo img {
   height: 75px;
   width: 253px;
 }
-
-h1, .h1 {
+.access-operations-drupal-portal h1, .access-operations-drupal-portal .h1 {
   font-size: 36px;
   font-stretch: 70%;
   font-weight: 400;
 }
-
-h2, .h2 {
+.access-operations-drupal-portal h2, .access-operations-drupal-portal .h2 {
   font-size: 24px;
   font-stretch: 70%;
   font-weight: 400;
 }
-
-h3, .h3 {
+.access-operations-drupal-portal h3, .access-operations-drupal-portal .h3 {
   font-size: 20px;
   font-stretch: 50%;
   font-weight: 400;
   color: #138597;
 }
-
-h4, .h4 {
+.access-operations-drupal-portal h4, .access-operations-drupal-portal .h4 {
   font-size: 16px;
   font-weight: 800;
 }
-
-.btn, .region-nav-main li a, button.link, .button, a.button, .node-preview-container .node-preview-backlink {
+.access-operations-drupal-portal .btn, .access-operations-drupal-portal .region-nav-main li a, .access-operations-drupal-portal button.link, .access-operations-drupal-portal .button, .access-operations-drupal-portal .node-preview-container .node-preview-backlink, .node-preview-container .access-operations-drupal-portal .node-preview-backlink {
   border-radius: 0px;
   border-width: 2px;
   border-style: solid;
   text-decoration: none;
   font-weight: 200;
 }
-.btn:hover, .region-nav-main li a:hover, button.link:hover, .button:hover, .node-preview-container .node-preview-backlink:hover, .btn.active, .region-nav-main li a.active, button.active.link, .active.button, .node-preview-container .active.node-preview-backlink, .media-library-view--widget .view-header a.btn.is-active, .media-library-view--widget .view-header .region-nav-main li a.is-active, .region-nav-main li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header a.button.is-active, .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active, .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active {
+.access-operations-drupal-portal .btn:hover, .access-operations-drupal-portal .region-nav-main li a:hover, .access-operations-drupal-portal button.link:hover, .access-operations-drupal-portal .button:hover, .access-operations-drupal-portal .node-preview-container .node-preview-backlink:hover, .node-preview-container .access-operations-drupal-portal .node-preview-backlink:hover, .access-operations-drupal-portal .btn.active, .access-operations-drupal-portal .region-nav-main li a.active, .access-operations-drupal-portal button.active.link, .access-operations-drupal-portal .active.button, .access-operations-drupal-portal .node-preview-container .active.node-preview-backlink, .node-preview-container .access-operations-drupal-portal .active.node-preview-backlink, .access-operations-drupal-portal .media-library-view--widget .view-header a.btn.is-active, .access-operations-drupal-portal .media-library-view--widget .view-header .region-nav-main li a.is-active, .access-operations-drupal-portal .region-nav-main li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .access-operations-drupal-portal a.btn.is-active, .media-library-view--widget .view-header .access-operations-drupal-portal .region-nav-main li a.is-active, .access-operations-drupal-portal .media-library-view--widget .view-header a.button.is-active, .media-library-view--widget .view-header .access-operations-drupal-portal a.button.is-active, .access-operations-drupal-portal .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active, .node-preview-container .media-library-view--widget .view-header .access-operations-drupal-portal a.node-preview-backlink.is-active, .access-operations-drupal-portal .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active, .media-library-view--widget .view-header .node-preview-container .access-operations-drupal-portal a.node-preview-backlink.is-active {
   text-decoration: none;
   font-weight: 200;
   background-color: white;
   border-color: black;
   color: black;
 }
-.btn.btn-link, .region-nav-main li a.btn-link, .btn-link.button, .node-preview-container .btn-link.node-preview-backlink, .node-preview-container button.node-preview-backlink.link, button.link {
+.access-operations-drupal-portal .btn.btn-link, .access-operations-drupal-portal .region-nav-main li a.btn-link, .access-operations-drupal-portal button.btn.link, .access-operations-drupal-portal .btn-link.button, .access-operations-drupal-portal .node-preview-container .btn-link.node-preview-backlink, .node-preview-container .access-operations-drupal-portal .btn-link.node-preview-backlink, .access-operations-drupal-portal button.link {
   margin: 0px;
   padding: 0px;
   width: initial;
@@ -11776,19 +11747,20 @@ h4, .h4 {
   border: none;
   background-color: transparent;
   word-break: break-word;
+  user-select: auto;
 }
-.btn.btn-link:hover, .region-nav-main li a.btn-link:hover, .btn-link.button:hover, .node-preview-container .btn-link.node-preview-backlink:hover, button.link:hover {
+.access-operations-drupal-portal .btn.btn-link:hover, .access-operations-drupal-portal .region-nav-main li a.btn-link:hover, .access-operations-drupal-portal .btn-link.button:hover, .access-operations-drupal-portal .node-preview-container .btn-link.node-preview-backlink:hover, .node-preview-container .access-operations-drupal-portal .btn-link.node-preview-backlink:hover, .access-operations-drupal-portal button.link:hover {
   text-decoration: underline;
   font-weight: bold;
   background-color: transparent;
   border: none;
   color: #138597;
 }
-.btn.btn-primary, .region-nav-main li a.btn-primary, button.btn-primary.link, .btn-primary.button, .node-preview-container .btn-primary.node-preview-backlink {
+.access-operations-drupal-portal .btn.btn-primary, .access-operations-drupal-portal .region-nav-main li a.btn-primary, .access-operations-drupal-portal button.btn-primary.link, .access-operations-drupal-portal .btn-primary.button, .access-operations-drupal-portal .node-preview-container .btn-primary.node-preview-backlink, .node-preview-container .access-operations-drupal-portal .btn-primary.node-preview-backlink {
   border-color: #FFC42D;
   background-color: #FFC42D;
 }
-.access-subdomain-breadcrumb-wrapper {
+.access-operations-drupal-portal .access-subdomain-breadcrumb-wrapper {
   padding: 9.5px;
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -11797,31 +11769,30 @@ h4, .h4 {
   border-style: solid;
   border-color: #6c757d;
 }
-.access-subdomain-breadcrumb-wrapper .breadcrumb {
+.access-operations-drupal-portal .access-subdomain-breadcrumb-wrapper .breadcrumb {
   margin: 0px;
 }
-.access-subdomain-breadcrumb-wrapper .breadcrumb li a {
+.access-operations-drupal-portal .access-subdomain-breadcrumb-wrapper .breadcrumb li a {
   color: #1A5B6E;
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
 }
-.access-subdomain-breadcrumb-wrapper .breadcrumb li a:hover {
+.access-operations-drupal-portal .access-subdomain-breadcrumb-wrapper .breadcrumb li a:hover {
   color: #138597;
   text-decoration: underline;
 }
-
-.region-nav-main li {
+.access-operations-drupal-portal .region-nav-main li {
   padding: 10px;
 }
-.views-row .ui-state-active,
-.views-row .ui-accordion .ui-accordion-header {
+.access-operations-drupal-portal .views-row .ui-state-active,
+.access-operations-drupal-portal .views-row .ui-accordion .ui-accordion-header {
   color: #138597;
   background: white;
   border-color: #dddddd;
 }
-.views-row .ui-state-active .field-content a,
-.views-row .ui-accordion .ui-accordion-header .field-content a {
+.access-operations-drupal-portal .views-row .ui-state-active .field-content a,
+.access-operations-drupal-portal .views-row .ui-accordion .ui-accordion-header .field-content a {
   color: #1A5B6E;
 }
 
