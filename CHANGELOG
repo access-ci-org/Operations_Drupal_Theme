@@ -1,3 +1,6 @@
+v0.3.37 20240820      Dinuka De Silva
+  - Adding the "access-operations-drupal-portal" parent CSS class for all of the CSS including bootstrap
+
 v0.3.36 20240819      Dinuka De Silva
   - Adding the "access-operations-drupal-portal" parent CSS class for ACCESS styles
   - Making the link text selectable.

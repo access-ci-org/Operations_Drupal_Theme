@@ -1,554 +1,553 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,70,400;0,100,400;0,100,600;0,100,800;1,100,400&display=swap");
 
-.access-operations-drupal-portal {
-  :root {
-    --teal-400: #48c0b9;
-    --teal-600: #008597;
-    --teal-700: #1a5b6e;
-    --font-primary: "Archivo", Helvetica, Arial, sans-serif;
-  }
+* {
+  --teal-400: #48c0b9;
+  --teal-600: #008597;
+  --teal-700: #1a5b6e;
+  --font-primary: "Archivo", Helvetica, Arial, sans-serif;
+}
 
-  body {
-    font-family: "Archivo", Helvetica, Arial, sans-serif;
-  }
+body {
+  font-family: "Archivo", Helvetica, Arial, sans-serif;
+}
 
-  .text-dark, .btn.btn-link.text-dark {
-    @extend .text-dark
-  }
+.text-dark, .btn.btn-link.text-dark {
+  @extend .text-dark
+}
 
-  .text-light, .btn.btn-link.text-light {
-    @extend .text-light
-  }
+.text-light, .btn.btn-link.text-light {
+  @extend .text-light
+}
 
-  .text-medium, .btn.btn-link.text-medium {
-    color: $access-medium;
-  }
+.text-medium, .btn.btn-link.text-medium {
+  color: $access-medium;
+}
 
-  .text-orange, .btn.btn-link.text-orange {
-    color: $access-orange;
-  }
+.text-orange, .btn.btn-link.text-orange {
+  color: $access-orange;
+}
 
-  .text-yellow, .btn.btn-link.text-yellow {
-    color: $access-yellow;
-  }
+.text-yellow, .btn.btn-link.text-yellow {
+  color: $access-yellow;
+}
 
-  .bg-dark {
-    background-color: $access-dark;
+.bg-dark {
+  background-color: $access-dark;
 
-    @extend .text-light;
+  @extend .text-light;
 
-    .btn.btn-link {
-      @extend .text-yellow;
+  .btn.btn-link {
+    @extend .text-yellow;
 
-      &:hover {
-        @extend .text-orange;
-      }
-    }
-
-    h3, .h3 {
-      color: $access-teal;
+    &:hover {
+      @extend .text-orange;
     }
   }
 
-  .bg-medium {
-    background-color: $access-medium;
+  h3, .h3 {
+    color: $access-teal;
   }
+}
 
-  .bg-light {
-    background-color: $access-light;
+.bg-medium {
+  background-color: $access-medium;
+}
 
-    @extend .text-dark;
+.bg-light {
+  background-color: $access-light;
+
+  @extend .text-dark;
+}
+
+
+*, * ::before, * ::after {
+  box-sizing: border-box
+}
+
+/*
+*, :after, :before {
+    box-sizing:inherit
+}
+*/
+
+.navbar {
+  --bs-navbar-padding-y: 0;
+}
+
+/*
+    margin: 0 auto;
+    */
+.region-nav-access-main {
+  flex-direction: row;
+  text-align: left;
+
+  ul {
+    height: 48px;
   }
+}
 
+.region-nav-access-additional {
+  flex-direction: row;
+  text-align: right
+}
 
-  *, * ::before, * ::after {
-    box-sizing: border-box
-  }
+footer .social-link {
+  text-decoration: none;
+  transition: transform .1s ease;
+  height: fit-content;
+  margin: 0.75rem
+}
 
-  /*
-  *, :after, :before {
-      box-sizing:inherit
-  }
-  */
+footer .social-link svg {
+  fill: #13294b !important;
+  height: 55px;
+  width: auto
+}
 
-  .navbar {
-    --bs-navbar-padding-y: 0;
-  }
+footer .social-link img {
+  height: 45px;
+  width: 45px;
+}
 
-  /*
-      margin: 0 auto;
-      */
-  .region-nav-access-main {
-    flex-direction: row;
-    text-align: left;
+footer .social-link:hover {
+  text-decoration: none;
+}
 
-    ul {
-      height: 48px;
-    }
-  }
+footer .social-link img:hover {
+  transform: scale(1.1)
+}
 
-  .region-nav-access-additional {
-    flex-direction: row;
-    text-align: right
-  }
+footer {
 
-  footer .social-link {
-    text-decoration: none;
-    transition: transform .1s ease;
-    height: fit-content;
-    margin: 0.75rem
-  }
-
-  footer .social-link svg {
-    fill: #13294b !important;
-    height: 55px;
-    width: auto
-  }
-
-  footer .social-link img {
-    height: 45px;
-    width: 45px;
-  }
-
-  footer .social-link:hover {
-    text-decoration: none;
-  }
-
-  footer .social-link img:hover {
-    transform: scale(1.1)
-  }
-
-  footer {
-
-    p {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 24px;
-
-      a.btn.btn-link {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 24px;
-      }
-
-      small {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 18px;
-      }
-    }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
 
     a.btn.btn-link {
-      color: $access-medium;
       text-decoration: none;
-      user-select: all;
-
-      &:hover {
-        text-decoration: underline;
-      }
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 24px;
     }
 
-    .footer-policies a.btn.btn-link {
+    small {
       font-size: 12px;
-      font-weight: 600;
-    }
-
-    a.btn.btn-link.read-more {
-      color: $access-medium;
-      font-size: 14px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 18px;
     }
   }
 
-  .btn-access-primary {
-    font-size: 14px;
-    font-weight: 700;
-    font-stretch: normal;
-    font-style: normal;
-    color: #000;
-    box-sizing: border-box;
-    background-color: #fec42d;
-    border-color: #fec42d;
-    border-radius: 0;
-    border-width: 4px;
-    padding: 8px;
+  a.btn.btn-link {
+    color: $access-medium;
     text-decoration: none;
-    vertical-align: middle;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
-  .btn-access-primary:hover {
-    color: #000;
-    background-color: #fff;
-    border-color: #000;
+  .footer-policies a.btn.btn-link {
+    font-size: 12px;
+    font-weight: 600;
   }
 
-  .region-nav-access-main,
-  .region-nav-access-additional {
-    //ul.sf-menu li.menuparent a {
-    //    &:hover, &:active, &:focus {
-    //        color: $access-light;
-    //        background-color: $access-medium;
-    //    }
-    //}
+  a.btn.btn-link.read-more {
+    color: $access-medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+
+.btn-access-primary {
+  font-size: 14px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  color: #000;
+  box-sizing: border-box;
+  background-color: #fec42d;
+  border-color: #fec42d;
+  border-radius: 0;
+  border-width: 4px;
+  padding: 8px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.btn-access-primary:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+
+.region-nav-access-main,
+.region-nav-access-additional {
+  //ul.sf-menu li.menuparent a {
+  //    &:hover, &:active, &:focus {
+  //        color: $access-light;
+  //        background-color: $access-medium;
+  //    }
+  //}
 
 
-    .nav-menu-icon-no-text {
-      visibility: hidden;
-    }
+  .nav-menu-icon-no-text {
+    visibility: hidden;
+  }
 
-    .nav-menu-icon::after {
-      visibility: visible;
-      display: inline-block;
-      height: 13px;
-      width: 16px;
-      overflow: visible;
-      content: " ";
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      margin-left: 5px;
-    }
+  .nav-menu-icon::after {
+    visibility: visible;
+    display: inline-block;
+    height: 13px;
+    width: 16px;
+    overflow: visible;
+    content: " ";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: 5px;
+  }
 
-    .nav-menu-icon-home::after {
-      background-image: url(../assets/img/icons/house-solid.svg);
-    }
+  .nav-menu-icon-home::after {
+    background-image: url(../assets/img/icons/house-solid.svg);
+  }
 
-    .nav-menu-icon-search::after {
-      background-image: url(../assets/img/icons/magnifying-glass-solid.svg);
-    }
+  .nav-menu-icon-search::after {
+    background-image: url(../assets/img/icons/magnifying-glass-solid.svg);
+  }
 
-    .nav-menu-icon-hamburger::after {
-      background-image: url(../assets/img/icons/bars-solid.svg);
-    }
+  .nav-menu-icon-hamburger::after {
+    background-image: url(../assets/img/icons/bars-solid.svg);
+  }
 
-    .sf-depth-1 {
-      ul {
-        padding: 10px !important;
-        background-color: $access-medium;
-      }
-    }
-
+  .sf-depth-1 {
     ul {
-      li {
+      padding: 10px !important;
+      background-color: $access-medium;
+    }
+  }
 
-        a, .menuparent {
+  ul {
+    li {
 
-          &.sf-depth-1 {
-            color: $access-light;
-            background-color: $access-dark;
-            font-weight: 800;
-            font-size: 14px;
-            padding: 16px 8px;
-            height: 100%;
+      a, .menuparent {
 
-            &:hover, &:focus {
-              text-decoration: none;
-            }
-          }
-
-          &.sf-depth-2 {
-            color: $access-light;
-            background-color: $access-medium;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 16px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            padding-left: 20px;
-            padding-right: 20px;
-          }
-
-          text-decoration: none;
+        &.sf-depth-1 {
+          color: $access-light;
+          background-color: $access-dark;
+          font-weight: 800;
+          font-size: 14px;
+          padding: 16px 8px;
+          height: 100%;
 
           &:hover, &:focus {
-            color: $access-light;
-            background-color: $access-medium;
-            text-decoration: underline;
-          }
-
-          &.active, &.is-active {
-            color: $access-light;
-            background-color: $access-medium;
+            text-decoration: none;
           }
         }
 
-        &.sfHover a {
+        &.sf-depth-2 {
           color: $access-light;
           background-color: $access-medium;
-        }
-      }
-    }
-  }
-
-  .access-subdomain-global-navigation {
-    border-color: $access-dark;
-    border-style: solid;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-top-width: 3px;
-
-    .block {
-      line-height: 10px;
-    }
-
-    .sf-depth-1 {
-      ul {
-        padding: 10px !important;
-        background-color: $access-medium;
-      }
-    }
-
-    ul {
-      @extend .d-inline-block;
-      @extend .list-inline;
-
-      li {
-        @extend .list-inline-item;
-        @extend .m-0;
-
-        .sf-sub-indicator {
-          display: none;
-        }
-
-        a, span.nolink {
-          background-color: $access-medium;
-          color: $access-light;
-
-          text-decoration: none;
-
-          &.sf-depth-1 {
-            color: $access-dark;
-            background-color: white;
-            font-weight: 600;
-            font-size: 16px;
-            padding-top: 15px;
-            padding-bottom: 14px;
-            padding-left: 20px;
-            padding-right: 20px;
-          }
-
-          &.sf-depth-2 {
-            color: $access-light;
-            background-color: $access-medium;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 18px;
-            padding-top: 9px;
-            padding-bottom: 9px;
-            padding-left: 20px;
-            padding-right: 20px;
-          }
-
-          &:hover {
-            background-color: $access-medium;
-            color: $access-light;
-
-            text-decoration: underline;
-            font-weight: 600;
-          }
-
-          &.active, &.is-active {
-            background-color: $access-dark;
-            color: $access-light;
-          }
-        }
-
-        &.sfHover {
-          a, span.nolink {
-            background-color: $access-medium;
-            color: $access-light;
-          }
-        }
-      }
-    }
-  }
-
-  ul.sf-menu.sf-horizontal.sf-shadow ul,
-  ul.sf-menu.sf-vertical.sf-shadow ul,
-  ul.sf-menu.sf-navbar.sf-shadow ul ul {
-    box-shadow: none;
-  }
-
-  ul.sf-menu li {
-    height: 100%;
-  }
-
-  .branding-wrapper {
-    padding-top: 50px;
-    padding-bottom: 64px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    .nsf-logo {
-      padding-right: 20px;
-
-      img {
-        height: 82px;
-        width: 82px;
-      }
-    }
-
-    .logo-divider {
-      padding-top: 6px;
-      padding-bottom: 6px;
-
-      img {
-        height: 70px;
-      }
-    }
-
-    .navbar-brand {
-      .site-logo {
-        padding-top: 22px;
-        padding-left: 23px;
-
-        img {
-          height: 75px;
-          width: 253px;
-        }
-      }
-    }
-  }
-
-  h1, .h1 {
-    font-size: 36px;
-    font-stretch: 70%;
-    font-weight: 400;
-    //text-transform: uppercase;
-  }
-
-  h2, .h2 {
-    font-size: 24px;
-    font-stretch: 70%;
-    font-weight: 400;
-    //text-transform: uppercase;
-  }
-
-  h3, .h3 {
-    font-size: 20px;
-    font-stretch: 50%;
-    font-weight: 400;
-    color: $access-medium
-    //text-transform: uppercase;
-  }
-
-  h4, .h4 {
-    font-size: 16px;
-    font-weight: 800;
-  }
-
-  .btn {
-    border-radius: 0px;
-    border-width: 2px;
-    border-style: solid;
-    text-decoration: none;
-    font-weight: 200;
-
-    &:hover, &.active {
-      text-decoration: none;
-      font-weight: 200;
-      background-color: white;
-      border-color: black;
-      color: black;
-    }
-
-    &.btn-link {
-      @extend .btn-link;
-      margin: 0px;
-      padding: 0px;
-      width: initial;
-      text-align: left;
-      font-size: inherit;
-      color: black;
-      text-decoration: underline;
-      font-weight: bold;
-      border: none;
-      background-color: transparent;
-      word-break: break-word;
-      user-select: auto;
-
-      &:hover {
-        text-decoration: underline;
-        font-weight: bold;
-        background-color: transparent;
-        border: none;
-        color: $access-medium;
-      }
-    }
-
-    &.btn-primary {
-      border-color: $access-yellow;
-      background-color: $access-yellow;
-    }
-
-    .btn-outline-primary,
-    .btn-outline-secondary,
-    .btn-outline-success,
-    .btn-outline-danger,
-    .btn-outline-warning,
-    .btn-outline-info,
-    .btn-outline-light,
-    .btn-outline-dark {
-
-    }
-  }
-
-  .access-subdomain-breadcrumb-wrapper {
-    padding: 9.5px;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-style: solid;
-    border-color: $access-secondary;
-
-    .breadcrumb {
-      margin: 0px;
-
-      li {
-        a {
-          color: $access-dark;
-          text-decoration: none;
-          font-weight: 400;
+          font-weight: 600;
           font-size: 14px;
+          line-height: 16px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
 
-          &:hover {
-            color: $access-medium;
-            text-decoration: underline;
-          }
+        text-decoration: none;
+
+        &:hover, &:focus {
+          color: $access-light;
+          background-color: $access-medium;
+          text-decoration: underline;
+        }
+
+        &.active, &.is-active {
+          color: $access-light;
+          background-color: $access-medium;
         }
       }
-    }
 
-  }
-
-  .region-nav-main {
-    li {
-      padding: 10px;
-
-      a {
-        @extend .btn;
-        @extend .btn-lg;
-        @extend .btn-outline-dark;
-      }
-    }
-  }
-
-  .views-row {
-    .ui-state-active,
-    .ui-accordion .ui-accordion-header {
-      color: $access-medium;
-      background: white;
-      border-color: #dddddd;
-
-      .field-content a {
-        color: $access-dark;
+      &.sfHover a {
+        color: $access-light;
+        background-color: $access-medium;
       }
     }
   }
 }
+
+.access-subdomain-global-navigation {
+  border-color: $access-dark;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 3px;
+
+  .block {
+    line-height: 10px;
+  }
+
+  .sf-depth-1 {
+    ul {
+      padding: 10px !important;
+      background-color: $access-medium;
+    }
+  }
+
+  ul {
+    @extend .d-inline-block;
+    @extend .list-inline;
+
+    li {
+      @extend .list-inline-item;
+      @extend .m-0;
+
+      .sf-sub-indicator {
+        display: none;
+      }
+
+      a, span.nolink {
+        background-color: $access-medium;
+        color: $access-light;
+
+        text-decoration: none;
+
+        &.sf-depth-1 {
+          color: $access-dark;
+          background-color: white;
+          font-weight: 600;
+          font-size: 16px;
+          padding-top: 15px;
+          padding-bottom: 14px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        &.sf-depth-2 {
+          color: $access-light;
+          background-color: $access-medium;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 18px;
+          padding-top: 9px;
+          padding-bottom: 9px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        &:hover {
+          background-color: $access-medium;
+          color: $access-light;
+
+          text-decoration: underline;
+          font-weight: 600;
+        }
+
+        &.active, &.is-active {
+          background-color: $access-dark;
+          color: $access-light;
+        }
+      }
+
+      &.sfHover {
+        a, span.nolink {
+          background-color: $access-medium;
+          color: $access-light;
+        }
+      }
+    }
+  }
+}
+
+ul.sf-menu.sf-horizontal.sf-shadow ul,
+ul.sf-menu.sf-vertical.sf-shadow ul,
+ul.sf-menu.sf-navbar.sf-shadow ul ul {
+  box-shadow: none;
+}
+
+ul.sf-menu li {
+  height: 100%;
+}
+
+.branding-wrapper {
+  padding-top: 50px;
+  padding-bottom: 64px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .nsf-logo {
+    padding-right: 20px;
+
+    img {
+      height: 82px;
+      width: 82px;
+    }
+  }
+
+  .logo-divider {
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .navbar-brand {
+    .site-logo {
+      padding-top: 22px;
+      padding-left: 23px;
+
+      img {
+        height: 75px;
+        width: 253px;
+      }
+    }
+  }
+}
+
+h1, .h1 {
+  font-size: 36px;
+  font-stretch: 70%;
+  font-weight: 400;
+  //text-transform: uppercase;
+}
+
+h2, .h2 {
+  font-size: 24px;
+  font-stretch: 70%;
+  font-weight: 400;
+  //text-transform: uppercase;
+}
+
+h3, .h3 {
+  font-size: 20px;
+  font-stretch: 50%;
+  font-weight: 400;
+  color: $access-medium
+  //text-transform: uppercase;
+}
+
+h4, .h4 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.btn {
+  border-radius: 0px;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  font-weight: 200;
+  user-select: auto;
+
+  &:hover, &.active {
+    text-decoration: none;
+    font-weight: 200;
+    background-color: white;
+    border-color: black;
+    color: black;
+  }
+
+  &.btn-link {
+    @extend .btn-link;
+    margin: 0px;
+    padding: 0px;
+    width: initial;
+    text-align: left;
+    font-size: inherit;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    word-break: break-word;
+    user-select: auto;
+
+    &:hover {
+      text-decoration: underline;
+      font-weight: bold;
+      background-color: transparent;
+      border: none;
+      color: $access-medium;
+    }
+  }
+
+  &.btn-primary {
+    border-color: $access-yellow;
+    background-color: $access-yellow;
+  }
+
+  .btn-outline-primary,
+  .btn-outline-secondary,
+  .btn-outline-success,
+  .btn-outline-danger,
+  .btn-outline-warning,
+  .btn-outline-info,
+  .btn-outline-light,
+  .btn-outline-dark {
+
+  }
+}
+
+.access-subdomain-breadcrumb-wrapper {
+  padding: 9.5px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: $access-secondary;
+
+  .breadcrumb {
+    margin: 0px;
+
+    li {
+      a {
+        color: $access-dark;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+
+        &:hover {
+          color: $access-medium;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}
+
+.region-nav-main {
+  li {
+    padding: 10px;
+
+    a {
+      @extend .btn;
+      @extend .btn-lg;
+      @extend .btn-outline-dark;
+    }
+  }
+}
+
+.views-row {
+  .ui-state-active,
+  .ui-accordion .ui-accordion-header {
+    color: $access-medium;
+    background: white;
+    border-color: #dddddd;
+
+    .field-content a {
+      color: $access-dark;
+    }
+  }
+}
+
 
 
