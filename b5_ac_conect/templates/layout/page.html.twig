@@ -51,58 +51,15 @@
     (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
     (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
     (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ') %}
+        <div id="universal-menus"></div>
+    <div id="header"></div>
+    <div id="site-menus"></div>
 
-<header data-elastic-exclude="true">
-    {{ page.header }}
 
-    {% if page.nav_access_main or page.nav_access_additional %}
-        <div class="bg-dark">
-            <nav class="{{ nav_classes }}">
-                <div class="{{ b5_top_container }} d-flex   w-100 py-0 py-md-0">
-                    {{ page.nav_access_main }}
-                    {{ page.nav_access_additional }}
-                </div>
-            </nav>
-        </div>
-    {% endif %}
 
-    {% if page.nav_branding or page.nav_main %}
-        <nav class="{{ nav_classes }}">
-            <div class="{{ b5_top_container }} d-flex w-100 branding-wrapper">
-                <div class="d-flex">
-                    <a class="nsf-logo" href="https://www.nsf.gov/" target="_blank">
-                        <img src="/themes/contrib/b5_ac_conect/logos/NSF_logo.svg" />
-                    </a>
-                    <div class="logo-divider">
-                        <img src="/themes/contrib/b5_ac_conect/logos/ACCESS-pipe.svg" />
-                    </div>
-                    {{ page.nav_branding }}
-                </div>
-                {{ page.nav_main }}
-            </div>
-        </nav>
-    {% endif %}
-
-</header>
-
-<main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    {% set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3' %}
-
-    {% set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3' %}
-
-    {% set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' ) %}
-
+<main role="main" id="main" class="container">
 
     <div>
-        {% if page.nav_additional %}
-            <div class="border-dark text-end access-subdomain-global-navigation">
-                <div class="{{ b5_top_container }}">
-                    {{ page.nav_additional }}
-                </div>
-            </div>
-        {% endif %}
         {% if page.breadcrumb %}
             <div class="w-100 access-subdomain-breadcrumb-wrapper">
                 <div class="{{ b5_top_container }}">
@@ -127,74 +84,100 @@
         </div>
     </div>
 
+
+  <div id="table-of-contents"></div>
 </main>
 
-{% if page.footer %}
-    <footer class="mt-auto {{ footer_classes }}" data-elastic-exclude="true">
-        <div class="{{ b5_top_container }}">
-            <div class="row pt-4">
-                <div class="col-md-6 col-sm-12">
-                    <p>
-                        ACCESS is an advanced computing and data resource program supported by the U.S. National
-                        Science Foundation (NSF) under the Office of Advanced Cyberinfrastructure awards
-                        <a class="btn btn-link"
-                            href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2138259&HistoricalAwards=false">
-                            #2138259</a>,
-                        <a class="btn btn-link"
-                            href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2138286&HistoricalAwards=false">
-                            #2138286</a>,
-                        <a class="btn btn-link"
-                            href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2138307&HistoricalAwards=false">
-                            #2138307</a>,
-                        <a class="btn btn-link"
-                            href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2137603&HistoricalAwards=false">
-                            #2137603</a> and
-                        <a class="btn btn-link"
-                            href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2138296&HistoricalAwards=false">
-                            #2138296</a>.
-                    </p>
+<div id="footer-menus"></div>
+<div id="footer"></div>
 
-                    <p>
-                        <small>
-                            Any opinions, findings, conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NSF.
-                        </small>
-                    </p>
 
-                    <a class="mt-3 read-more btn btn-link" href="https://access-ci.org/contact">
-                        CONTACT ACCESS
-                    </a>
-                </div>
+<script type="module">
+  import {
+    footer,
+    footerMenus,
+    header,
+    siteMenus,
+    tableOfContents,
+    universalMenuItems,
+    universalMenus,
+  } from "https://esm.sh/@access-ci/ui@0.2.5";
 
-                <div class="col-md-6 col-sm-12 text-center pt-5">
-                    <a class="social-link" href="https://twitter.com/ACCESSforCI">
-                        <img src="/themes/contrib/b5_ac_conect/logos/social/share-x.svg"/>
-                    </a>
-                    <a class="social-link" href="https://www.youtube.com/c/ACCESSforCI">
-                        <img src="/themes/contrib/b5_ac_conect/logos/social/share-yt.svg"/>
-                    </a>
-                    <a class="social-link" href="https://www.facebook.com/ACCESSforCI">
-                        <img src="/themes/contrib/b5_ac_conect/logos/social/share-fb.svg"/>
-                    </a>
-                    <a class="social-link" href="https://www.linkedin.com/company/accessforci/">
-                        <img src="/themes/contrib/b5_ac_conect/logos/social/share-li.svg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="row mb-4 pt-2 mt-5 border-top border-secondary">
-                <div class="col-md-6 col-sm-end text-md-start" id="footer-brand">
-                    <a href="https://access-ci.org"><img alt="ACCESS" class="footer-logo" height="43px" width="188.1px"
-                                                         src="/themes/contrib/b5_ac_conect/logos/ACCS012524_ACCESS_Logo-Main-RGB.png"></a>
-                </div>
+  const siteItems = [
+    {
+      name: "Focus Areas",
+      items: [
+        {
+          name: "Cybersecurity",
+          href: "/pub/cybersecurity",
+        },
+        {
+          name: "Networking & Data Transfer",
+          href: "/pub/data_n_networking",
+        },
+        {
+          name: "Operational Support",
+          href: "/pub/operational_support",
+        },
+        {
+          name: "Student Training & Engagement Program",
+          href: "/step",
+        },
+      ],
+    },
+    {
+      name: "Infrastructure",
+      items: [
+        {
+          name: "Existing Infrastructure",
+          href: "/resources/access-allocated",
+        },
+        {
+          name: "New Infrastructure",
+          href: "/pub/access-infrastructure-integration",
+        },
+      ],
+    },
+    {
+      name: "FAQs",
+      href: "/faqs",
+    },
+    {
+      name: "Help",
+      href: "/help",
+    },
+  ];
 
-                <div class="col-md-6 col-sm-12 footer-policies text-md-end text-sm-start">
-                    <a class="p-2 btn btn-link" href="https://access-ci.org/acceptable-use">Acceptable Use Policy</a>
-                    <a class="p-2 btn btn-link" href="https://access-ci.org/code-of-conduct">Code of Conduct</a>
-                    <a class="p-2 btn btn-link" href="https://access-ci.org/privacy-policy">Privacy Policy</a>
-                    <a class="p-2 btn btn-link" href="https://access-ci.org/glossary/">Glossary</a>
-                    <a class="p-2 btn btn-link" href="https://access-ci.org/site-map/">Site Map</a>
-                </div>
-            </div>
-            {#{{ page.footer }}#}
-        </div>
-    </footer>
-{% endif %}
+  universalMenus({
+    isLoggedIn: true, // document.cookie.split("; ").includes("SESSaccesscisso=Operations"),
+    loginUrl: "/user/login",
+    logoutUrl: "/logout",
+    siteName: "Operations",
+    target: document.getElementById("universal-menus"),
+  });
+
+  header({
+    siteName: "Operations",
+    target: document.getElementById("header"),
+  });
+
+  siteMenus({
+    items: siteItems,
+    siteName: "Operations",
+    target: document.getElementById("site-menus"),
+  });
+
+  tableOfContents({
+    headings: document.querySelectorAll("#body h1, #body h2"),
+    target: document.getElementById("table-of-contents"),
+  });
+
+  footerMenus({
+    items: siteItems,
+    target: document.getElementById("footer-menus"),
+  });
+
+  footer({ target: document.getElementById("footer") });
+</script>
+
+

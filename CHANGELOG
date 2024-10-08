@@ -1,3 +1,6 @@
+v0.3.38 20241008      Dinuka De Silva
+  - Adding the access-ci-ui components
+
 v0.3.37 20240820      Dinuka De Silva
   - Adding the "access-operations-drupal-portal" parent CSS class for all of the CSS including bootstrap
 
