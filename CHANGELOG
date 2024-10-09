@@ -1,3 +1,6 @@
+v0.3.40 20241009      Dinuka De Silva
+  - Fix logout url
+
 v0.3.39 20241009      Dinuka De Silva
   - Upgrade access-ci-ui to 0.3.0-beta3
 
