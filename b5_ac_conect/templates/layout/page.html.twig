@@ -148,13 +148,39 @@
     },
   ];
 
-  universalMenus({
-    isLoggedIn: document.cookie.split("; ").includes("SESSaccesscisso=Operations"),
-    loginUrl: "/user/login",
-    logoutUrl: "/user/logout",
-    siteName: "Operations",
-    target: document.getElementById("universal-menus"),
-  });
+  function getToken(callback) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "/session/logout/token", true);
+    xhr.responseType = "text";
+    xhr.onload = () => {
+      if (xhr.readyState === xhr.DONE) {
+        if (xhr.status === 200) {
+          callback(xhr.responseText);
+        } else {
+          callback(null);
+        }
+      }
+    };
+
+    xhr.send(null);
+  }
+
+  function populateUniversalMenus(token) {
+      let logoutUrl = "/user/logout";
+      if (token) {
+        logoutUrl += `?token=${token}`;
+      }
+
+      universalMenus({
+        isLoggedIn: document.cookie.split("; ").includes("SESSaccesscisso=Operations"),
+        loginUrl: "/user/login",
+        logoutUrl: logoutUrl,
+        siteName: "Operations",
+        target: document.getElementById("universal-menus"),
+      });
+  }
+
+  getToken(populateUniversalMenus);
 
   header({
     siteName: "Operations",
