@@ -1,3 +1,6 @@
+v0.3.42 20241010      Dinuka De Silva
+  - Upgrade access-ci-ui to 0.3.1
+
 v0.3.41 20241010      Dinuka De Silva
   - Fix logout token
 
