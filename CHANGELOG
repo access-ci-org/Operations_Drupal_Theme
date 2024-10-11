@@ -1,3 +1,7 @@
+v0.3.43 20241010      Dinuka De Silva
+  - Style improvements
+  - Fix login redirect url
+
 v0.3.42 20241010      Dinuka De Silva
   - Upgrade access-ci-ui to 0.3.1
 
