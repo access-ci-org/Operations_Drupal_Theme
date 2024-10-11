@@ -165,6 +165,8 @@
     xhr.send(null);
   }
 
+
+
   function populateUniversalMenus(token) {
       let logoutUrl = "/user/logout";
       if (token) {
@@ -173,7 +175,7 @@
 
       universalMenus({
         isLoggedIn: document.cookie.split("; ").includes("SESSaccesscisso=Operations"),
-        loginUrl: "/user/login",
+        loginUrl: "/user/login?destination=" + window.location.pathname,
         logoutUrl: logoutUrl,
         siteName: "Operations",
         target: document.getElementById("universal-menus"),
