@@ -70,6 +70,96 @@ body {
 }
 */
 
+.navbar {
+  --bs-navbar-padding-y: 0;
+}
+
+/*
+    margin: 0 auto;
+    */
+.region-nav-access-main {
+  flex-direction: row;
+  text-align: left;
+
+  ul {
+    height: 48px;
+  }
+}
+
+.region-nav-access-additional {
+  flex-direction: row;
+  text-align: right
+}
+
+footer .social-link {
+  text-decoration: none;
+  transition: transform .1s ease;
+  height: fit-content;
+  margin: 0.75rem
+}
+
+footer .social-link svg {
+  fill: #13294b !important;
+  height: 55px;
+  width: auto
+}
+
+footer .social-link img {
+  height: 45px;
+  width: 45px;
+}
+
+footer .social-link:hover {
+  text-decoration: none;
+}
+
+footer .social-link img:hover {
+  transform: scale(1.1)
+}
+
+footer {
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    a.btn.btn-link {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 24px;
+    }
+
+    small {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+
+  a.btn.btn-link {
+    color: $access-medium;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .footer-policies a.btn.btn-link {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  a.btn.btn-link.read-more {
+    color: $access-medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+
 .btn-access-primary {
   font-size: 14px;
   font-weight: 700;
@@ -90,6 +180,198 @@ body {
   color: #000;
   background-color: #fff;
   border-color: #000;
+}
+
+.region-nav-access-main,
+.region-nav-access-additional {
+  //ul.sf-menu li.menuparent a {
+  //    &:hover, &:active, &:focus {
+  //        color: $access-light;
+  //        background-color: $access-medium;
+  //    }
+  //}
+
+
+  .nav-menu-icon-no-text {
+    visibility: hidden;
+  }
+
+  .nav-menu-icon::after {
+    visibility: visible;
+    display: inline-block;
+    height: 13px;
+    width: 16px;
+    overflow: visible;
+    content: " ";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: 5px;
+  }
+
+  .nav-menu-icon-home::after {
+    background-image: url(../assets/img/icons/house-solid.svg);
+  }
+
+  .nav-menu-icon-search::after {
+    background-image: url(../assets/img/icons/magnifying-glass-solid.svg);
+  }
+
+  .nav-menu-icon-hamburger::after {
+    background-image: url(../assets/img/icons/bars-solid.svg);
+  }
+
+  .sf-depth-1 {
+    ul {
+      padding: 10px !important;
+      background-color: $access-medium;
+    }
+  }
+
+  ul {
+    li {
+
+      a, .menuparent {
+
+        &.sf-depth-1 {
+          color: $access-light;
+          background-color: $access-dark;
+          font-weight: 800;
+          font-size: 14px;
+          padding: 16px 8px;
+          height: 100%;
+
+          &:hover, &:focus {
+            text-decoration: none;
+          }
+        }
+
+        &.sf-depth-2 {
+          color: $access-light;
+          background-color: $access-medium;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        text-decoration: none;
+
+        &:hover, &:focus {
+          color: $access-light;
+          background-color: $access-medium;
+          text-decoration: underline;
+        }
+
+        &.active, &.is-active {
+          color: $access-light;
+          background-color: $access-medium;
+        }
+      }
+
+      &.sfHover a {
+        color: $access-light;
+        background-color: $access-medium;
+      }
+    }
+  }
+}
+
+.access-subdomain-global-navigation {
+  border-color: $access-dark;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 3px;
+
+  .block {
+    line-height: 10px;
+  }
+
+  .sf-depth-1 {
+    ul {
+      padding: 10px !important;
+      background-color: $access-medium;
+    }
+  }
+
+  ul {
+    @extend .d-inline-block;
+    @extend .list-inline;
+
+    li {
+      @extend .list-inline-item;
+      @extend .m-0;
+
+      .sf-sub-indicator {
+        display: none;
+      }
+
+      a, span.nolink {
+        background-color: $access-medium;
+        color: $access-light;
+
+        text-decoration: none;
+
+        &.sf-depth-1 {
+          color: $access-dark;
+          background-color: white;
+          font-weight: 600;
+          font-size: 16px;
+          padding-top: 15px;
+          padding-bottom: 14px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        &.sf-depth-2 {
+          color: $access-light;
+          background-color: $access-medium;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 18px;
+          padding-top: 9px;
+          padding-bottom: 9px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        &:hover {
+          background-color: $access-medium;
+          color: $access-light;
+
+          text-decoration: underline;
+          font-weight: 600;
+        }
+
+        &.active, &.is-active {
+          background-color: $access-dark;
+          color: $access-light;
+        }
+      }
+
+      &.sfHover {
+        a, span.nolink {
+          background-color: $access-medium;
+          color: $access-light;
+        }
+      }
+    }
+  }
+}
+
+ul.sf-menu.sf-horizontal.sf-shadow ul,
+ul.sf-menu.sf-vertical.sf-shadow ul,
+ul.sf-menu.sf-navbar.sf-shadow ul ul {
+  box-shadow: none;
+}
+
+ul.sf-menu li {
+  height: 100%;
 }
 
 .branding-wrapper {
@@ -231,6 +513,32 @@ h4, .h4 {
           text-decoration: underline;
         }
       }
+    }
+  }
+
+}
+
+.region-nav-main {
+  li {
+    padding: 10px;
+
+    a {
+      @extend .btn;
+      @extend .btn-lg;
+      @extend .btn-outline-dark;
+    }
+  }
+}
+
+.views-row {
+  .ui-state-active,
+  .ui-accordion .ui-accordion-header {
+    color: $access-medium;
+    background: white;
+    border-color: #dddddd;
+
+    .field-content a {
+      color: $access-dark;
     }
   }
 }

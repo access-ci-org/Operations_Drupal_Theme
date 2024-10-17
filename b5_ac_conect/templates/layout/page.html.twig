@@ -51,10 +51,31 @@
     (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
     (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
     (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ') %}
-        <div id="universal-menus"></div>
-    <div id="header"></div>
+
+<header data-elastic-exclude="true" class="access-operations-drupal-portal">
+
+    <div id="universal-menus"></div>
+
+    {% if page.nav_branding or page.nav_main %}
+        <nav class="{{ nav_classes }}">
+            <div class="{{ b5_top_container }} d-flex w-100 branding-wrapper">
+                <div class="d-flex">
+                    <a class="nsf-logo" href="https://www.nsf.gov/" target="_blank">
+                        <img src="/themes/contrib/b5_ac_conect/logos/NSF_logo.svg" />
+                    </a>
+                    <div class="logo-divider">
+                        <img src="/themes/contrib/b5_ac_conect/logos/ACCESS-pipe.svg" />
+                    </div>
+                    {{ page.nav_branding }}
+                </div>
+                {{ page.nav_main }}
+            </div>
+        </nav>
+    {% endif %}
+
     <div id="site-menus"></div>
 
+</header>
 
 
 <main role="main" id="main" class="container">
@@ -184,10 +205,10 @@
 
   getToken(populateUniversalMenus);
 
-  header({
-    siteName: "Operations",
-    target: document.getElementById("header"),
-  });
+  //header({
+  //  siteName: "Operations",
+  //  target: document.getElementById("header"),
+  //});
 
   siteMenus({
     items: siteItems,

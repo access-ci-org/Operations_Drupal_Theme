@@ -1,3 +1,6 @@
+v0.3.44 20241016      Dinuka De Silva
+  - Revert the branding header
+
 v0.3.43 20241010      Dinuka De Silva
   - Style improvements
   - Fix login redirect url
