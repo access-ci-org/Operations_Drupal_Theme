@@ -122,7 +122,7 @@
     tableOfContents,
     universalMenuItems,
     universalMenus,
-  } from "https://esm.sh/@access-ci/ui@0.3.1";
+  } from "https://esm.sh/@access-ci/ui@0.8.0";
 
   const siteItems = [
     {
@@ -223,10 +223,26 @@
 
   footerMenus({
     items: siteItems,
+    siteName: "Operations",
     target: document.getElementById("footer-menus"),
   });
 
   footer({ target: document.getElementById("footer") });
+
+
+</script>
+
+<script type="module">
+
+    import { qaBot } from "https://esm.sh/@access-ci/ui@0.8.0?exports=qaBot";
+
+    qaBot({
+      target: document.getElementById("qa-bot"),
+      apiKey: "get-api-key-from-support-team",
+    });
+
+  <div id="qa-bot"></div>
+
 </script>
 
 
