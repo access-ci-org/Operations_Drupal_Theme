@@ -1,3 +1,6 @@
+v0.3.45 20240521      Dinuka De Silva
+  - Bump the `access-ci/ui` to `0.8.0`
+
 v0.3.44 20241016      Dinuka De Silva
   - Revert the branding header
 
