@@ -1,10 +1,15 @@
+#npm install -g postcss-cli autoprefixer
+
 sass ./b5_ac_conect/scss/style.scss ./b5_ac_conect/css/style.css
-
-rm -rf /Users/dinukadesilva/Documents/iub-access/opsportal/web/themes/contrib/b5_ac_conect
-
-cp -r ./b5_ac_conect /Users/dinukadesilva/Documents/iub-access/opsportal/web/themes/contrib/b5_ac_conect
+postcss ./b5_ac_conect/css/style.css --replace --use autoprefixer
 
 
-cd /Users/dinukadesilva/Documents/iub-access/opsportal
+rm -rf ../../drupal-portals/opsportal/web/themes/contrib/b5_ac_conect
+
+
+cp -r ./b5_ac_conect ../../drupal-portals/opsportal/web/themes/contrib/b5_ac_conect
+
+
+cd ../../drupal-portals/opsportal
 ddev drush cr
-cd /Users/dinukadesilva/Documents/iub-access/repo/Operations_Drupal_Theme
+cd ../../repo/Operations_Drupal_Theme
