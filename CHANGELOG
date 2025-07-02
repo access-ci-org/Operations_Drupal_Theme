@@ -1,3 +1,6 @@
+v0.3.46 20240521      Dinuka De Silva
+  - Fix the session validation
+
 v0.3.45 20240521      Dinuka De Silva
   - Bump the `access-ci/ui` to `0.8.0`
 
