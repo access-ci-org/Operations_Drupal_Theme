@@ -111,6 +111,7 @@
 
 <div id="footer-menus"></div>
 <div id="footer"></div>
+<div id="qa-bot"></div>
 
 
 <script type="module">
@@ -118,11 +119,12 @@
     footer,
     footerMenus,
     header,
+    qaBot,
     siteMenus,
     tableOfContents,
     universalMenuItems,
     universalMenus,
-  } from "https://esm.sh/@access-ci/ui@0.13.1";
+  } from "https://unpkg.com/@access-ci/ui@0.13.2/dist/access-ci-ui.js";
 
   const siteItems = [
     {
@@ -194,12 +196,22 @@
         logoutUrl += `?token=${token}`;
       }
 
+      const isLoggedIn = document.cookie.split("; ").includes("SESSaccesscisso=1");
+      const loginUrl = "/user/login?destination=" + window.location.pathname;
+
       universalMenus({
-        isLoggedIn: document.cookie.split("; ").includes("SESSaccesscisso=1"),
-        loginUrl: "/user/login?destination=" + window.location.pathname,
+        isLoggedIn: isLoggedIn,
+        loginUrl: loginUrl,
         logoutUrl: logoutUrl,
         siteName: "Operations",
-        target: document.getElementById("universal-menus"),
+        target: document.getElementById("universal-menus")
+      });
+
+      qaBot({
+        isLoggedIn: isLoggedIn,
+        loginUrl: loginUrl,
+        apiKey: "IkkHtNm3JQiQd45QkDrHrRs5A5UJkmu4cT_R5PYGDv4",
+        target: document.getElementById("qa-bot")
       });
   }
 
@@ -229,20 +241,4 @@
 
   footer({ target: document.getElementById("footer") });
 
-
 </script>
-
-<script type="module">
-
-    import { qaBot } from "https://esm.sh/@access-ci/ui@0.8.0?exports=qaBot";
-
-    qaBot({
-      target: document.getElementById("qa-bot"),
-      apiKey: "get-api-key-from-support-team",
-    });
-
-  <div id="qa-bot"></div>
-
-</script>
-
-
