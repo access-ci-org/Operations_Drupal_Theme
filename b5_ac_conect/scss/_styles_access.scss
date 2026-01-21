@@ -542,3 +542,7 @@ h4, .h4 {
     }
   }
 }
+
+input.field-add-more-submit {
+  @extend .btn.btn-primary;
+}
