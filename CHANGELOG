@@ -1,3 +1,6 @@
+v0.5.1 20260122      Dinuka De Silva
+  - Minor bug fix in the stylesheet (CTT-858)
+
 v0.5.0 20260121      Dinuka De Silva
   - Making “Add another item” in infrastructure news posting form color yellow (CTT-858)
   - Upgrade @access-ci/ui version to 0.15.0 (CTT-860)
