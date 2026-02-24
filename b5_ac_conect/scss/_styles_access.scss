@@ -53,11 +53,10 @@ a {
   text-decoration: underline;
   font-weight: bold;
   background-color: transparent;
-  //word-break: break-word;
-  //user-select: auto;
+  @extend .text-black;
 
   &:hover {
-    color: $access-medium !important;
+    @extend .text-medium;
   }
 
   &.text-decoration-none:hover {
