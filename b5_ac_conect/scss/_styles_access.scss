@@ -126,7 +126,7 @@ a.badge {
 }
 
 
-/////////////////
+// ACCESS Operations Drupal portal related styles
 
 .bg-dark {
   @extend .text-light;
@@ -238,4 +238,8 @@ a.badge {
       color: $access-dark;
     }
   }
+}
+
+input.field-add-more-submit {
+  @extend .btn, .btn-primary;
 }
