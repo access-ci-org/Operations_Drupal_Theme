@@ -1,0 +1,18 @@
+
+.access-operations-drupal-portal {
+  // Include ACCESS
+  @import 'variables_access';
+
+  // Sub theme styling.
+  @import 'variables_drupal';
+
+  // Bootstrap overriden variables.
+  // @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+  @import 'variables_bootstrap';
+
+  // Include bootstrap.
+  @import '../../bootstrap5/scss/style';
+
+  // Include ACCESS
+  @import 'styles_access';
+}

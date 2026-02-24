@@ -3,17 +3,10 @@
 //$body-font-family: Archivo;
 
 $access-dark: #1A5B6E;
-$access-dark-rgb: 26, 91, 110;
-$access-medium: #138597;
-$access-medium-rgb: 19, 133, 151;
-$access-teal: #48C0B9;
-$access-teal-rgb: 72, 192, 185;
+$access-medium: #107180;
 $access-light: #ECF9F8;
-$access-light-rgb: 236, 249, 248;
 $access-yellow: #FFC42D;
-$access-yellow-rgb: 255, 196, 45;
 $access-orange: #F07537;
-$access-orange-rgb: 240, 117, 56;
 $access-secondary: #6c757d;
 
 $container-max-widths: (
@@ -24,9 +17,102 @@ $container-max-widths: (
   xxl: 1203px
 ) !default;
 
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+
+// scss-docs-start theme-color-variables
+$primary:       $access-yellow; // $blue !default;
+$secondary:     $access-secondary; // $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
 $theme-colors: (
   "dark": $access-dark,
+  "medium": $access-medium,
   "light": $access-light,
   "primary": $access-yellow,
-  "secondary": $access-secondary
+  "secondary": $access-secondary,
+
+  "yellow": $access-yellow,
+  "orange": $access-orange,
+
+  "white": $white,
+  "blue": $blue,
+  "green": $green,
+
+  "success":    #A4F4CF, // $success
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900
+);
+
+$table-variants: (
+  "dark": $access-dark,
+  "light": $access-light,
+);
+
+// custom-variables.scss
+$h1-font-size: 2.3rem;
+$h2-font-size: 1.55rem;
+$h3-font-size: 1.4rem;
+$h4-font-size: 1.3rem;
+$h5-font-size: 1.2rem;
+$h6-font-size: 1rem;
+$h7-font-size: 0.9rem;
+$h8-font-size: 0.8rem;
+$h9-font-size: 0.7rem;
+
+// Other useful variables to customize
+$headings-font-family:  "Archivo", Helvetica, Arial, sans-serif;
+$headings-font-weight: 800;
+$headings-line-height: 1.2;
+// $headings-color: $black;
+
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size
 );

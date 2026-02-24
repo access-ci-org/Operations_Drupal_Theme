@@ -21,7 +21,110 @@ $form-text-margin-top: 0 !default;
 $legend-font-size: 1rem !default;
 $table-cell-padding-x: .75rem !default;
 
-$accordion-button-color:           $access-medium;
+
+
+// Accordion
+
+// scss-docs-start accordion-variables
+$accordion-padding-y:                     0.7rem !default;
+$accordion-padding-x:                     1rem !default;
+//$accordion-color:                         var(--#{$prefix}body-color) !default;
+$accordion-bg:                            $access-light; //var(--#{$prefix}body-bg) !default;
+//$accordion-border-width:                  var(--#{$prefix}border-width) !default;
+//$accordion-border-color:                  var(--#{$prefix}border-color) !default;
+//$accordion-border-radius:                 var(--#{$prefix}border-radius) !default;
+//$accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width) !default;
+
+//$accordion-body-padding-y:                $accordion-padding-y !default;
+//$accordion-body-padding-x:                $accordion-padding-x !default;
+//
+//$accordion-button-padding-y:              $accordion-padding-y !default;
+//$accordion-button-padding-x:              $accordion-padding-x !default;
+//$accordion-button-color:                  var(--#{$prefix}body-color) !default;
+//$accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
+//$accordion-transition:                    $btn-transition, border-radius .15s ease !default;
+$accordion-button-active-bg:              $access-light; //var(--#{$prefix}primary-bg-subtle) !default;
+//$accordion-button-active-color:           var(--#{$prefix}primary-text-emphasis) !default;
+//
+//// fusv-disable
+//$accordion-button-focus-border-color:     $input-focus-border-color !default; // Deprecated in v5.3.3
+//// fusv-enable
+//$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+//
+//$accordion-icon-width:                    1.25rem !default;
+//$accordion-icon-color:                    $body-color !default;
+//$accordion-icon-active-color:             $primary-text-emphasis !default;
+//$accordion-icon-transition:               transform .2s ease-in-out !default;
+//$accordion-icon-transform:                rotate(-180deg) !default;
+//
+//$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-color}' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>") !default;
+//$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-active-color}' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>") !default;
+// scss-docs-end accordion-variables
+
+
+//$accordion-button-color: $access-medium;
+//
+//$accordion-button-active-bg: $access-light;
+//$accordion-button-active-color: $access-medium;
+
+
+$nav-link-color: $access-secondary;
+$nav-link-hover-color: $access-medium;
+
+$nav-underline-gap: 1rem !default;
+$nav-underline-border-width: .1rem !default;
+$nav-underline-link-active-color: $access-medium;
+
+
+// Modals
+
+// scss-docs-start modal-variables
+//$modal-inner-padding:               $spacer !default;
+//
+//$modal-footer-margin-between:       .5rem !default;
+//
+//$modal-dialog-margin:               .5rem !default;
+//$modal-dialog-margin-y-sm-up:       1.75rem !default;
+//
+//$modal-title-line-height:           $line-height-base !default;
+//
+//$modal-content-color:               null !default;
+//$modal-content-bg:                  var(--#{$prefix}body-bg) !default;
+//$modal-content-border-color:        var(--#{$prefix}border-color-translucent) !default;
+$modal-content-border-width: 0px; // var(--#{$prefix}border-width) !default;
+$modal-content-border-radius: 0px; // var(--#{$prefix}border-radius-lg) !default;
+$modal-content-inner-border-radius: 0px; // subtract($modal-content-border-radius, $modal-content-border-width) !default;
+//$modal-content-box-shadow-xs:       var(--#{$prefix}box-shadow-sm) !default;
+//$modal-content-box-shadow-sm-up:    var(--#{$prefix}box-shadow) !default;
+//
+//$modal-backdrop-bg:                 $black !default;
+//$modal-backdrop-opacity:            .5 !default;
+
+$modal-header-border-color: 0px; // var(--#{$prefix}border-color) !default;
+$modal-header-border-width: 0px; // $modal-content-border-width !default;
+$modal-header-padding-y: 50px; // $modal-inner-padding !default;
+$modal-header-padding-x: 50px; // $modal-inner-padding !default;
+//$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+//
+//$modal-footer-bg:                   null !default;
+//$modal-footer-border-color:         $modal-header-border-color !default;
+$modal-footer-border-width: 0px; // $modal-header-border-width !default;
+
+//$modal-sm:                          300px !default;
+//$modal-md:                          500px !default;
+//$modal-lg:                          800px !default;
+//$modal-xl:                          1140px !default;
+//
+//$modal-fade-transform:              translate(0, -50px) !default;
+//$modal-show-transform:              none !default;
+//$modal-transition:                  transform .3s ease-out !default;
+//$modal-scale-transform:             scale(1.02) !default;
+// scss-docs-end modal-variables
+
+
+$component-active-color: $white !default;
+$component-active-bg: $access-medium !default;
+
 
 $accordion-button-active-bg:              $access-light;
 $accordion-button-active-color:           $access-medium;
