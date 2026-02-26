@@ -1,3 +1,6 @@
+v0.6.4 20260226      Dinuka De Silva
+  - Enabling the `access-ci-ui` breadcrumb (CTT-548)
+
 v0.6.3 20260224      Dinuka De Silva
   - Minor bug fix (CTT-858)
 

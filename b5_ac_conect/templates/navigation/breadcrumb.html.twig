@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Theme override for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ */
+#}
+{% if breadcrumb %}
+<div id="breadcrumbs"></div>
+<script type="module">
+  import {
+    breadcrumbs
+  } from "https://unpkg.com/@access-ci/ui@0.15.0/dist/access-ci-ui.js";
+
+  const items = [
+    {% for item in breadcrumb %}
+      {
+        "name": "{% if item.url == "/" %}OPERATIONS{% else %}{{ item.text }}{% endif %}",
+        "href": "{{ item.url }}",
+      },
+    {% endfor %}
+  ];
+
+  breadcrumbs({
+    items: items,
+    target: document.getElementById("breadcrumbs"),
+  });
+</script>
+{% endif %}

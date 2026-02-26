@@ -74,6 +74,8 @@
     {% endif %}
 
     <div id="site-menus"></div>
+    {{ page.breadcrumb }}
+
 
 </header>
 
@@ -81,13 +83,6 @@
 <main role="main" id="main" class="container">
 
     <div>
-        {% if page.breadcrumb %}
-            <div class="w-100 access-subdomain-breadcrumb-wrapper">
-                <div class="{{ b5_top_container }}">
-                    {{ page.breadcrumb }}
-                </div>
-            </div>
-        {% endif %}
         <div class="row g-0">
             {% if page.sidebar_first %}
                 <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">
@@ -127,14 +122,6 @@
   } from "https://unpkg.com/@access-ci/ui@0.15.0/dist/access-ci-ui.js";
 
   const siteItems = [
-    {
-      name: "Home",
-      href: "https://access-ci.org",
-    },
-    {
-      name: "OPERATIONS",
-      href: "/",
-    },
     {
       name: "Focus Areas",
       items: [
